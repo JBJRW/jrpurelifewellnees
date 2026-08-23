@@ -1,0 +1,6 @@
+# Añadir el remote (reemplaza TU-USUARIO con tu username de GitHub)
+git remote add origin https://github.com/TU-USUARIO/jr-purelife-wellness.git
+
+# Renombrar rama a main y hacer push inicial
+git branch -M main
+git push -u origin main
