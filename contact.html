@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A Dialogue with Botanical Science | JR PureLife Wellness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed-dim": "#c3cb99",
+                "on-secondary": "#ffffff",
+                "on-background": "#1b1c19",
+                "surface-container-low": "#f5f3ee",
+                "on-error": "#ffffff",
+                "surface-container-high": "#eae8e3",
+                "secondary-container": "#fed65b",
+                "error": "#ba1a1a",
+                "on-surface": "#1b1c19",
+                "tertiary-fixed": "#dfe8a6",
+                "on-tertiary-fixed-variant": "#434a19",
+                "tertiary-container": "#3d4413",
+                "surface-container": "#f0eee9",
+                "surface-variant": "#e4e2dd",
+                "outline-variant": "#c7c7b9",
+                "inverse-on-surface": "#f2f1ec",
+                "surface-dim": "#dbdad5",
+                "on-surface-variant": "#46483d",
+                "on-primary": "#ffffff",
+                "surface": "#fbf9f4",
+                "primary": "#272e0a",
+                "outline": "#77786c",
+                "primary-fixed": "#dfe7b3",
+                "on-tertiary-fixed": "#191e00",
+                "inverse-primary": "#c3cb99",
+                "on-secondary-fixed-variant": "#574500",
+                "on-error-container": "#93000a",
+                "tertiary-fixed-dim": "#c3cc8c",
+                "on-secondary-container": "#745c00",
+                "secondary-fixed-dim": "#e9c349",
+                "primary-container": "#3d441e",
+                "tertiary": "#272d00",
+                "surface-bright": "#fbf9f4",
+                "on-tertiary-container": "#a9b175",
+                "surface-tint": "#5b6239",
+                "background": "#fbf9f4",
+                "inverse-surface": "#30312e",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#241a00",
+                "on-primary-fixed-variant": "#434a23",
+                "secondary": "#735c00",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed": "#ffe088",
+                "error-container": "#ffdad6",
+                "surface-container-highest": "#e4e2dd",
+                "on-primary-container": "#a9b181",
+                "on-primary-fixed": "#181e00"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "unit": "8px",
+                "container-max": "1280px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "label-caps": ["Space Mono"],
+                "headline-lg": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "headline-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-glass {
+            background: rgba(251, 249, 244, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .custom-shadow {
+            box-shadow: 0 24px 48px -12px rgba(61, 68, 30, 0.08);
+        }
+        .ancestral-trinity-bullet {
+            list-style: none;
+            position: relative;
+        }
+        .ancestral-trinity-bullet::before {
+            content: 'eco';
+            font-family: 'Material Symbols Outlined';
+            position: absolute;
+            left: -1.5rem;
+            color: #735c00;
+            font-size: 1rem;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #272e0a !important;
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden" data-i18n-title-key="contact.meta.title">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md border-b border-outline-variant/30 shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                JR PureLife Wellness
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 hover:text-secondary" href="alchemy.html" data-i18n="contact.nav.alchemy">Alchemy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 hover:text-secondary" href="product.html" data-i18n="contact.nav.trinity">The Trinity</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300 hover:text-secondary" href="journal.html" data-i18n="contact.nav.lab_notes">Lab Notes</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-secondary transition-colors duration-300" href="contact.html" data-i18n="contact.nav.contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-all active:opacity-80" data-i18n="contact.nav.cta">Consultation</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-75" data-alt="A cinematic, high-end photograph of a modern botanical laboratory integrated into a traditional stone greenhouse. The scene is bathed in the warm, golden glow of a Mediterranean sunset, with long shadows stretching across vintage glass test tubes and artisanal ceramic jars. Lush green olive trees are visible through the glass panels, creating a seamless blend of science and nature. The overall aesthetic is serene, luxurious, and rooted in heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFqg7h_c0FQkiwOJ83chwqwqx6Bamij21ktxtfYavqabbEn0AR7gcUDkH2gQjF0zcunBQI4ay18ayWql6CLqir47CISkgYARqrBlcoXYXLB35uP1VSQosfY-yxv-Z7AxdDUzYv8visd90ujspnSyH7opng5ZUj8Qugzeu3mrLXtD1CArZhhG4BBqFWuO79gECye0sC2H55NtA4Nmk66pqWLwemz-pIoJMQrYCrC8hDzozR6N62EzERrld6vLZK4-SHBFRVKvCQlLMn"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl">
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-primary/40 backdrop-blur-sm px-4 py-1 inline-block mb-6 tracking-[0.2em] uppercase" data-i18n="contact.hero.eyebrow">Research Sanctuary</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-white mb-8" data-i18n="contact.hero.title">A Dialogue with Botanical Science</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto leading-relaxed" data-i18n="contact.hero.subtitle">Where the Earth's ancestral intelligence meets the precision of the contemporary laboratory. Let's begin a conversation about pure wellness.</p>
+</div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-3xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Direct Channels -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Channel 1 -->
+<div class="p-10 bg-white custom-shadow border-b border-secondary/20 transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-full mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="contact.channel1.title">General Inquiries</h3>
+<p class="text-on-surface-variant mb-6 font-body-md" data-i18n="contact.channel1.desc">For questions about our philosophy, products, and botanical skincare.</p>
+<a class="font-label-caps text-label-caps text-secondary font-bold hover:underline" href="mailto:hola@jrpurelife.com">hola@jrpurelife.com</a>
+</div>
+<!-- Channel 2 -->
+<div class="p-10 bg-white custom-shadow border-b border-secondary/20 transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-full mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">science</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="contact.channel2.title">Lab Reports</h3>
+<p class="text-on-surface-variant mb-6 font-body-md" data-i18n="contact.channel2.desc">Access to analysis certificates, ingredient purity data, and technical scientific documentation.</p>
+<a class="font-label-caps text-label-caps text-secondary font-bold hover:underline" href="mailto:lab@jrpurelife.com">lab@jrpurelife.com</a>
+</div>
+<!-- Channel 3 -->
+<div class="p-10 bg-white custom-shadow border-b border-secondary/20 transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-full mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="contact.channel3.title">Partnerships</h3>
+<p class="text-on-surface-variant mb-6 font-body-md" data-i18n="contact.channel3.desc">Collaboration opportunities, exclusive distribution, and joint research projects.</p>
+<a class="font-label-caps text-label-caps text-secondary font-bold hover:underline" href="mailto:partners@jrpurelife.com">partners@jrpurelife.com</a>
+</div>
+</div>
+</section>
+<!-- The Lab Form & Map -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col lg:flex-row gap-20">
+<!-- Form Area -->
+<div class="lg:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4" data-i18n="contact.form.heading">Contact Protocol</h2>
+<p class="text-on-surface-variant mb-12 font-body-lg" data-i18n="contact.form.subheading">Complete our formal form for a detailed response from our team of specialists.</p>
+<form class="space-y-8" id="lab-contact-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<label class="font-label-caps text-[10px] text-primary uppercase tracking-widest mb-2 block" data-i18n="contact.form.name_label">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 px-0 focus:border-primary transition-colors text-on-surface font-body-md" data-i18n-placeholder="contact.form.name_placeholder" placeholder="Dr./Ms. Julianne Rivera" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label-caps text-[10px] text-primary uppercase tracking-widest mb-2 block" data-i18n="contact.form.email_label">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 px-0 focus:border-primary transition-colors text-on-surface font-body-md" data-i18n-placeholder="contact.form.email_placeholder" placeholder="research@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-primary uppercase tracking-widest mb-2 block" data-i18n="contact.form.subject_label">Nature of Inquiry</label>
+<select class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 px-0 focus:border-primary transition-colors text-on-surface font-body-md appearance-none">
+<option value="scientific" data-i18n="contact.form.opt_scientific">Scientific Analysis / Formulation</option>
+<option value="order" data-i18n="contact.form.opt_order">Order Management / Logistics</option>
+<option value="wholesale" data-i18n="contact.form.opt_wholesale">Wholesale Distribution</option>
+<option value="press" data-i18n="contact.form.opt_press">Press & Communications</option>
+</select>
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-primary uppercase tracking-widest mb-2 block" data-i18n="contact.form.message_label">Message / Technical Requirement</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-outline-variant py-3 px-0 focus:border-primary transition-colors text-on-surface font-body-md resize-none" data-i18n-placeholder="contact.form.message_placeholder" placeholder="Describe your inquiry in as much detail as possible..." rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary px-12 py-4 font-label-caps text-label-caps tracking-widest uppercase hover:bg-primary-container transition-all flex items-center gap-4 group">
+<span data-i18n="contact.form.submit">Send Protocol</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+<!-- Location Area -->
+<div class="lg:w-1/2 flex flex-col justify-center">
+<div class="relative aspect-video w-full custom-shadow overflow-hidden group mb-8">
+<img class="w-full h-full object-cover" data-alt="A detailed map-like aerial view of a lush Mediterranean olive grove in Tuscany. The image shows rolling hills covered in silver-green olive trees, a winding dirt path, and a rustic stone laboratory building with large glass windows. The lighting is soft morning mist, giving a clean, artisanal feel that emphasizes the connection between the location and the brand's botanical science." data-location="Tuscany, Italy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCPTX1XJLLcoYOyBAn0VpvZ-P7-jw3aEAxMvac5XLyM4yoZXHRvZHsl-iJsB8_5ko-4TSRdS250joJ8qJjCDxn4E1mTa1IZmjR0nl7-ZngU5_PdLZGkgo24pWCqlCgbZ9YRZwIDqSEporH_bOGslV7bH6sV4c7JsjTAmZ0iWB4Ue8_NKlP2rj8IvYxB9rV59QrOA2PcnjgqL4LsxdQNZPsJ47iXps9uD4Vudm8rC1bbVvH_QVGLqJLJdXRjAHBOU7pDGp6fARnrl6l"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white/90 px-6 py-2 font-label-caps text-label-caps text-primary" data-i18n="contact.location.map_cta">View on Google Maps</span>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary" data-i18n="contact.location.title">Mediterranean Research Center</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed" data-i18n="contact.location.desc">Nestled in the heart of an ancestral Tuscan olive grove, our laboratory operates under biodynamic farming principles. Sea-salted air and mineral-rich earth are invisible ingredients in every one of our formulations.</p>
+<div class="flex items-start gap-4 text-on-surface">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div>
+<p class="font-bold" data-i18n="contact.location.address1">Via degli Ulivi, 42</p>
+<p data-i18n="contact.location.address2">58011 Capalbio, GR - Italy</p>
+</div>
+</div>
+<div class="flex items-start gap-4 text-on-surface">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<p class="font-bold" data-i18n="contact.location.hours_label">Visits by Appointment</p>
+<p data-i18n="contact.location.hours_value">Monday to Friday: 09:00 - 17:00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Lab Notes -->
+<section class="py-24 text-center bg-white">
+<div class="max-w-2xl mx-auto px-margin-mobile">
+<h3 class="font-headline-md text-headline-md text-primary mb-6" data-i18n="contact.subscribe.heading">Subscribe to 'Lab Notes'</h3>
+<p class="font-body-md text-on-surface-variant mb-10" data-i18n="contact.subscribe.text">Receive our latest research on the botanical triad and cellular wellness advances every month.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<input class="bg-surface-container-low border-0 px-6 py-4 min-w-[300px] font-body-md" data-i18n-placeholder="contact.subscribe.placeholder" placeholder="Your email address" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:brightness-110 transition-all" data-i18n="contact.subscribe.cta">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop space-y-8 md:space-y-0 max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start space-y-4">
+<div class="font-display-lg text-headline-md text-on-primary dark:text-primary">
+                    JR PureLife Wellness
+                </div>
+<p class="text-primary-fixed-dim/70 font-body-md text-body-md" data-i18n="contact.footer.copyright">© 2024 JR PureLife Wellness. Botanical Intelligence.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body-md text-body-md text-primary-fixed-dim/70 hover:text-primary-fixed-dim transition-all hover:underline" href="checkout.html" data-i18n="contact.footer.privacy">Privacy Policy</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim/70 hover:text-primary-fixed-dim transition-all hover:underline" href="checkout.html" data-i18n="contact.footer.terms">Terms of Service</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim/70 hover:text-primary-fixed-dim transition-all hover:underline" href="alchemy.html" data-i18n="contact.footer.lab_cert">Lab Certification</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim/70 hover:text-primary-fixed-dim transition-all hover:underline" href="alchemy.html" data-i18n="contact.footer.sustainability">Sustainability Report</a>
+</div>
+<div class="flex space-x-6 text-on-primary/60">
+<a class="hover:text-secondary-fixed transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="hover:text-secondary-fixed transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for form inputs
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                const label = input.previousElementSibling;
+                if (label) label.style.color = '#735c00';
+            });
+            input.addEventListener('blur', () => {
+                const label = input.previousElementSibling;
+                if (label) label.style.color = '#272e0a';
+            });
+        });
+
+        // Simple smooth scroll for in-page anchors only. Checks the href AT
+        // CLICK TIME (not at page-load) because nav-fix.js rewrites "#" nav
+        // links into real page URLs after this script runs — without this
+        // check, clicking a nav link would preventDefault() and then try to
+        // scroll to a non-existent selector, breaking navigation entirely.
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href') || '';
+                if (!href.startsWith('#') || href === '#') return; // not an in-page anchor (anymore)
+                const target = document.querySelector(href);
+                if (!target) return; // no matching section on this page
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

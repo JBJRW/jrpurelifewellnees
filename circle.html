@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Alchemist's Circle | JR PureLife Wellness</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#c7c7b9",
+                    "on-tertiary-container": "#a9b175",
+                    "inverse-surface": "#30312e",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#191e00",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#a9b181",
+                    "tertiary-container": "#3d4413",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary-fixed": "#181e00",
+                    "secondary-container": "#fed65b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c3cc8c",
+                    "primary-fixed": "#dfe7b3",
+                    "on-surface-variant": "#46483d",
+                    "on-primary-fixed-variant": "#434a23",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-container": "#f0eee9",
+                    "primary": "#272e0a",
+                    "surface-tint": "#5b6239",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-surface": "#1b1c19",
+                    "surface-container-high": "#eae8e3",
+                    "inverse-primary": "#c3cb99",
+                    "background": "#fbf9f4",
+                    "tertiary": "#272d00",
+                    "surface-bright": "#fbf9f4",
+                    "on-tertiary-fixed-variant": "#434a19",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "primary-fixed-dim": "#c3cb99",
+                    "surface": "#fbf9f4",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed": "#dfe8a6",
+                    "secondary": "#735c00",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#3d441e",
+                    "surface-container-highest": "#e4e2dd",
+                    "secondary-fixed": "#ffe088",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dbdad5",
+                    "on-background": "#1b1c19",
+                    "outline": "#77786c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "label-caps": ["Space Mono"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #3d441e33; border-radius: 10px; }
+        .ritual-card:hover .accent-line { width: 100%; }
+        .accent-line { transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-background text-on-background min-h-screen selection:bg-primary-fixed-dim selection:text-primary" data-i18n-title-key="circle.meta.title">
+<!-- Subtle Background Texture -->
+<div class="fixed inset-0 pointer-events-none z-0 opacity-10 mix-blend-multiply" data-alt="A cinematic, sun-drenched laboratory with antique glass apothecary bottles and dried botanical herbs hanging from wooden rafters. Soft golden hour light filters through large windows, illuminating dust motes and creating a warm, organic texture. The style is hyper-realistic and high-end wellness aesthetic, using a palette of creamy whites and earthy greens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBko_Hn_ZAWPsc_1EwYq2vFMPIp2zrlGeITlwVPjFGzFn6j8KB6bDsidaBup8Yruq-wXfM2DxtHpd19F6dhhn5ZGPQqoiN9f8uq154t0VJvd6Cm4xOw_EoFxLojNTlDs9pb4ERKjkAhDIbFAmhLIZFAnEC0a4gLMH8TZWyEFRoRLvI9UfXfxqJk9KnhomtavN_NPK66OtMqHA5xai9PEm0eEaZvFJNbOiUv4Yib10PVRoTHx1inoVqtKA')">
+</div>
+<!-- Sidebar Navigation -->
+<aside class="hidden lg:flex flex-col h-full w-80 left-0 fixed bg-surface-container-low dark:bg-surface-container shadow-2xl shadow-primary/5 p-gutter z-50">
+<div class="mb-10">
+<h1 class="text-headline-md font-headline-md text-primary tracking-tight" data-i18n="circle.sidebar.title">ALCHEMIST</h1>
+<p class="text-label-caps font-label-caps text-outline tracking-widest mt-1" data-i18n="circle.sidebar.subtitle">CONCIERGE</p>
+</div>
+<a href="concierge.html" class="flex items-center gap-4 mb-12 p-4 bg-surface-container-lowest rounded-xl shadow-sm hover:bg-surface-variant transition-colors">
+<img class="w-12 h-12 rounded-full object-cover grayscale brightness-110" data-i18n-alt="circle.sidebar.avatar_alt" alt="A professional and elegant headshot of a refined individual with a serene expression, styled for a high-end concierge service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc76GgxJNM9bC1jB07lTAthqLgEupZEVS5-SmDe9nv-xhjM4oLuT0K7N-fHLj3duxALgFYpt3XEF-ghmvgFWzJuiFI0z7_KY5_Zv2ht-dmv4TYVUgmmbwnxHrwYz1lui55qXQLM_vnnPUKlpJ8zZRS4MrQOfLJiVL9P7i1BBvf7GO5C3lyAiaNQFicoSNKOJB5SJyyINt00s6T80_kcWa0UeX0OfQjtP_6_o3ere1nwZbH4elgm4iVjg"/>
+<div>
+<p class="text-label-caps font-label-caps text-primary" data-i18n="circle.sidebar.member_no">Member No. 0422</p>
+<p class="text-body-md font-body-md text-on-surface-variant opacity-70" data-i18n="circle.sidebar.member_tag">Elite Botanical Access</p>
+</div>
+</a>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 text-primary font-bold bg-secondary-container/20 rounded-lg translate-x-1 transition-transform duration-200" href="circle.html">
+<span class="material-symbols-outlined">science</span>
+<span class="text-label-caps font-label-caps" data-i18n="circle.sidebar.nav_alchemist">Personal Alchemist</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="vault.html">
+<span class="material-symbols-outlined">eco</span>
+<span class="text-label-caps font-label-caps" data-i18n="circle.sidebar.nav_profile">Botanical Profile</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="history.html">
+<span class="material-symbols-outlined">history_edu</span>
+<span class="text-label-caps font-label-caps" data-i18n="circle.sidebar.nav_history">Scientific History</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="reserve.html">
+<span class="material-symbols-outlined">diamond</span>
+<span class="text-label-caps font-label-caps" data-i18n="circle.sidebar.nav_rituals">Exclusive Rituals</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="contact.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-caps font-label-caps" data-i18n="circle.sidebar.nav_settings">Settings</span>
+</a>
+</nav>
+<a href="contact.html" class="mt-auto bg-primary text-on-primary py-4 rounded-full text-label-caps font-label-caps tracking-widest hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">add</span>
+<span data-i18n="circle.sidebar.cta_book">Book Consultation</span>
+</a>
+</aside>
+<!-- Main Content Area -->
+<main class="lg:ml-80 min-h-screen relative z-10">
+<!-- Top App Bar (Mobile View) -->
+<header class="sticky top-0 w-full px-margin-mobile md:px-margin-desktop py-4 bg-background/80 backdrop-blur-md flex justify-between items-center lg:hidden z-40">
+<div class="text-label-caps font-label-caps tracking-widest text-primary" data-i18n="circle.mobilebar.title">ALCHEMIST</div>
+<div class="flex gap-4">
+<a href="contact.html" class="material-symbols-outlined text-primary">chat</a>
+<a href="history.html" class="material-symbols-outlined text-primary">history</a>
+</div>
+</header>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12">
+<!-- Welcome Header -->
+<header class="mb-12">
+<p class="text-label-caps font-label-caps text-secondary mb-2" data-i18n="circle.welcome.date">MARCH 24, 2024</p>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary" data-i18n="circle.welcome.title">Welcome to the Alchemist's Circle</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mt-4"><span id="circle-greeting" data-i18n="circle.welcome.greeting_morning">Good morning</span><span data-i18n="circle.welcome.text_rest">, Julian. Your personalized botanical infusion is nearing its peak potency. Your lead alchemist is ready for today's scientific briefing.</span></p>
+</header>
+<!-- Dashboard Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Central Messaging Interface (The Lab Chat) -->
+<section class="xl:col-span-8 flex flex-col h-[700px] bg-surface-container-lowest rounded-2xl shadow-[0_24px_48px_rgba(61,68,30,0.05)] overflow-hidden border border-surface-variant/50">
+<div class="p-6 border-b border-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover border-2 border-secondary-container" data-i18n-alt="circle.chat.alchemist_avatar_alt" alt="A portrait of a senior master alchemist, an elderly man with a wise expression, wearing a high-end linen lab coat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6TKCdHSzZYgYyouF_fsHOlspWxUKJsHT_G-3zwM09-7DeVX0UEGA2jQDyPSp7ke4tkmeh9PXrvZ4AndZ4yUfSpsM4S8w0gvj_UjXshrKUgQwMTNCkUYiHo9bqpmKNJYLJx08fqlkdhuJfT6Y4kU4pj1LFVo7JdzMASQiOB7cMrsmGCGMcQOMx81jsFRMQMPbqbtIk44ebS91pzOnNjXmVZQ7Cuxg0h1ZXAkW7pMIrqDcmdbRP5j4GEA"/>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<div>
+<h3 class="text-body-lg font-semibold text-primary" data-i18n="circle.chat.alchemist_name">Master Alchemist Elias</h3>
+<p class="text-label-caps font-label-caps text-on-surface-variant opacity-60 text-[10px]" data-i18n="circle.chat.alchemist_title">Head of Extraction</p>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors text-outline">
+<span class="material-symbols-outlined">video_call</span>
+</button>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors text-outline">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</div>
+<!-- Chat Messages -->
+<div class="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar bg-[radial-gradient(#3d441e05_1px,transparent_1px)] bg-[size:20px_20px]">
+<div class="flex gap-4">
+<div class="bg-surface-container p-4 rounded-2xl rounded-tl-none max-w-[80%]">
+<p class="text-body-md text-on-surface-variant" data-i18n="circle.chat.msg1_text">The cold-pressed extraction of the Sicilian Olive crop from last night shows a remarkable 12% increase in polyphenol density. I've adjusted your ritual soap formulation to account for this potency.</p>
+<span class="text-[10px] font-label-caps text-outline block mt-2" data-i18n="circle.chat.msg1_time">09:12 AM</span>
+</div>
+</div>
+<div class="flex gap-4 flex-row-reverse">
+<div class="bg-primary p-4 rounded-2xl rounded-tr-none max-w-[80%] text-on-primary">
+<p class="text-body-md" data-i18n="circle.chat.msg2_text">That sounds exceptional, Elias. How will this affect the cure time? I was hoping to start the new ritual by next weekend.</p>
+<span class="text-[10px] font-label-caps opacity-60 block mt-2 text-right" data-i18n="circle.chat.msg2_time">09:45 AM</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container p-4 rounded-2xl rounded-tl-none max-w-[80%]">
+<p class="text-body-md" data-i18n="circle.chat.msg3_text">The higher oil density actually stabilizes the crystalline structure faster. We should be ready for the first bath by Thursday. Shall we schedule the ritual briefing?</p>
+<span class="text-[10px] font-label-caps text-outline block mt-2" data-i18n="circle.chat.msg3_time">09:52 AM</span>
+</div>
+</div>
+</div>
+<!-- Chat Input -->
+<div class="p-6 bg-surface-container-low border-t border-surface-variant">
+<form id="circle-chat-form" class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-primary/20 focus:border-primary focus:ring-0 text-body-md py-4 px-6 rounded-xl transition-all" data-i18n-placeholder="circle.chat.input_placeholder" placeholder="Consult with your Alchemist..." type="text" id="circle-chat-input"/>
+<div class="absolute right-4 flex gap-2">
+<button type="button" class="text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">attachment</span>
+</button>
+<button type="submit" class="text-primary hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Sidebar Content -->
+<aside class="xl:col-span-4 space-y-gutter">
+<!-- Quick Actions -->
+<div class="grid grid-cols-2 gap-4">
+<a href="contact.html" class="flex flex-col items-center justify-center p-6 bg-surface-container-lowest border border-surface-variant rounded-2xl hover:shadow-lg transition-all group">
+<span class="material-symbols-outlined text-secondary mb-3 text-3xl group-hover:scale-110 transition-transform">biotech</span>
+<span class="text-label-caps font-label-caps text-primary text-center leading-tight" data-i18n="circle.quick.consult">Request New Consultation</span>
+</a>
+<a href="history.html" class="flex flex-col items-center justify-center p-6 bg-surface-container-lowest border border-surface-variant rounded-2xl hover:shadow-lg transition-all group">
+<span class="material-symbols-outlined text-secondary mb-3 text-3xl group-hover:scale-110 transition-transform">inventory_2</span>
+<span class="text-label-caps font-label-caps text-primary text-center leading-tight" data-i18n="circle.quick.history">View Extraction History</span>
+</a>
+</div>
+<!-- Active Botanical Profiles -->
+<div class="bg-surface-container-lowest p-gutter rounded-2xl border border-surface-variant/50">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-headline-md font-headline-md text-primary text-xl" data-i18n="circle.profiles.heading">Active Profiles</h3>
+<span class="text-label-caps font-label-caps text-secondary" data-i18n="circle.profiles.live_badge">LIVE</span>
+</div>
+<div class="space-y-4">
+<a href="vault.html" class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-2 rounded-lg">eco</span>
+<div class="flex-1">
+<p class="text-body-md font-semibold text-primary" data-i18n="circle.profiles.p1_name">Ancestral Olive Trinity</p>
+<p class="text-[12px] text-on-surface-variant" data-i18n="circle.profiles.p1_desc">Batch #882 • Maturation: 84%</p>
+</div>
+<div class="w-12 h-1 bg-outline-variant rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary w-[84%]"></div>
+</div>
+</a>
+<a href="vault.html" class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-primary bg-primary-fixed p-2 rounded-lg">spa</span>
+<div class="flex-1">
+<p class="text-body-md font-semibold text-primary" data-i18n="circle.profiles.p2_name">Avocado Lipid Infusion</p>
+<p class="text-[12px] text-on-surface-variant" data-i18n="circle.profiles.p2_desc">Batch #901 • Maturation: 12%</p>
+</div>
+<div class="w-12 h-1 bg-outline-variant rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary w-[12%]"></div>
+</div>
+</a>
+</div>
+</div>
+<!-- Upcoming Ritual Consultations -->
+<div class="bg-surface-container-lowest p-gutter rounded-2xl border border-surface-variant/50">
+<h3 class="text-headline-md font-headline-md text-primary text-xl mb-6" data-i18n="circle.schedule.heading">Ritual Schedule</h3>
+<div class="space-y-4">
+<a href="contact.html" class="ritual-card group cursor-pointer block">
+<div class="flex gap-4 items-start">
+<div class="text-center min-w-[48px]">
+<p class="text-label-caps font-label-caps text-primary text-lg" data-i18n="circle.schedule.r1_day">26</p>
+<p class="text-[10px] font-label-caps text-outline" data-i18n="circle.schedule.r1_month">MAR</p>
+</div>
+<div class="flex-1 pb-4 border-b border-surface-variant group-last:border-none">
+<p class="text-body-md font-bold text-primary" data-i18n="circle.schedule.r1_title">Olfactory Deep-Dive</p>
+<p class="text-body-md text-on-surface-variant opacity-70" data-i18n="circle.schedule.r1_meta">14:00 • Virtual Laboratory</p>
+<div class="accent-line w-0 h-[1px] bg-secondary-container mt-2"></div>
+</div>
+</div>
+</a>
+<a href="contact.html" class="ritual-card group cursor-pointer block">
+<div class="flex gap-4 items-start">
+<div class="text-center min-w-[48px]">
+<p class="text-label-caps font-label-caps text-primary text-lg" data-i18n="circle.schedule.r2_day">28</p>
+<p class="text-[10px] font-label-caps text-outline" data-i18n="circle.schedule.r2_month">MAR</p>
+</div>
+<div class="flex-1 pb-4 border-b border-surface-variant group-last:border-none">
+<p class="text-body-md font-bold text-primary" data-i18n="circle.schedule.r2_title">pH Alignment Ritual</p>
+<p class="text-body-md text-on-surface-variant opacity-70" data-i18n="circle.schedule.r2_meta">10:30 • Private Suite</p>
+<div class="accent-line w-0 h-[1px] bg-secondary-container mt-2"></div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 bg-background/90 backdrop-blur-md px-4 pb-safe md:hidden border-t border-surface-variant/20">
+<a class="flex flex-col items-center justify-center text-primary scale-110" href="concierge.html">
+<span class="material-symbols-outlined">spa</span>
+<span class="text-label-caps font-label-caps text-[8px] mt-1" data-i18n="circle.tabbar.concierge">Concierge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="contact.html">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-label-caps font-label-caps text-[8px] mt-1" data-i18n="circle.tabbar.schedule">Schedule</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="vault.html">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-label-caps font-label-caps text-[8px] mt-1" data-i18n="circle.tabbar.vault">Vault</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="home.html">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-caps font-label-caps text-[8px] mt-1" data-i18n="circle.tabbar.profile">Profile</span>
+</a>
+</nav>
+<script>
+        // Simple Micro-interaction for chat
+        const chatInput = document.getElementById('circle-chat-input');
+        chatInput.addEventListener('focus', () => {
+            chatInput.parentElement.parentElement.classList.add('shadow-inner');
+        });
+        chatInput.addEventListener('blur', () => {
+            chatInput.parentElement.parentElement.classList.remove('shadow-inner');
+        });
+
+        function clT(key, fallback) {
+            if (window.JRI18N && typeof window.JRI18N.t === "function") {
+                const v = window.JRI18N.t(key);
+                if (v && v !== key) return v;
+            }
+            return fallback;
+        }
+
+        // Send a message: appends it to the chat as the user's own bubble
+        document.getElementById('circle-chat-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const val = chatInput.value.trim();
+            if (!val) return;
+            const messages = document.querySelector('.custom-scrollbar');
+            const bubble = document.createElement('div');
+            bubble.className = 'flex gap-4 flex-row-reverse';
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            bubble.innerHTML = `<div class="bg-primary p-4 rounded-2xl rounded-tr-none max-w-[80%] text-on-primary"><p class="text-body-md"></p><span class="text-[10px] font-label-caps opacity-60 block mt-2 text-right"></span></div>`;
+            bubble.querySelector('p').textContent = val;
+            bubble.querySelector('span').textContent = timeStr;
+            messages.appendChild(bubble);
+            messages.scrollTop = messages.scrollHeight;
+            chatInput.value = '';
+
+            // Simulated alchemist acknowledgement
+            setTimeout(() => {
+                const reply = document.createElement('div');
+                reply.className = 'flex gap-4';
+                reply.innerHTML = `<div class="bg-surface-container p-4 rounded-2xl rounded-tl-none max-w-[80%]"><p class="text-body-md text-on-surface-variant"></p><span class="text-[10px] font-label-caps text-outline block mt-2"></span></div>`;
+                reply.querySelector('p').textContent = clT('circle.dynamic.auto_reply', "Noted — I'll review this and respond personally within the hour.");
+                reply.querySelector('span').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                messages.appendChild(reply);
+                messages.scrollTop = messages.scrollHeight;
+            }, 1200);
+        });
+
+        // Dynamic Greeting based on time, translation-aware
+        window.addEventListener('load', () => {
+            const hour = new Date().getHours();
+            const greetingEl = document.getElementById('circle-greeting');
+            let key = 'circle.welcome.greeting_morning';
+            let fallback = 'Good morning';
+            if (hour >= 12 && hour < 17) { key = 'circle.welcome.greeting_afternoon'; fallback = 'Good afternoon'; }
+            else if (hour >= 17) { key = 'circle.welcome.greeting_evening'; fallback = 'Good evening'; }
+            greetingEl.setAttribute('data-i18n', key);
+            greetingEl.textContent = clT(key, fallback);
+        });
+
+        window.addEventListener('jr:langchange', () => {
+            const greetingEl = document.getElementById('circle-greeting');
+            const key = greetingEl.getAttribute('data-i18n');
+            const fallback = greetingEl.textContent;
+            greetingEl.textContent = clT(key, fallback);
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

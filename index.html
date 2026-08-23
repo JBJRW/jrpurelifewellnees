@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JR PureLife Wellness | Botanical Alchemy &amp; Sacred Art</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0eee9",
+                    "surface-tint": "#5b6239",
+                    "on-surface-variant": "#46483d",
+                    "surface": "#fbf9f4",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-primary": "#ffffff",
+                    "secondary": "#735c00",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#434a19",
+                    "inverse-surface": "#30312e",
+                    "primary-fixed": "#dfe7b3",
+                    "on-secondary-container": "#745c00",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c3cc8c",
+                    "secondary-fixed": "#ffe088",
+                    "on-background": "#1b1c19",
+                    "on-tertiary-container": "#a9b175",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-primary-fixed-variant": "#434a23",
+                    "on-secondary-fixed": "#241a00",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary-fixed": "#181e00",
+                    "on-tertiary-fixed": "#191e00",
+                    "tertiary-container": "#3d4413",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "outline-variant": "#c7c7b9",
+                    "outline": "#77786c",
+                    "on-surface": "#1b1c19",
+                    "tertiary-fixed": "#dfe8a6",
+                    "secondary-container": "#fed65b",
+                    "primary-container": "#3d441e",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#a9b181",
+                    "inverse-primary": "#c3cb99",
+                    "tertiary": "#272d00",
+                    "surface-container-low": "#f5f3ee",
+                    "primary-fixed-dim": "#c3cb99",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#272e0a",
+                    "surface-bright": "#fbf9f4",
+                    "surface-dim": "#dbdad5",
+                    "on-error-container": "#93000a",
+                    "background": "#fbf9f4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "label-caps": ["Space Mono"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .language-dropdown {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .language-trigger:hover + .language-dropdown,
+        .language-dropdown:hover {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+        .blur-backdrop {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, transparent 0%, #fbf9f4 90%);
+        }
+        .scrolled .nav-bg {
+            opacity: 1;
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-[100] transition-all duration-500 nav-bg bg-surface/80 blur-backdrop">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-primary tracking-tight font-bold">
+            JR PureLife
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Alchemy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Rituals</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Boutique</a>
+</div>
+<div class="flex items-center gap-6">
+<!-- Language Selector -->
+<div class="relative">
+<button class="language-trigger flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined text-[20px]">language</span>
+<span class="hidden sm:inline">ENG</span>
+</button>
+<div class="language-dropdown absolute right-0 mt-2 w-48 bg-surface-container-low shadow-xl rounded-lg border border-outline-variant/20 p-2 blur-backdrop">
+<div class="flex flex-col gap-1">
+<button class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-surface-container-highest transition-colors">
+<span class="text-lg">🇺🇸</span> <span class="font-label-caps text-label-caps">USA</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-surface-container-highest transition-colors">
+<span class="text-lg">🇪🇸</span> <span class="font-label-caps text-label-caps">Spain</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-surface-container-highest transition-colors">
+<span class="text-lg">🇫🇷</span> <span class="font-label-caps text-label-caps">France</span>
+</button>
+<button class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-surface-container-highest transition-colors">
+<span class="text-lg">🇮🇹</span> <span class="font-label-caps text-label-caps">Italy</span>
+</button>
+</div>
+</div>
+</div>
+<button class="text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative min-h-screen flex flex-col items-center justify-center pt-20">
+<!-- Living Background Shader -->
+<div class="absolute inset-0 z-0 overflow-hidden">
+
+<div class="absolute inset-0 bg-[url('placeholder')] opacity-20 bg-cover bg-center mix-blend-overlay" data-alt="Ultra-realistic cinematic aerial view of a Tuscan olive grove at sunrise, golden light filtering through olive branches, soft morning mist, 8k resolution, ethereal atmosphere."></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 container max-w-container-max px-margin-mobile text-center flex flex-col items-center gap-unit-6">
+<div class="animate-fade-in-up" style="animation-delay: 0.2s">
+<img alt="JR PureLife Logo" class="w-48 md:w-64 mb-8 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeqENG_mEc0gS1PDQwN0mYd41Bs-mWvhBluAVeR0eTHxi9rC33bGRXTbVL-7fxUx9e-uWFvKA6QVYvKSg5oFeW2s0H-SY7mrtF_nLcs9bsVSH5IKjQiYRjhFTbLXbaWY3m11GEnBZH1l1ZfulDgTKvTpgowjbMT0-drTPTFDWdzlPr_18B2juumlltjme3jKrEbAE3q2Eww9fdyD6hZzLIUOhjUtHB3kWnqFZbbRUmhTOBvwi-rXxWi7iJAJwvymgM1irVQEKaNudb"/>
+</div>
+<h1 class="animate-fade-in-up font-display-lg text-display-lg text-primary max-w-4xl" style="animation-delay: 0.4s">
+            Botanical Intelligence <br class="hidden md:block"/> &amp; Sacred Art
+        </h1>
+<p class="animate-fade-in-up font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mt-4" style="animation-delay: 0.6s">
+            Rediscover ancestral wisdom through modern biological science. A sanctuary of pure life wellness.
+        </p>
+<div class="animate-fade-in-up mt-12" style="animation-delay: 0.8s">
+<button class="group relative px-12 py-5 bg-primary-container text-on-primary-container font-label-caps text-label-caps tracking-[0.2em] overflow-hidden transition-all hover:bg-primary duration-500 rounded-full shadow-2xl" onclick="window.location.href='home.html'">
+<span class="relative z-10">ENTER THE SANCTUARY</span>
+<div class="absolute inset-0 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 opacity-20"></div>
+</button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+<span class="material-symbols-outlined text-primary text-[32px]">expand_more</span>
+</div>
+</main>
+<!-- Club PureLife Section (Bento Grid) -->
+<section class="relative py-24 bg-surface px-margin-mobile overflow-hidden">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter items-end mb-16">
+<div class="flex-1">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">EXCLUSIVITY</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">PureLife Wellness Club</h2>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-on-surface-variant">
+                    Access to a community governed by the cycles of nature and biological purity. Our membership redefines luxury through certified sustainability.
+                </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[600px]">
+<!-- Bento Item 1: Concept -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-12 flex flex-col justify-center relative group overflow-hidden border border-outline-variant/10">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-weight="fill">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Exclusive Membership</h3>
+<p class="font-body-lg text-on-surface-variant max-w-lg mb-8">
+                    Join a select circle where every product is a piece of botanical art, reserved through sacred curation processes.
+                </p>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-primary/5 border border-primary/20 rounded-full font-label-caps text-label-caps text-primary">Sacred Curation</span>
+<span class="px-4 py-2 bg-primary/5 border border-primary/20 rounded-full font-label-caps text-label-caps text-primary">Naturist Sanctuary</span>
+</div>
+</div>
+<!-- Bento Item 2: Orders -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-8 flex flex-col justify-between border border-primary shadow-2xl">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-[40px]">inventory_2</span>
+<div class="w-12 h-[1px] bg-secondary-fixed mt-5"></div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary-fixed mb-4">PREPAID ORDERS</h4>
+<div class="space-y-6">
+<div>
+<p class="text-xs font-label-caps text-on-primary-container/60 mb-1 uppercase">Ritual Date</p>
+<p class="font-headline-md text-2xl">Botanical Curing</p>
+</div>
+<div class="h-[1px] bg-on-primary-container/20"></div>
+<div>
+<p class="text-xs font-label-caps text-on-primary-container/60 mb-1 uppercase">Expiration</p>
+<p class="font-headline-md text-2xl">Biological Cycle</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Item 3: Sustainability -->
+<div class="md:col-span-12 h-48 md:h-64 bg-cover bg-center rounded-xl relative group overflow-hidden" data-alt="Close up cinematic photography of raw organic botanical ingredients: cold-pressed olive oil ripples, a cracked coconut shell, and lush avocado pits, softly lit with golden morning sun, earthy textures, luxurious and pure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBAzkC5EQVqeALUFaYXVG1Ictujqb80h1u2xn0TOc9Z6-slNmArddXP5wBryZhintTYucwZYj1oFdQ_ngxP0Xw4TIdTsBwH7-CLAM7rWEpVI4xZUUbdC75JZAPFc1yJxqvCqlZw0_5rX1NxCGeDqESybi2dC0OT4RushaA7i7XsE-twbvsMVdy1tXiFo2RvmOXCGaTsadQ6unHqa-zAgH_bS56wIR2SwvnOKhfReL3yfy9DzzIcvkuptW3v7a7J65757SDG6e9eokN')">
+<div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/20 transition-all duration-700"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<p class="font-display-lg text-white text-3xl md:text-5xl text-center italic">"Nature is the purest intelligence."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Terms & Sanctuary Info -->
+<section class="bg-surface-container py-24 px-margin-mobile">
+<div class="max-w-container-max mx-auto border-y border-outline-variant/30 py-16">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block">100% NATURIST SANCTUARY</span>
+<h3 class="font-headline-md text-headline-md text-primary">Our Ethical Commitment</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="text-center group p-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-[32px]">eco</span>
+</div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Pure Origin</h4>
+<p class="text-sm text-on-surface-variant">Ingredients harvested under protocols of ancestral respect.</p>
+</div>
+<div class="text-center group p-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-[32px]">science</span>
+</div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Certified Lab</h4>
+<p class="text-sm text-on-surface-variant">Sustainability tested under the highest biological standards.</p>
+</div>
+<div class="text-center group p-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-[32px]">auto_awesome</span>
+</div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Sacred Art</h4>
+<p class="text-sm text-on-surface-variant">Each soap is molded as a unique botanical relic.</p>
+</div>
+<div class="text-center group p-6">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-[32px]">history_edu</span>
+</div>
+<h4 class="font-label-caps text-label-caps text-primary mb-2">Sanctuary Terms</h4>
+<p class="text-sm text-on-surface-variant">Absolute transparency in our value chain.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full rounded-t-xl border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="max-w-xs">
+<div class="font-headline-md text-primary mb-6">JR PureLife</div>
+<p class="font-body-md text-on-surface-variant opacity-80">
+                Botanical Intelligence and Sacred Art. Laboratory Certified Sustainability.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-primary">Explore</span>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Our Alchemy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Sustainability</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Certifications</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-primary">Legal</span>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors underline" href="#">Sanctuary Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-12">
+<p class="font-label-caps text-[10px] text-on-surface-variant/50 tracking-widest uppercase">
+            © 2024 JR PureLife Wellness. Botanical Intelligence &amp; Sacred Art. Laboratory Certified Sustainability.
+        </p>
+</div>
+</footer>
+<script>
+    // Smooth scroll appearance
+    window.addEventListener('scroll', () => {
+        const body = document.body;
+        if (window.scrollY > 50) {
+            body.classList.add('scrolled');
+        } else {
+            body.classList.remove('scrolled');
+        }
+    });
+
+    // Micro-interaction for language selector
+    const langTrigger = document.querySelector('.language-trigger');
+    const langDropdown = document.querySelector('.language-dropdown');
+
+    langTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('opacity-100');
+        langDropdown.classList.toggle('pointer-events-auto');
+        langDropdown.classList.toggle('translate-y-0');
+    });
+
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+    });
+</script>
+<script src="assets/config.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

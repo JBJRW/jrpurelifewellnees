@@ -1,0 +1,1662 @@
+{
+  "home": {
+    "meta": {
+      "title": "JR PureLife Wellness | La Trinidad Ancestral"
+    },
+    "nav": {
+      "shop": "Tienda",
+      "our_story": "Nuestra Historia",
+      "journal": "Wellness Journal"
+    },
+    "hero": {
+      "eyebrow": "Saponificación en Frío",
+      "title": "La Trinidad Ancestral",
+      "subtitle": "Restaura la inteligencia natural de tu piel, perdida con el tiempo. Un ritual biológico nacido de la oliva, el coco y el aguacate.",
+      "cta_primary": "Explorar Colección",
+      "cta_secondary": "Nuestra Ciencia",
+      "img_alt": "Aceites botánicos de la Trinidad Ancestral sobre una mesa rústica"
+    },
+    "pillars": {
+      "heading": "Los Tres Pilares",
+      "olive": {
+        "name": "Oliva",
+        "tag": "EL ESCUDO",
+        "point1_strong": "Escudo antioxidante:",
+        "point1_text": "Neutraliza los radicales libres gracias a su alta concentración de Vitamina E.",
+        "point2_strong": "Elasticidad:",
+        "point2_text": "Preserva la estructura celular para una piel visiblemente más firme."
+      },
+      "coconut": {
+        "name": "Coco",
+        "tag": "LA PUREZA",
+        "point1_strong": "Purificación antibacterial:",
+        "point1_text": "Ácido láurico que limpia en profundidad sin agredir.",
+        "point2_strong": "Espuma cremosa:",
+        "point2_text": "Una textura rica que respeta el manto lipídico natural."
+      },
+      "avocado": {
+        "name": "Aguacate",
+        "tag": "EL RENACER",
+        "point1_strong": "Regeneración profunda:",
+        "point1_text": "Fitoesteroles que estimulan la recuperación del tejido dañado.",
+        "point2_strong": "Colágeno:",
+        "point2_text": "Impulsa la producción natural para un tacto sedoso y juvenil."
+      }
+    },
+    "story": {
+      "heading": "Inteligencia Botánica",
+      "text": "Un viaje cinematográfico de 1:30 min al corazón de nuestra herencia. Descubre el arte de la saponificación en frío, donde el tiempo es el ingrediente más preciado para preservar la inteligencia vegetal.",
+      "watch": "Ver el Proceso",
+      "img_alt": "Luz solar filtrándose entre olivos de un huerto toscano"
+    },
+    "spotlight": {
+      "badge": "EDICIÓN LIMITADA",
+      "product_name": "Barra Maestra",
+      "eyebrow": "Sinfonía Botánica",
+      "heading": "Equilibrio Perfecto",
+      "text": "Cada barra es una obra de arte biológica. Formulada con precisión científica para equilibrar el pH de la piel mientras entrega una dosis concentrada de fitonutrientes. No es solo limpieza; es la restauración del ecosistema de la piel.",
+      "feature1_title": "Pureza Certificada",
+      "feature1_text": "Libre de sulfatos, parabenos y fragancias sintéticas.",
+      "feature2_title": "Curado de 6 Semanas",
+      "feature2_text": "Reposo absoluto para asegurar una suavidad extrema.",
+      "cta": "Comprar Ritual",
+      "img_alt": "Barra de jabón artesanal de JR PureLife Wellness"
+    },
+    "footer": {
+      "logo_alt": "Logo dorado de JR PureLife Wellness",
+      "tagline": "\"La naturaleza en su máxima expresión.\"",
+      "company_label": "Compañía",
+      "sustainability": "Sostenibilidad",
+      "wholesale": "Mayoreo",
+      "contact_us": "Contáctanos",
+      "legal_label": "Legal",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "shipping": "Envíos",
+      "copyright": "© 2024 JR PureLife Wellness. La naturaleza en su máxima expresión."
+    },
+    "misc": {
+      "ambient_frequency": "Frecuencia Ambiental: 432Hz Activa"
+    }
+  },
+  "product": {
+    "meta": {
+      "title": "Jabón Trinidad Ancestral | JR PureLife Wellness"
+    },
+    "nav": {
+      "heritage": "Heritage",
+      "science": "Science",
+      "collection": "Collection",
+      "sanctuary": "Sanctuary"
+    },
+    "hero": {
+      "eyebrow": "Artesanía Biológica",
+      "title": "Jabón Trinidad Ancestral",
+      "subtitle": "Saponificación en frío. Una sinergia de Oliva, Coco y Aguacate.",
+      "description": "Una barra de arte biológico formulada para restaurar el ecosistema cutáneo. 100% natural, libre de químicos sintéticos.",
+      "cta_add": "Añadir al Ritual",
+      "cta_science": "Explorar Ciencia",
+      "weight_label": "Peso",
+      "weight_value": "100g approx.",
+      "origin_label": "Origen",
+      "origin_value": "Hecho a mano en España",
+      "img_alt": "Jabón Trinidad Ancestral product"
+    },
+    "ingredients": {
+      "eyebrow": "El Ecosistema",
+      "heading": "La Trinidad Ancestral",
+      "olive_name": "Oliva Extra Virgen",
+      "olive_text": "Escudo antioxidante y elasticidad. Rico en escualeno y vitamina E.",
+      "olive_badge": "Pureza 100%",
+      "coconut_name": "Coco Prensado en Frío",
+      "coconut_text": "Purificación antibacteriana y espuma cremosa. Ácido láurico esencial.",
+      "coconut_badge": "Prensado en frío",
+      "avocado_name": "Aguacate Regenerativo",
+      "avocado_text": "Regeneración profunda y colágeno. Perfil excepcional de Omega 3, 6 y 9.",
+      "avocado_badge": "Bio-Regenerativo"
+    },
+    "science": {
+      "img_alt": "Rustic texture and botanical fragments",
+      "quote_label": "Curado Lento",
+      "quote_text": "\"El tiempo es el ingrediente que no se puede apresurar. Respetamos cada ciclo natural.\"",
+      "eyebrow": "Metodología",
+      "heading": "La Ciencia de lo Natural",
+      "step1_title": "Saponificación en Frío",
+      "step1_text": "Preservamos la integridad de los ácidos grasos y las vitaminas al no aplicar calor extremo durante la mezcla.",
+      "step2_title": "Curado de 6 Semanas",
+      "step2_text": "Cada barra descansa el tiempo necesario para alcanzar su pH óptimo y su máxima dureza mineral.",
+      "step3_title": "Impacto Zero",
+      "step3_text": "Packaging biodegradable y sostenible. Hecho a mano en España respetando la tierra."
+    },
+    "specs": {
+      "composition_title": "Composición",
+      "composition_text": "Sodium Olivate, Sodium Cocoate, Persea Gratissima Oil, Aqua, Glycerin, Botanical Essences.",
+      "biodegradable_label": "Biodegradable",
+      "shipping_text": "Envío Sostenible 24/48h"
+    },
+    "footer": {
+      "tagline": "\"Ancestral Wisdom, Biological Science. Reconciliando al ser humano con su propia naturaleza.\"",
+      "community_label": "Comunidad",
+      "sourcing_ethics": "Sourcing Ethics",
+      "lab_reports": "Lab Reports",
+      "the_journal": "The Journal",
+      "help_label": "Ayuda",
+      "privacy": "Privacy Policy",
+      "contact": "Contact",
+      "returns": "Returns",
+      "copyright": "© 2024 JR PureLife Wellness. Ancestral Wisdom, Biological Science.",
+      "write_review": "Escribir una Reseña"
+    }
+  },
+  "alchemy": {
+    "meta": {
+      "title": "Nuestra Alquimia | JR PureLife Wellness"
+    },
+    "nav": {
+      "alchemy": "Alquimia",
+      "trinity": "La Trinidad",
+      "lab_notes": "Notas de Laboratorio",
+      "contact": "Contacto",
+      "consultation": "Consulta"
+    },
+    "hero": {
+      "eyebrow": "Protocolo Botánico N.º 01",
+      "title_line1": "Nuestra Alquimia:",
+      "title_line2": "El Diálogo Entre la Ciencia y la Tierra",
+      "subtitle": "Donde la sabiduría ancestral de la Toscana se encuentra con la precisión biológica moderna. Un viaje desde la raíz hasta la pureza celular.",
+      "scroll": "Desliza",
+      "img_alt": "Olivar mediterráneo al atardecer"
+    },
+    "pillars": {
+      "heading": "Los Pilares de la Extracción",
+      "text": "Seleccionamos solo lípidos biológicamente activos. La \"Trinidad Ancestral\" no es solo una base; es el sistema de entrega de nutrientes más sofisticado de la naturaleza.",
+      "archive_label": "ARCHIVO: 2024.BIO_04",
+      "trinity_img_alt": "Aceites de la Trinidad Ancestral",
+      "trinity_badge": "LA TRINIDAD",
+      "trinity_title": "Oliva, Coco y Aguacate",
+      "trinity_text": "Nuestra base fundamental utiliza aceite de oliva virgen extra de primera presión en frío, coco orgánico para una estructura molecular estable, y aguacate por su riqueza en escualeno vegetal. Un equilibrio lipídico diseñado para la homeostasis cutánea.",
+      "shea_img_alt": "Textura de la manteca de karité",
+      "shea_badge": "ADITIVO: MANTECA DE KARITÉ",
+      "shea_title": "Manteca de Karité",
+      "shea_text": "Recolectada de forma silvestre con métodos tradicionales para preservar la fracción insaponificable, rica en vitaminas A y E."
+    },
+    "process": {
+      "eyebrow": "NOTAS DE LABORATORIO",
+      "heading": "La Quietud de los 40 Días",
+      "subtitle": "A diferencia de los procesos industriales que usan calor extremo, nuestra saponificación en frío preserva la glicerina natural y los nutrientes termolábiles de las plantas.",
+      "step1_title": "Precisión de Fusión",
+      "step1_text": "Los aceites se combinan a temperaturas controladas que nunca superan los 40 °C para evitar la oxidación lipídica.",
+      "step2_title": "Curado Atmosférico",
+      "step2_text": "Cada lote reposa 40 días en salas con temperatura y humedad controladas, permitiendo que el pH se estabilice de forma natural.",
+      "step3_title": "Integridad del Jabón",
+      "step3_text": "El resultado es una barra densa en nutrientes con un pH fisiológicamente compatible con el manto ácido de la piel.",
+      "batch_label": "LOTE N.º 442",
+      "datasheet_label": "FICHA TÉCNICA ANALÍTICA",
+      "fatty_acid": "PERFIL DE ÁCIDOS GRASOS",
+      "passed": "APROBADO",
+      "ph_level": "NIVEL DE PH (40 DÍAS)",
+      "glycerin": "CONTENIDO DE GLICERINA",
+      "certified": "CERTIFICADO DE INTELIGENCIA BOTÁNICA"
+    },
+    "transparency": {
+      "heading": "Transparencia de Laboratorio",
+      "text": "Nuestra ciencia es abierta. Cada ingrediente pasa por un análisis GC-MS para garantizar la ausencia de pesticidas y metales pesados.",
+      "cert1_title": "Análisis GC-MS",
+      "cert1_text": "Cromatografía de gases para identificar cada compuesto volátil en nuestros aceites esenciales.",
+      "cert1_link": "Ver Informe",
+      "cert2_title": "Certificación de Pureza",
+      "cert2_text": "Garantizamos 100% de pureza en nuestros lípidos de la Trinidad Ancestral.",
+      "cert2_link": "Ver Certificado",
+      "cert3_title": "Eco-Trazabilidad",
+      "cert3_text": "Trazabilidad completa desde el olivar toscano hasta el laboratorio final.",
+      "cert3_link": "Rastrear Lote",
+      "seal_text": "EL SELLO DE CONFIANZA"
+    },
+    "cta": {
+      "heading": "¿Quieres profundizar en nuestra ciencia?",
+      "text": "Explora el \"Wellness Journal\" para artículos detallados sobre fisiología de la piel, fitonutrientes y el arte del baño consciente.",
+      "button": "EXPLORAR WELLNESS JOURNAL"
+    },
+    "footer": {
+      "copyright": "© 2024 JR PureLife Wellness. Inteligencia Botánica.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "lab_cert": "Certificación de Laboratorio",
+      "sustainability": "Informe de Sostenibilidad"
+    }
+  },
+  "reserve": {
+    "meta": {
+      "title": "El Archivo de la Reserva Privada | JR PureLife Wellness"
+    },
+    "nav": {
+      "archive": "El Archivo",
+      "extractions": "Extracciones Raras",
+      "science": "Ciencia Botánica",
+      "rituals": "Rituales",
+      "search_placeholder": "Buscar en la Reserva..."
+    },
+    "hero": {
+      "eyebrow": "RESERVA PRIVADA",
+      "title": "El Archivo de la Reserva Privada",
+      "subtitle": "Un santuario biológico para nuestras extracciones botánicas más raras y sagradas. Accesible solo para el círculo interno de ORACLE, estos especímenes representan la cúspide de la inteligencia ancestral.",
+      "scroll": "DESLIZA PARA OBSERVAR"
+    },
+    "philosophy": {
+      "eyebrow": "NUESTRA FILOSOFÍA",
+      "text1": "Cada elixir de la Reserva Privada pasa por un proceso de destilación propio de la \"Trinidad Ancestral\". Sincronizamos la cosecha de nuestra Olea, Cocos y Persea con los ciclos lunares para garantizar que la integridad molecular de los aceites botánicos permanezca intacta.",
+      "text2": "Estos no son simples productos; son registros cronológicos vivos de la inteligencia de la naturaleza, curados en bóvedas de cristal con temperatura controlada durante un mínimo de 365 días.",
+      "batch_label": "LOTE N.º 072",
+      "quote": "\"La extracción capturó un perfil de humedad atmosférica específico que se presenta solo una vez cada década.\"",
+      "heading_l1": "Ciencia Biológica,",
+      "heading_l2": "Arte Sagrado."
+    },
+    "archive": {
+      "heading": "Especímenes de Edición Limitada",
+      "subheading": "Crónicas de Extracción y Maduración",
+      "sort_btn": "ORDENAR POR FECHA DE CURADO",
+      "filter_btn": "FILTRAR ORIGEN",
+      "superpack_btn": "PACK SUPER PACK"
+    },
+    "p1": {
+      "badge": "Exclusivo para Miembros",
+      "name": "Extracción 001: Olea Dorada",
+      "subtitle": "ELIXIR DE EMBRIÓN DE OLIVA",
+      "origin": "Peloponeso, Grecia",
+      "date": "Equinoccio de Otoño 2023"
+    },
+    "p2": {
+      "badge": "Espécimen Raro",
+      "name": "Extracción 004: Cocos Nucifera",
+      "subtitle": "CORAZÓN DE COCO VIRGEN",
+      "origin": "Costa de Filipinas",
+      "date": "Solsticio de Invierno 2022"
+    },
+    "p3": {
+      "badge": "Último del Lote",
+      "name": "Extracción 009: Aceite de Persea",
+      "subtitle": "NÚCLEO DE AGUACATE PRENSADO EN FRÍO",
+      "origin": "Tierras Altas de Michoacán",
+      "date": "Equinoccio de Primavera 2024"
+    },
+    "card": {
+      "origin_label": "Origen Botánico",
+      "date_label": "Fecha de Curado",
+      "request_btn": "SOLICITAR EXTRACCIÓN"
+    },
+    "cta": {
+      "eyebrow": "LA INVITACIÓN",
+      "heading": "¿Puede tu ascendencia destilarse en un solo ritual?",
+      "text": "Acceder a la Reserva Privada es un privilegio reservado para quienes entienden que el bienestar es un diálogo generacional. Nuestros curadores están disponibles para consultas botánicas privadas y así diseñar una selección de reserva a la medida de tu perfil biológico.",
+      "apply_btn": "SOLICITAR MEMBRESÍA",
+      "consult_btn": "RESERVAR CONSULTA"
+    },
+    "footer": {
+      "copyright": "© 2024 JR PURELIFE WELLNESS. TODOS LOS DERECHOS RESERVADOS.",
+      "privacy": "Política de Privacidad",
+      "sourcing": "Abastecimiento Ético",
+      "heritage": "Herencia Ancestral",
+      "standards": "Estándares de Laboratorio"
+    }
+  },
+  "journal": {
+    "meta": {
+      "title": "Wellness Journal | JR PureLife Wellness"
+    },
+    "nav": {
+      "our_story": "Nuestra Historia",
+      "collections": "Colecciones",
+      "journal": "Wellness Journal"
+    },
+    "hero": {
+      "eyebrow": "Edición Destacada",
+      "title": "La Alquimia de la Oliva: La Ciencia Detrás de la Regeneración Celular",
+      "subtitle": "Una exploración profunda de cómo los polifenoles prensados en frío se comunican con la piel humana a nivel molecular, haciendo eco de la sabiduría ancestral a través de la ciencia biológica.",
+      "cta": "LEER EL ESTUDIO"
+    },
+    "grid": {
+      "heading": "Capítulos Ancestrales",
+      "subheading": "Crónicas de investigación botánica, artesanía tradicional y el arte de vivir despacio."
+    },
+    "a1": {
+      "tag": "SAPONIFICACIÓN",
+      "title": "Saponificación en Frío",
+      "excerpt": "La alquimia silenciosa de 40 días. Descubre por qué el proceso lento preserva la integridad biológica de nuestros lípidos orgánicos."
+    },
+    "a2": {
+      "tag": "INGREDIENTES",
+      "title": "El Poder de la Manteca de Karité",
+      "excerpt": "Del corazón de la sabana a tu piel. Una inmersión profunda en el perfil de ácidos grasos de la Vitellaria paradoxa silvestre."
+    },
+    "a3": {
+      "tag": "ESTILO DE VIDA",
+      "title": "Rituales de Baño Ancestrales",
+      "excerpt": "Recuperando la santidad del baño. Cómo transformar la higiene diaria en una práctica meditativa de renovación sensorial."
+    },
+    "card": {
+      "explore": "Explorar Artículo"
+    },
+    "lab": {
+      "eyebrow": "El Pilar Científico",
+      "heading": "Informes de Laboratorio: Inteligencia Botánica",
+      "text": "Nuestro laboratorio es el puente entre el bosque y la clínica. Ofrecemos acceso transparente a nuestros análisis GC-MS y certificaciones dermatológicas, garantizando que cada barra de JR PureLife sea un activo biológico verificado.",
+      "item1": "Análisis de Pureza 2024",
+      "item2": "Estudio de Respuesta Celular",
+      "cta": "ACCEDER AL ARCHIVO DE INVESTIGACIÓN",
+      "stat_label": "Nutrientes Biodisponibles"
+    },
+    "newsletter": {
+      "heading": "La Carta Botánica",
+      "text": "Envíos bimensuales sobre salud ancestral, belleza regenerativa y la ciencia biológica del bienestar.",
+      "placeholder": "Tu esencia (Correo electrónico)",
+      "subscribe_btn": "SUSCRIBIRSE",
+      "privacy_note": "Respetamos tu privacidad. Sin spam, solo sabiduría."
+    },
+    "footer": {
+      "copyright": "© 2024 JR PureLife Wellness. Sabiduría Ancestral, Ciencia Biológica.",
+      "sustainability": "Informe de Sostenibilidad",
+      "shipping": "Política de Envíos",
+      "terms": "Términos de Servicio",
+      "wholesale": "Mayoreo"
+    }
+  },
+  "vault": {
+    "meta": {
+      "title": "Bóveda Privada | JR PureLife Wellness"
+    },
+    "nav": {
+      "sanctuary": "Santuario",
+      "soaps": "Jabones Artesanales",
+      "elixirs": "Elixires",
+      "concierge": "Concierge",
+      "membership": "MEMBRESÍA"
+    },
+    "header": {
+      "eyebrow": "ACCESO ORÁCULO CONCEDIDO",
+      "title": "Bienvenido a tu Bóveda Privada, Oráculo Julian",
+      "subtitle": "Tu colección personal de jabones artesanales y elixires está actualmente en transformación sagrada. Sigue cada cambio molecular desde la comodidad de tu santuario."
+    },
+    "stats": {
+      "temp": "TEMP. BÓVEDA: 21°C",
+      "humidity": "HUMEDAD: 45%"
+    },
+    "batch": {
+      "active_label": "ACTUALMENTE ACTIVO",
+      "title": "Lote #882: Oliva Sagrada y Lavanda Silvestre",
+      "progress_label": "PROGRESO DE MADURACIÓN",
+      "day": "Día 22 de 40",
+      "phase_note": "\"Fase 3: Secado Central — Los niveles de humedad se estabilizan mientras los aceites ancestrales recristalizan en una estructura densa y duradera.\"",
+      "cta_request": "SOLICITAR ASIGNACIÓN ANTICIPADA",
+      "cta_contact": "CONTACTAR AL ALQUIMISTA"
+    },
+    "timeline": {
+      "heading": "LA LÍNEA DE TRANSFORMACIÓN",
+      "s1_label": "ETAPA 01",
+      "s1_name": "Saponificación",
+      "s2_label": "ETAPA 02",
+      "s2_name": "Salida de aceite",
+      "s3_label": "ETAPA 03",
+      "s3_name": "Secado Central",
+      "s4_label": "ETAPA 04",
+      "s4_name": "Recristalización",
+      "s5_label": "ETAPA 05",
+      "s5_name": "Madurez",
+      "completed": "COMPLETADO",
+      "active": "ACTIVO"
+    },
+    "inventory": {
+      "heading": "Tu Inventario Reservado",
+      "total": "TOTAL: 4 ARTÍCULOS"
+    },
+    "card1": {
+      "name": "Elixir de Esencia de Aguacate",
+      "tag": "PRENSADO EN FRÍO • ORGÁNICO",
+      "status": "CURADO"
+    },
+    "card2": {
+      "name": "Barra Trinidad de Seda de Coco",
+      "tag": "FÓRMULA ANCESTRAL",
+      "status": "EN ESPERA DE ENVÍO",
+      "view": "VER DETALLES"
+    },
+    "card3": {
+      "name": "Mezcla Personalizada de Botica",
+      "tag": "FORMULACIÓN PRIVADA",
+      "status": "MADURANDO"
+    },
+    "footer": {
+      "science": "LA CIENCIA",
+      "purity": "ESTÁNDARES DE PUREZA",
+      "shipping": "ENVÍOS",
+      "privacy": "PRIVACIDAD",
+      "sustainability": "SOSTENIBILIDAD",
+      "copyright": "© 2024 JR PureLife Wellness. La Trinidad Ancestral: Oliva, Coco, Aguacate."
+    }
+  },
+  "cart": {
+    "meta": {
+      "title": "Tu Canasta Ritual | JR PureLife Wellness"
+    },
+    "nav": {
+      "heritage": "Herencia",
+      "science": "La Ciencia",
+      "collections": "Colecciones",
+      "rituals": "Rituales"
+    },
+    "header": {
+      "title": "Tu Canasta Ritual",
+      "subtitle": "Curando tu camino hacia el bienestar botánico y la alineación ancestral."
+    },
+    "progress_note": {
+      "pre": "Te faltan $26 para desbloquear",
+      "strong": "Envío Herencia Gratuito",
+      "post": "y una muestra de nuestro Aceite Ritual de Escualano de Oliva."
+    },
+    "pairings": {
+      "heading": "Combinaciones Botánicas",
+      "p1_tag": "Trinidad I",
+      "p1_name": "Elixir de Oliva Virgen",
+      "p1_price": "$38.00",
+      "p2_tag": "Trinidad II",
+      "p2_name": "Lípido Puro de Coco",
+      "p2_price": "$32.00",
+      "p3_tag": "Trinidad III",
+      "p3_name": "Esencia de Pulpa de Aguacate",
+      "p3_price": "$42.00"
+    },
+    "summary": {
+      "heading": "Resumen del Pedido",
+      "subtotal": "Subtotal",
+      "shipping_label": "Envío Herencia",
+      "shipping_sub": "SOSTENIBLE 24/48H",
+      "taxes": "Impuestos (Estimado)",
+      "total_label": "Total",
+      "cta": "Completar el Ritual",
+      "trust1": "Nuestros laboratorios confirman que todos los ingredientes son de origen ético y biodegradables.",
+      "trust2": "Enviado en empaque artesanal libre de plástico, de papel con semillas."
+    },
+    "promo": {
+      "label": "CÓDIGO HERENCIA",
+      "placeholder": "INGRESA EL CÓDIGO",
+      "apply": "APLICAR"
+    },
+    "footer": {
+      "privacy": "Política de Privacidad",
+      "sourcing": "Ética de Abastecimiento",
+      "lab_reports": "Informes de Laboratorio",
+      "contact": "Contacto",
+      "copyright": "© 2024 JR PureLife Wellness. La Ciencia del Bienestar Ancestral."
+    },
+    "dynamic": {
+      "unit_price": "PRECIO UNITARIO",
+      "empty_title": "Tu canasta está vacía",
+      "empty_text": "Comienza tu ritual explorando la colección.",
+      "empty_cta": "Explorar la Reserva",
+      "added_toast": "{name} añadido a tu canasta ritual",
+      "alert_empty_checkout": "Tu canasta ritual está vacía. Añade un producto antes de proceder al pago.",
+      "alert_empty_basket": "Tu canasta está vacía — añade un producto antes de proceder al pago.",
+      "alert_no_payment": "Los pagos aún no están configurados.\n\nAbre assets/config.js y define STRIPE_PAYMENT_LINK con tu enlace real de pago de Stripe (o URL de sesión de Checkout) para activar el pago real."
+    }
+  },
+  "checkout": {
+    "meta": {
+      "title": "Pago de Asignación Sagrada | ORACLE — JR PureLife Wellness"
+    },
+    "header": {
+      "terminal": "Terminal Segura de Asignación"
+    },
+    "banner": {
+      "status": "ESTADO DEL SANTUARIO: CONFIRMADO",
+      "greeting": "Saludos, Sabio. Tu autorización te da acceso al Lote de Reserva Privada 0924."
+    },
+    "allocation": {
+      "heading": "LA ASIGNACIÓN"
+    },
+    "item": {
+      "badge": "RESERVA LIMITADA",
+      "name": "Elixir Trinidad Ancestral",
+      "desc": "Un concentrado triple-infusionado de semillas de Oliva, Coco y Aguacate prensadas en frío, madurado durante 120 días en vasijas de cerámica.",
+      "batch_label": "N.º DE LOTE",
+      "batch_value": "#AT-2024-09",
+      "date_label": "FECHA DE CURACIÓN",
+      "date_value": "14 OCT, 2024"
+    },
+    "cert": {
+      "heading": "CERTIFICACIÓN DE LABORATORIO: LOTE 0924-A",
+      "card_title": "CERTIFICADO",
+      "purity": "PUREZA: 99.98%",
+      "bioactivity": "BIOACTIVIDAD: ÓPTIMA",
+      "dna": "ORIGEN ADN: VERIFICADO",
+      "text": "Este lote ha sido sometido a un riguroso análisis GC-MS, garantizando la integridad molecular de los lípidos de la Trinidad Ancestral. El certificado digital (respaldado por NFT) se emitirá tras la confirmación.",
+      "cta": "VER DATOS DE ANÁLISIS"
+    },
+    "payment": {
+      "heading": "Pago de Asignación Sagrada",
+      "name_label": "IDENTIDAD DEL TITULAR",
+      "name_placeholder": "EL SABIO",
+      "card_label": "DATOS DE LA TARJETA",
+      "expiry_label": "VENCIMIENTO",
+      "cvc_label": "CÓDIGO CVC"
+    },
+    "summary": {
+      "allocation": "Asignación de Reserva",
+      "handling": "Manejo Ceremonial",
+      "total": "VALOR TOTAL",
+      "cta": "INICIAR RITUAL DE ASIGNACIÓN",
+      "disclaimer": "Al confirmar, reconoces la herencia ancestral y los estándares de laboratorio de ORACLE."
+    },
+    "footer": {
+      "privacy": "Política de Privacidad",
+      "sourcing": "Abastecimiento Ético",
+      "heritage": "Herencia Ancestral",
+      "lab_standards": "Estándares de Laboratorio",
+      "copyright": "© 2024 JR PURELIFE WELLNESS. TODOS LOS DERECHOS RESERVADOS."
+    },
+    "dynamic": {
+      "verifying": "VERIFICANDO BIOMETRÍA...",
+      "secured": "ASIGNACIÓN ASEGURADA"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Diálogo con la Ciencia Botánica | JR PureLife Wellness"
+    },
+    "nav": {
+      "alchemy": "Alquimia",
+      "trinity": "La Trinidad",
+      "lab_notes": "Notas de Laboratorio",
+      "contact": "Contacto",
+      "cta": "Consulta"
+    },
+    "hero": {
+      "eyebrow": "Santuario de Investigación",
+      "title": "Diálogo con la Ciencia Botánica",
+      "subtitle": "Donde la inteligencia ancestral de la Tierra se encuentra con la precisión del laboratorio contemporáneo. Iniciemos una conversación sobre el bienestar puro."
+    },
+    "channel1": {
+      "title": "Inquietudes Generales",
+      "desc": "Para consultas sobre nuestra filosofía, productos y el cuidado de la piel mediante la botánica."
+    },
+    "channel2": {
+      "title": "Reportes de Lab",
+      "desc": "Acceso a certificados de análisis, pureza de ingredientes y documentación técnica científica."
+    },
+    "channel3": {
+      "title": "Alianzas",
+      "desc": "Oportunidades de colaboración, distribución exclusiva y proyectos de investigación conjunta."
+    },
+    "form": {
+      "heading": "Protocolo de Contacto",
+      "subheading": "Complete nuestro formulario formal para una respuesta detallada de nuestro equipo de especialistas.",
+      "name_label": "Nombre Completo",
+      "name_placeholder": "Dr./Sra. Julianne Rivera",
+      "email_label": "Correo Electrónico",
+      "email_placeholder": "investigacion@ejemplo.com",
+      "subject_label": "Naturaleza de la Consulta",
+      "opt_scientific": "Análisis Científico / Formulación",
+      "opt_order": "Gestión de Pedidos / Logística",
+      "opt_wholesale": "Distribución al por Mayor",
+      "opt_press": "Prensa y Comunicación",
+      "message_label": "Mensaje / Requerimiento Técnico",
+      "message_placeholder": "Describa su consulta con el mayor detalle posible...",
+      "submit": "Enviar Protocolo"
+    },
+    "location": {
+      "map_cta": "Ver en Google Maps",
+      "title": "Centro de Investigación Mediterráneo",
+      "desc": "Situado en el corazón de un olivar ancestral de la Toscana, nuestro laboratorio opera bajo los principios de la agricultura biodinámica. El aire salino del mar y la tierra rica en minerales son ingredientes invisibles en cada una de nuestras formulaciones.",
+      "address1": "Via degli Ulivi, 42",
+      "address2": "58011 Capalbio, GR - Italia",
+      "hours_label": "Visitas con Cita Previa",
+      "hours_value": "Lunes a Viernes: 09:00 - 17:00"
+    },
+    "subscribe": {
+      "heading": "Suscríbase a 'Lab Notes'",
+      "text": "Reciba mensualmente nuestras últimas investigaciones sobre la tríada botánica y avances en bienestar celular.",
+      "placeholder": "Su correo electrónico",
+      "cta": "Suscribirse"
+    },
+    "footer": {
+      "copyright": "© 2024 JR PureLife Wellness. Inteligencia Botánica.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "lab_cert": "Certificación de Laboratorio",
+      "sustainability": "Informe de Sostenibilidad"
+    }
+  },
+  "concierge": {
+    "meta": {
+      "title": "Concierge Alquimista | Acceso Botánico de Élite"
+    },
+    "header": {
+      "title": "CONCIERGE ALQUIMISTA",
+      "avatar_alt": "Un retrato sofisticado de un concierge de alta gama con expresión serena, sobre un fondo desenfocado de un laboratorio botánico."
+    },
+    "greeting": {
+      "member_no": "MIEMBRO N.º 0422",
+      "line1": "Bienvenido de nuevo,",
+      "line2": "Buscador de Esencia."
+    },
+    "bento": {
+      "consult_title": "Consultar al Alquimista",
+      "consult_subtitle": "Enlace cifrado directo",
+      "book_l1": "Reservar",
+      "book_l2": "Consulta",
+      "profile_l1": "Mi Perfil",
+      "profile_l2": "Botánico"
+    },
+    "feed": {
+      "heading": "RITUALES RELEVANTES",
+      "update_label": "Actualizado: Ahora mismo",
+      "card1_tag": "RECOMENDACIÓN MATUTINA",
+      "card1_text": "\"El rocío matutino en el olivar sugiere hoy un cambio hacia los nutrientes de aguacate prensados en frío. Tu perfil de piel indica una necesidad de reposición de hidratación.\"",
+      "card1_from": "De: Tu Alquimista Personal",
+      "card1_cta": "Leer Protocolo Completo",
+      "product_alt": "Una fotografía cinematográfica de alta resolución de una barra de jabón de lujo con texturas visibles de hojas de oliva trituradas y cáscara de coco.",
+      "product_badge": "SELECCIONADO PARA TI",
+      "product_name": "Barra de Jabón Trinidad Ancestral",
+      "product_desc": "Aceites de Oliva, Coco y Aguacate prensados en frío",
+      "card2_tag": "HISTORIAL CIENTÍFICO ACTUALIZADO",
+      "card2_text1": "La Fase II de tu aclimatación botánica está completa.",
+      "card2_text2": "Consulta cómo han respondido tus niveles de humedad celular a la mezcla de aceites actual.",
+      "card2_cta": "VER BIOMÉTRICOS"
+    },
+    "tabbar": {
+      "concierge": "Concierge",
+      "schedule": "Agenda",
+      "vault": "Bóveda",
+      "profile": "Perfil"
+    }
+  },
+  "points": {
+    "meta": {
+      "title": "Puntos y Recompensas del Santuario | JR PureLife Wellness"
+    },
+    "nav": {
+      "alchemy": "Alquimia",
+      "rituals": "Rituales",
+      "boutique": "Boutique",
+      "journal": "Journal",
+      "search_placeholder": "Buscar Rituales...",
+      "profile": "Perfil"
+    },
+    "hero": {
+      "eyebrow": "EL PROGRAMA DEL SANTUARIO",
+      "title": "Tu Viaje Botánico",
+      "balance_label": "Saldo de Puntos",
+      "balance_value": "2,450",
+      "rank_start": "Semilla",
+      "rank_current": "Rango Botánico: Adepto Alquimista (1,500 pts para Maestro)",
+      "rank_end": "Maestro Botánico",
+      "cta": "APRENDE SOBRE LOS RITUALES"
+    },
+    "rewards": {
+      "heading": "Recompensas Mensuales",
+      "subheading": "Extracciones seleccionadas y artefactos artesanales de octubre",
+      "view_all": "VER TODAS"
+    },
+    "redeem_btn": "CANJEAR",
+    "card1": {
+      "badge": "NUEVO",
+      "name": "Toalla de Lino Ancestral",
+      "price": "500 PTS",
+      "desc": "Algodón egipcio tejido a mano, con doble costura para mayor durabilidad."
+    },
+    "card2": {
+      "name": "Trío de Muestras de Jabón",
+      "price": "800 PTS",
+      "desc": "La colección Trinidad en tamaños prensados en frío listos para viajar."
+    },
+    "card3": {
+      "badge": "Exclusivo",
+      "name": "Extracción de Laboratorio 01",
+      "price": "1200 PTS",
+      "desc": "Destilación pura de incienso y aceite de semilla de aguacate silvestre."
+    },
+    "card4": {
+      "name": "Plato Ceremonial de Cerámica",
+      "price": "1500 PTS",
+      "desc": "Cerámica torneada a mano diseñada para una respiración óptima de la barra."
+    },
+    "history": {
+      "heading": "Historial de Puntos",
+      "th_date": "Fecha",
+      "th_activity": "Actividad",
+      "th_status": "Estado",
+      "th_points": "Puntos",
+      "row1_date": "12 oct, 2024",
+      "row1_activity": "Compra en Boutique #2940",
+      "row2_date": "08 oct, 2024",
+      "row2_activity": "Ritual de Luna Nueva completado",
+      "row3_date": "30 sep, 2024",
+      "row3_activity": "Canje: Set de Frascos de Laboratorio",
+      "row4_date": "15 sep, 2024",
+      "row4_activity": "Reseña de Producto Botánico",
+      "status_completed": "Completado",
+      "status_redeemed": "Canjeado"
+    },
+    "quests": {
+      "heading": "Misiones Rituales",
+      "q1_tag": "RITUAL DIARIO",
+      "q1_title": "Comparte tu Alquimia",
+      "q1_desc": "Etiquétanos en tu ritual de extracción matutino y gana 25 puntos.",
+      "q1_cta": "CONTINUAR",
+      "q2_tag": "EXPLORACIÓN DE HISTORIA",
+      "q2_title": "Raíces Ancestrales",
+      "q2_desc": "Lee la última entrada del Journal sobre abastecimiento ético.",
+      "q2_pts": "10 PTS",
+      "q3_tag": "COMPLETADO",
+      "q3_title": "Bienvenida del Fundador",
+      "q3_desc": "Mira la introducción a JR PureLife Wellness."
+    },
+    "footer": {
+      "tagline": "Preservando la ciencia biológica y el arte sagrado de la fabricación de jabón a través de la Trinidad Ancestral.",
+      "sustainability": "Sostenibilidad",
+      "sourcing": "Abastecimiento Ético",
+      "lab_reports": "Informes de Laboratorio",
+      "privacy": "Política de Privacidad",
+      "copyright": "© 2024 JR PureLife Wellness. Certificado Trinidad Ancestral."
+    },
+    "dynamic": {
+      "redeeming": "CANJEANDO...",
+      "redeemed": "CANJEADO",
+      "alert_success": "¡Recompensa reclamada con éxito! Un ritual de extracción será enviado pronto."
+    }
+  },
+  "achievements": {
+    "meta": {
+      "title": "Logros Botánicos | JR PureLife Wellness"
+    },
+    "nav": {
+      "sanctuary": "Santuario",
+      "harvest": "Cosecha",
+      "journal": "Journal",
+      "achievements": "Logros"
+    },
+    "header": {
+      "avatar_alt": "Un retrato sofisticado de un profesional del bienestar con mirada serena, iluminado por luz natural cálida sobre un fondo blanco hueso limpio."
+    },
+    "member": {
+      "eyebrow": "TRAYECTORIA DE MIEMBRO",
+      "greeting": "Bienvenido de nuevo, Alquimista Julian",
+      "tier_label": "NIVEL ACTUAL",
+      "tier_value": "ORÁCULO",
+      "balance_label": "Saldo de Puntos Purificados",
+      "balance_value": "12,450",
+      "balance_unit": "XP"
+    },
+    "evolution": {
+      "heading": "Próxima Evolución",
+      "current": "ORÁCULO (82%)",
+      "next": "SOBERANO (15,000 XP)",
+      "multiplier_title": "Multiplicador de Crecimiento",
+      "multiplier_desc": "1.2x XP Ganado (Activo)"
+    },
+    "highlight": {
+      "eyebrow": "DESBLOQUEO RECIENTE",
+      "title": "Guardián de la Trinidad",
+      "desc": "Otorgado por la curación magistral del set ritual de Oliva, Coco y Aguacate. Has demostrado un profundo respeto por la Trinidad Ancestral.",
+      "benefit_label": "BENEFICIO ACTIVO",
+      "benefit_value": "Acceso Anticipado Exclusivo a Lotes de Karité"
+    },
+    "path": {
+      "heading": "El Camino de la Cosecha",
+      "m1_name": "PRIMER BROTE",
+      "m2_name": "PROVENZA ALQUIMISTA",
+      "m3_name": "GUARDIÁN DE LA TRINIDAD",
+      "m4_name": "ARCO-ALQUIMISTA",
+      "m5_name": "SABIO ANCESTRAL",
+      "completed": "Completado",
+      "active": "Activo",
+      "locked": "Bloqueado"
+    },
+    "seals": {
+      "heading": "Sellos Botánicos",
+      "filter_all": "TODOS LOS SELLOS (18)",
+      "filter_earned": "OBTENIDOS (7)",
+      "s1_name": "MAESTRO DEL PRENSADO EN FRÍO",
+      "s2_name": "SABIO BOTÁNICO",
+      "s3_name": "GUARDIÁN DE LA TRINIDAD",
+      "s4_name": "CURADOR SUPREMO",
+      "s5_name": "MONARCA DE LA PRADERA",
+      "s6_name": "ASESOR DE ALQUIMIA"
+    },
+    "tabbar": {
+      "sanctuary": "SANTUARIO",
+      "harvest": "COSECHA",
+      "levels": "NIVELES",
+      "profile": "PERFIL"
+    }
+  },
+  "circle": {
+    "meta": {
+      "title": "El Círculo del Alquimista | JR PureLife Wellness"
+    },
+    "sidebar": {
+      "title": "ALQUIMISTA",
+      "subtitle": "CONCIERGE",
+      "avatar_alt": "Un retrato profesional y elegante de una persona refinada con expresión serena, con el estilo de un servicio de concierge de alta gama.",
+      "member_no": "Miembro N.º 0422",
+      "member_tag": "Acceso Botánico de Élite",
+      "nav_alchemist": "Alquimista Personal",
+      "nav_profile": "Perfil Botánico",
+      "nav_history": "Historial Científico",
+      "nav_rituals": "Rituales Exclusivos",
+      "nav_settings": "Ajustes",
+      "cta_book": "Reservar Consulta"
+    },
+    "mobilebar": {
+      "title": "ALQUIMISTA"
+    },
+    "welcome": {
+      "date": "24 DE MARZO, 2024",
+      "title": "Bienvenido al Círculo del Alquimista",
+      "greeting_morning": "Buenos días",
+      "greeting_afternoon": "Buenas tardes",
+      "greeting_evening": "Buenas noches",
+      "text_rest": ", Julian. Tu infusión botánica personalizada se acerca a su potencia máxima. Tu alquimista principal está listo para la sesión científica de hoy."
+    },
+    "chat": {
+      "alchemist_avatar_alt": "Un retrato de un maestro alquimista de mayor edad con expresión sabia, vistiendo una bata de laboratorio de lino de alta gama.",
+      "alchemist_name": "Maestro Alquimista Elias",
+      "alchemist_title": "Jefe de Extracción",
+      "msg1_text": "La extracción en frío de la cosecha de Oliva Siciliana de anoche muestra un notable aumento del 12% en densidad de polifenoles. He ajustado tu fórmula de jabón ritual para aprovechar esta potencia.",
+      "msg1_time": "09:12 AM",
+      "msg2_text": "Eso suena excepcional, Elias. ¿Cómo afectará esto al tiempo de curado? Esperaba comenzar el nuevo ritual el próximo fin de semana.",
+      "msg2_time": "09:45 AM",
+      "msg3_text": "La mayor densidad de aceite en realidad estabiliza la estructura cristalina más rápido. Deberíamos estar listos para el primer baño el jueves. ¿Programamos la sesión ritual?",
+      "msg3_time": "09:52 AM",
+      "input_placeholder": "Consulta con tu Alquimista..."
+    },
+    "quick": {
+      "consult": "Solicitar Nueva Consulta",
+      "history": "Ver Historial de Extracción"
+    },
+    "profiles": {
+      "heading": "Perfiles Activos",
+      "live_badge": "EN VIVO",
+      "p1_name": "Trinidad de Oliva Ancestral",
+      "p1_desc": "Lote #882 • Maduración: 84%",
+      "p2_name": "Infusión de Lípidos de Aguacate",
+      "p2_desc": "Lote #901 • Maduración: 12%"
+    },
+    "schedule": {
+      "heading": "Agenda de Rituales",
+      "r1_day": "26",
+      "r1_month": "MAR",
+      "r1_title": "Inmersión Olfativa Profunda",
+      "r1_meta": "14:00 • Laboratorio Virtual",
+      "r2_day": "28",
+      "r2_month": "MAR",
+      "r2_title": "Ritual de Alineación de pH",
+      "r2_meta": "10:30 • Suite Privada"
+    },
+    "tabbar": {
+      "concierge": "Concierge",
+      "schedule": "Agenda",
+      "vault": "Bóveda",
+      "profile": "Perfil"
+    },
+    "dynamic": {
+      "auto_reply": "Anotado — lo revisaré y te responderé personalmente dentro de la hora."
+    }
+  },
+  "history": {
+    "meta": {
+      "title": "Historial de Protocolos | JR PureLife Wellness"
+    },
+    "sidebar": {
+      "tagline": "ARMONÍA BIOLÓGICA",
+      "nav_dashboard": "Panel",
+      "nav_history": "Historial de Protocolos",
+      "nav_consult": "Consulta con Alquimista",
+      "nav_apothecary": "Botica",
+      "nav_biometrics": "Bio-Métricos",
+      "cta_schedule": "AGENDAR SESIÓN",
+      "nav_settings": "Ajustes",
+      "nav_support": "Soporte"
+    },
+    "header": {
+      "title": "Historial de Protocolos",
+      "avatar_alt": "Un retrato sofisticado de una clienta de bienestar de alta gama con piel radiante y clara, con iluminación neutra."
+    },
+    "evolution": {
+      "eyebrow": "Línea de Tiempo Biológica",
+      "title": "Evolución del Ser",
+      "cta": "AGENDAR PRÓXIMA ALINEACIÓN"
+    },
+    "chart": {
+      "heading": "Métricas Metabólicas",
+      "legend_ph": "NIVELES DE PH",
+      "legend_hydration": "HIDRATACIÓN",
+      "legend_barrier": "FUERZA DE BARRERA",
+      "s11": "SESIÓN 11",
+      "s12": "SESIÓN 12",
+      "s13": "SESIÓN 13",
+      "s14": "SESIÓN 14",
+      "s15": "SESIÓN 15 (ÚLTIMA)",
+      "harmony_label": "ARMONÍA ACTUAL",
+      "harmony_value": "94",
+      "harmony_delta": "+3.2% desde la última alineación",
+      "window_label": "VENTANA ÓPTIMA",
+      "window_value": "12 nov — 18 nov"
+    },
+    "rituals": {
+      "heading": "Rituales Pasados",
+      "alchemist_label": "Alquimista:",
+      "notes_label": "NOTAS DEL ALQUIMISTA",
+      "metrics_label": "MÉTRICAS CLAVE",
+      "sensory_label": "DATOS SENSORIALES",
+      "r1_month": "OCT",
+      "r1_day": "28",
+      "r1_title": "Ritual de Infusión Lipídica",
+      "r1_alchemist": "Elias",
+      "r1_status": "ARMONIZADO",
+      "r1_notes": "La clienta presentó ligera fatiga ambiental en la barrera dérmica. Elias aplicó una infusión lipídica concentrada usando aceites de aguacate prensados en frío y un toque de esencia de ámbar dorado. La absorción inicial fue rápida, lo que sugiere un déficit profundo de hidratación. El ritual concluyó con una escultura facial rítmica para estimular el movimiento linfático.",
+      "r1_m1_label": "Balance de pH",
+      "r1_m1_value": "5.5 (Ideal)",
+      "r1_m2_label": "Densidad Lipídica",
+      "r1_m2_value": "+12%",
+      "r1_m3_label": "Recuerdo Celular",
+      "r1_m3_value": "Alto",
+      "r2_month": "OCT",
+      "r2_day": "14",
+      "r2_title": "Alineación y Reinicio de pH",
+      "r2_alchemist": "Soren",
+      "r2_status": "OPTIMIZADO",
+      "r2_notes": "Enfoque principal en la regulación de acidez tras un período de mucho estrés por viajes. Soren utilizó la mezcla de jabón Trinidad Ancestral en su forma más pura.",
+      "r2_m1_label": "Balance de pH",
+      "r2_m1_value": "5.2",
+      "r3_month": "SEP",
+      "r3_day": "29",
+      "r3_title": "Inmersión Olfativa Profunda",
+      "r3_alchemist": "Elias",
+      "r3_status": "COMPLETADO",
+      "r3_notes": "Sesión de anclaje sensorial para identificar los principales atractores botánicos para una formulación de jabón personalizada. La clienta mostró una fuerte afinidad por las notas de hoja de olivo y sándalo.",
+      "r3_m1_label": "Terpeno Principal",
+      "r3_m1_value": "Limoneno"
+    },
+    "footer": {
+      "title": "Transparencia Científica",
+      "text": "Tu historial de protocolos se calcula mediante sensores de bioimpedancia integrados en nuestras superficies de tratamiento. Todos los datos están cifrados de extremo a extremo y se comparten solo con tu Alquimista Principal asignado para garantizar la pureza y eficacia de cada sesión."
+    },
+    "tabbar": {
+      "dashboard": "PANEL",
+      "history": "HISTORIAL",
+      "apothecary": "BOTICA",
+      "metrics": "MÉTRICAS"
+    }
+  },
+  "calendar": {
+    "meta": {
+      "title": "Ventana de Maduración | JR PureLife Wellness"
+    },
+    "nav": {
+      "ritual_sanctuary": "Santuario Ritual",
+      "maturation": "Ventana de Maduración",
+      "archive": "Archivo Botánico",
+      "avatar_alt": "Un retrato sofisticado de una persona serena con piel radiante, representando el ideal del bienestar ancestral."
+    },
+    "sidebar": {
+      "title": "Santuario del Miembro",
+      "cycle": "Ciclo Biológico: Luna Creciente",
+      "nav_ritual": "Santuario Ritual",
+      "nav_maturation": "Ventana de Maduración",
+      "nav_archive": "Archivo Botánico",
+      "nav_concierge": "Concierge Privado",
+      "nav_art": "Arte Sagrado",
+      "cta_schedule": "Agendar Ritual",
+      "nav_settings": "Ajustes",
+      "nav_logout": "Cerrar Sesión"
+    },
+    "hero": {
+      "eyebrow": "Concierge Privado",
+      "title": "Ventana de Maduración",
+      "text": "Cada bloque sagrado de jabón requiere un diálogo preciso con el tiempo. Programamos tus sesiones según los ritmos biológicos naturales y las ventanas de curado para garantizar que la integridad botánica de tu lote personal alcance su punto máximo."
+    },
+    "recommended": {
+      "label": "Próximo Ritual Recomendado",
+      "date": "12 nov",
+      "moon": "Pico de Luna Creciente",
+      "cta": "Asegurar Ventana"
+    },
+    "status": {
+      "peak": "Pico de Potencia",
+      "harvesting": "Cosechando",
+      "curing": "Curando"
+    },
+    "grid": {
+      "month": "Noviembre 2023",
+      "day_sun": "DOM",
+      "day_mon": "LUN",
+      "day_tue": "MAR",
+      "day_wed": "MIÉ",
+      "day_thu": "JUE",
+      "day_fri": "VIE",
+      "day_sat": "SÁB"
+    },
+    "window": {
+      "heading": "Ventana Seleccionada",
+      "dawn_label": "Ritual del Amanecer",
+      "dawn_time": "05:30 — 08:00",
+      "midday_label": "Ritual del Mediodía",
+      "midday_time": "11:30 — 14:00",
+      "twilight_label": "Ritual del Crepúsculo",
+      "twilight_time": "17:30 — 20:00",
+      "cta_confirm": "CONFIRMAR ALINEACIÓN"
+    },
+    "notes": {
+      "heading": "Notas del Alquimista Elias",
+      "text": "\"La ventana del mediodía del 12 de noviembre captura las esencias de oliva en su pico térmico. Esta intersección específica con la Luna Creciente promueve una velocidad óptima de saponificación, asegurando que la barra resultante mantenga su brillo 'oro líquido' una vez curada. He reservado personalmente esta ventana para tu mezcla Trinidad personalizada.\""
+    },
+    "ambient": {
+      "alt": "Un primer plano cinematográfico de alta gama de aceite botánico color ámbar siendo vertido en un chorro lento y viscoso.",
+      "badge": "Integridad Botánica",
+      "title": "Flujo de Esencia Trinidad"
+    },
+    "dynamic": {
+      "confirming": "Confirmando...",
+      "confirmed": "Ventana Asegurada ✓"
+    }
+  },
+  "synergy": {
+    "meta": {
+      "title": "Reporte de Bio-sinergia | JR PureLife Wellness"
+    },
+    "sidebar": {
+      "section": "El Santuario",
+      "nav_sanctuary": "Santuario",
+      "nav_synergy": "Bio-sinergia",
+      "nav_rituals": "Rituales",
+      "nav_alchemy": "Alquimia",
+      "avatar_alt": "Una foto de retrato de una profesional del bienestar sofisticada con piel radiante.",
+      "profile_label": "Perfil de Miembro",
+      "profile_name": "Elena Vance",
+      "cta_consult": "Consultar al Alquimista"
+    },
+    "header": {
+      "unit": "Unidad de Inteligencia Biológica"
+    },
+    "hero": {
+      "bg_alt": "Olivar al Atardecer",
+      "eyebrow": "Armonía de Fase IV",
+      "title": "Tu Evolución de Bio-sinergia"
+    },
+    "map": {
+      "heading": "Mapa de Sinergia",
+      "legend_botanicals": "BOTÁNICOS",
+      "legend_biomarkers": "BIOMARCADORES",
+      "convergence": "Delta de Convergencia: +12.4%"
+    },
+    "metrics": {
+      "m1_label": "Integridad del Manto",
+      "m1_value": "98%",
+      "m1_note": "Estado Estable",
+      "m2_label": "Edad Biológica",
+      "m2_value": "-2.4A",
+      "m2_note": "Alineación Lograda",
+      "m3_label": "Saturación de Nutrientes",
+      "m3_value": "Máxima",
+      "m3_note": "Vitaminas de Karité Activas"
+    },
+    "alchemist": {
+      "avatar_alt": "Retrato de Elias Thorne, un digno Maestro Alquimista de edad avanzada con cabello plateado y mirada sabia.",
+      "name": "Elias Thorne",
+      "title": "MAESTRO ALQUIMISTA",
+      "quote": "\"Tu piel está respirando el lenguaje de la Trinidad. La sinergia entre las vitaminas de karité y los polifenoles de oliva ha alcanzado un estado de armonía perpetua. Estamos viendo una resonancia biológica que trasciende el cuidado de la piel convencional.\"",
+      "next_label": "PRÓXIMA CALIBRACIÓN",
+      "next_date": "24 sep, 2024"
+    },
+    "cta": {
+      "title": "Recalibración de Tejido Profundo",
+      "text": "Agenda tu ajuste estacional con Elias para optimizar tu ingesta botánica para el próximo ciclo de cosecha.",
+      "button": "AGENDAR CALIBRACIÓN"
+    },
+    "trinity": {
+      "heading": "TRINIDAD ANCESTRAL ACTIVA",
+      "i1_name": "Oliva Pura Prensada en Frío",
+      "i1_pct": "42%",
+      "i2_name": "Matriz de Coco Saturada",
+      "i2_pct": "28%",
+      "i3_name": "Lípidos de Aguacate Triturado",
+      "i3_pct": "30%"
+    },
+    "footer": {
+      "copyright": "© 2024 JR PURELIFE WELLNESS BIOLOGICALS",
+      "sourcing": "ABASTECIMIENTO ÉTICO",
+      "privacy": "PROTOCOLO DE BIO-PRIVACIDAD"
+    },
+    "tabbar": {
+      "sanctuary": "Santuario",
+      "report": "Reporte",
+      "rituals": "Rituales",
+      "alchemist": "Alquimista"
+    }
+  },
+  "ph": {
+    "meta": {
+      "title": "Reporte de Análisis de pH | JR PureLife Wellness"
+    },
+    "sidebar": {
+      "title": "Portal de Miembro",
+      "tier": "NIVEL ORÁCULO",
+      "status": "Estado de Pureza: Oro",
+      "nav_apothecary": "Botica",
+      "nav_labs": "Informes de Laboratorio",
+      "nav_concierge": "Concierge",
+      "nav_subscriptions": "Suscripciones",
+      "nav_art": "Arte Sagrado",
+      "cta_consult": "Solicitar Consulta",
+      "nav_settings": "Ajustes",
+      "nav_logout": "Cerrar Sesión"
+    },
+    "header": {
+      "title": "Concierge Trinidad Ancestral",
+      "tab_analysis": "Análisis Post-Sesión",
+      "tab_reports": "Informes Anteriores",
+      "tab_protocol": "Protocolo Alfa",
+      "avatar_alt": "Un retrato de perfil sofisticado y de alta gama de un entusiasta del bienestar moderno."
+    },
+    "hero": {
+      "eyebrow": "PERSPECTIVAS DE NIVEL ORÁCULO",
+      "title_pre": "Bienvenido de vuelta de tu",
+      "title_em": "Ritual de Alineación",
+      "title_post": ", Julian.",
+      "text": "Tu campo biológico ha sido sintetizado. Hemos analizado los residuos moleculares del Elixir Trinidad en todo tu paisaje dérmico. Los resultados indican una restauración profunda de la línea base del manto."
+    },
+    "macro": {
+      "alt": "Una impresionante fotografía macro en 4K de un elixir botánico siendo vertido.",
+      "m1_label": "LÍNEA BASE DEL MANTO",
+      "m1_value": "5.50",
+      "m2_label": "pH ACTUAL",
+      "m2_value": "5.42",
+      "m3_label": "ESTABILIDAD",
+      "m3_value": "98.4%",
+      "m4_label": "DENSIDAD",
+      "m4_value": "1.02ρ"
+    },
+    "details": {
+      "d1_title": "ORIGEN TRINIDAD",
+      "d1_text": "Aceitunas Koroneiki prensadas en frío, Coco de cosecha silvestre, extracción de semilla de Aguacate Hass.",
+      "d2_title": "ENSAYO MOLECULAR",
+      "d2_text": "Lípidos de alta densidad detectados. Integración celular observada en un 89% en las capas epiteliales.",
+      "d3_title": "BLOQUEO DE HIDRATACIÓN",
+      "d3_text": "Barrera oclusiva establecida. Pérdida de agua transepidérmica reducida en un 22% post-ritual."
+    },
+    "dial": {
+      "heading": "ESTADO DEL MANTO DÉRMICO",
+      "status": "Óptimo",
+      "status_sub": "ALINEACIÓN LOGRADA",
+      "quote": "\"Tu piel está respirando el lenguaje de la Trinidad.\""
+    },
+    "recommend": {
+      "eyebrow": "GUÍA DE ELIAS",
+      "title": "Recomendación para el Protocolo Alfa",
+      "text": "\"Julian, tu pH actual de 5.42 es el más estable que he visto desde tu inducción. Durante las próximas 72 horas, prioriza la fase de 'Descanso Sagrado'. Evita contaminantes sintéticos y mantén la barrera solo con la Bruma Infusionada de Coco. Recalibraremos para la nutrición profunda de Aguacate el viernes.\"",
+      "avatar_alt": "Un retrato de un sabio y autoritario pero acogedor alquimista de cabello canoso.",
+      "role": "MAESTRO ALQUIMISTA",
+      "name": "Elias Thorne"
+    },
+    "milestone": {
+      "heading": "PRÓXIMO HITO",
+      "title": "Ritual del Viernes",
+      "desc": "Rejuvenecimiento Profundo de Aguacate",
+      "cta": "VER CALENDARIO COMPLETO"
+    }
+  },
+  "assistant": {
+    "meta": {
+      "title": "Asistente de Rituales | JR PureLife Wellness"
+    },
+    "header": {
+      "title": "CONCIERGE ALQUIMISTA",
+      "nav_consult": "Consultas",
+      "nav_heritage": "Herencia",
+      "avatar_alt": "Un retrato sofisticado de un concierge de bienestar de alta gama, Elias."
+    },
+    "sidebar": {
+      "member_no": "Miembro N.º 0422",
+      "member_tag": "Acceso Botánico de Élite",
+      "nav_alchemist": "Alquimista Personal",
+      "nav_profile": "Perfil Botánico",
+      "nav_history": "Historial Científico",
+      "nav_rituals": "Rituales Exclusivos",
+      "nav_settings": "Ajustes",
+      "cta_book": "Reservar Consulta"
+    },
+    "hero": {
+      "avatar_alt": "Un primer plano de un sofisticado concierge masculino llamado Elias.",
+      "badge": "Asistente Inteligente: Elias",
+      "title_pre": "Tus marcadores biológicos sugieren una",
+      "title_em": "Infusión Lipídica Profunda",
+      "title_post": "esta noche.",
+      "text": "Basándome en el último análisis atmosférico y el pH actual de tu piel de 5.42, he identificado una necesidad crítica de fortificación oleica. Un estudio reciente de herencia confirma que los Lípidos de Aguacate armonizan perfectamente con tu estado regenerativo actual."
+    },
+    "data": {
+      "d1_label": "Feed de Inteligencia",
+      "d1_text": "Nuevo Estudio: Biosíntesis de Lípidos de Aguacate en climas fríos.",
+      "d2_label": "Tus Signos Vitales",
+      "d2_value": "pH 5.42",
+      "d2_alert": "Alerta",
+      "d2_text": "Tendencia ligeramente alcalina detectada en las últimas 24 horas.",
+      "d3_label": "Puntuación de Sinergia",
+      "d3_value": "98% de Coincidencia",
+      "d3_text": "Alineación de la Trinidad Ancestral confirmada para el Ritual L-42."
+    },
+    "rituals": {
+      "heading": "Inteligencia Accionable",
+      "view_all": "VER TODOS LOS RITUALES"
+    },
+    "card1": {
+      "img_alt": "Una fotografía macro cinematográfica de una barra de jabón de lujo hecha de aguacate y aceite de oliva.",
+      "badge": "OPCIÓN ÓPTIMA",
+      "name": "Ritual de Infusión Lipídica Profunda",
+      "tag1": "PRENSADO EN FRÍO",
+      "tag2": "ORGÁNICO",
+      "tag3": "ENFOQUE OLIVA",
+      "desc": "Un ritual nocturno de 45 minutos diseñado para restaurar la humedad celular usando una base de lípidos de aguacate hiperconcentrada. Mejor realizado entre las 9 PM y las 11 PM para una absorción máxima.",
+      "cta_primary": "ALINEAR AHORA",
+      "cta_secondary": "DETALLES"
+    },
+    "card2": {
+      "img_alt": "Toma macro cinematográfica de un elixir botánico transparente siendo vertido en un recipiente de cristal.",
+      "name": "Ritual de Estabilización de pH",
+      "tag1": "ACCIÓN RÁPIDA",
+      "tag2": "ACEITE DE COCO",
+      "desc": "Un ritual reactivo enfocado en la corrección inmediata del pH usando las propiedades equilibrantes alcalinas del agua de coco virgen y sales minerales esenciales.",
+      "cta_primary": "RESERVAR RITUAL",
+      "cta_secondary": "DETALLES"
+    },
+    "trinity": {
+      "heading": "El Índice de la Trinidad Ancestral",
+      "text": "La sinergia biológica entre estos tres pilares botánicos forma la base de tu trayectoria de bienestar personalizada.",
+      "olive_label": "OLIVA",
+      "olive_value": "88%",
+      "coconut_label": "COCO",
+      "coconut_value": "42%",
+      "avocado_label": "AGUACATE",
+      "avocado_value": "94%",
+      "mapping": "Mapeo de Biosinergia en Tiempo Real"
+    },
+    "tabbar": {
+      "concierge": "Concierge",
+      "schedule": "Agenda",
+      "vault": "Bóveda",
+      "profile": "Perfil"
+    }
+  },
+  "certificate": {
+    "meta": {
+      "title": "Certificado de Autenticidad Ancestral | JR PureLife Wellness"
+    },
+    "title": "Certificado de Autenticidad Ancestral",
+    "subtitle": "Este documento certifica que la formulación botánica incluida ha sido elaborada con una integridad inquebrantable, honrando la sinergia ancestral de los mejores aceites de la naturaleza.",
+    "item_label": "Designación del Artículo",
+    "item_value": "Super Pack Trinidad Ancestral",
+    "batch_label": "Número de Lote",
+    "batch_value": "#TR-402-2024",
+    "date_label": "Inicio de Maduración",
+    "date_value": "15 de octubre, 2024",
+    "formulation_label": "Formulación Central",
+    "ing1": "Aceite de Oliva Prensado en Primer Frío",
+    "ing2": "Aceite de Coco Virgen",
+    "ing3": "Aceite de Aguacate Sin Refinar",
+    "ing4": "Manteca de Karité Cruda",
+    "image_alt": "Aceites Botánicos de la Trinidad Ancestral",
+    "signature_alt": "Una firma manuscrita delicada y fluida en tinta oliva oscura.",
+    "signer_name": "Juliet Rivers",
+    "signer_role": "Alquimista Principal y Fundadora",
+    "cta_download": "Descargar PDF",
+    "cta_share": "Compartir con el Santuario",
+    "footer": "© 2024 JR PureLife Wellness. Inteligencia Botánica.",
+    "dynamic": {
+      "preparing": "Preparando...",
+      "link_copied": "Enlace Copiado ✓"
+    }
+  },
+  "rituals": {
+    "meta": {
+      "title": "Rituales Ancestrales | JR PureLife Wellness"
+    },
+    "nav": {
+      "home": "Inicio",
+      "rituals": "Rituales",
+      "boutique": "Boutique",
+      "ingredients": "Ingredientes"
+    },
+    "hero": {
+      "bg_alt": "Un santuario de baño cinematográfico y de alta gama lleno de luz cálida de la mañana filtrándose a través del vapor.",
+      "eyebrow": "EL ARTE DEL SANTUARIO",
+      "title": "Rituales Ancestrales",
+      "text": "Transforma tu rutina en un ritual. Donde la ciencia se encuentra con el alma a través de la inteligencia biológica de la naturaleza.",
+      "cta_start": "Comenzar el Viaje",
+      "cta_guide": "Explorar Guía"
+    },
+    "hair": {
+      "img_alt": "Fotografía editorial de alta resolución del cabello de una persona siendo enjuagado bajo agua clara y brillante.",
+      "usage_label": "MODO DE EMPLEO",
+      "quote": "\"La paciencia es el ingrediente final de cada fórmula.\"",
+      "eyebrow": "PASO A PASO",
+      "title": "Ritual Capilar Ancestral",
+      "text": "Un protocolo de tres actos diseñado para restaurar el equilibrio folicular mediante la purificación sagrada.",
+      "s1_title": "El Despertar",
+      "s1_text": "Sumerge el cabello en agua templada durante dos minutos exactos. Deja que la fibra se abra, preparando el terreno para la alquimia botánica.",
+      "s2_title": "La Alquimia",
+      "s2_text": "Masajea con el jabón de la Trinidad. La espuma densa y cremosa, rica en ácidos grasos, debe habitar en tu cuero cabelludo mientras visualizas la regeneración.",
+      "s3_title": "La Calma",
+      "s3_text": "Aclara con agua fría para sellar la cutícula. El secreto de los 40 días: la verdadera transformación biológica requiere un ciclo lunar completo de constancia.",
+      "frequency": "FRECUENCIA RECOMENDADA: 2-3 VECES POR SEMANA"
+    },
+    "skin": {
+      "eyebrow": "THE BODY JOURNEY",
+      "title": "Sinfonía de los Sentidos",
+      "img_alt": "Una toma macro de una barra de jabón botánico cremoso siendo enjabonada.",
+      "contact_title": "El Contacto Sagrado",
+      "contact_text": "Inicia el ritual desde las extremidades hacia el corazón, utilizando movimientos circulares lentos que activan el sistema linfático y la presencia consciente.",
+      "s1_title": "El Despertar",
+      "s1_text": "Inicia con agua templada para dilatar los poros. Realiza movimientos ascendentes activando el sistema linfático, preparando el tejido para la nutrición profunda.",
+      "s2_title": "La Alquimia",
+      "s2_text": "Aplica el jabón de la Trinidad Ancestral. Masajea circularmente permitiendo que la sinergia de Olivo, Coco, Aguacate y Manteca de Karité penetre profundamente en la barrera lipídica.",
+      "s3_title": "La Calma",
+      "s3_text": "Finaliza con un aclarado de agua fresca para sellar la barrera cutánea y fijar los nutrientes. Reposa en silencio para un enraizamiento sensorial completo.",
+      "frequency": "FRECUENCIA RECOMENDADA: USO DIARIO PARA NUTRICIÓN CELULAR CONTINUA"
+    },
+    "sensory": {
+      "heading": "Notas Sensoriales",
+      "c1_name": "Eucalipto Glaciar",
+      "c1_text": "Una apertura punzante que refresca el tejido. Su espuma densa libera vapores que expanden la capacidad respiratoria mientras purifican el poro.",
+      "c1_profile": "PERFIL: ACLARADOR / TACTO SEDOSO",
+      "c2_name": "Romero Ancestral",
+      "c2_text": "El corazón regenerador. Su textura cremosa facilita el masaje profundo, estimulando la microcirculación y la firmeza cutánea.",
+      "c2_profile": "PERFIL: REGENERADOR / ESPUMA DENSA",
+      "c3_name": "Cedro de Fondo",
+      "c3_text": "La nota de anclaje que deja un velo protector invisible. Calma las rojeces y asienta los nutrientes en las capas más profundas.",
+      "c3_profile": "PERFIL: ENRAIZANTE / ACABADO TERCIOPELO"
+    },
+    "shader": {
+      "text": "Agua. Aceite. Intención."
+    },
+    "cta": {
+      "eyebrow": "EL PRINCIPIO DE TODO",
+      "title": "Descubre la Trinidad Ancestral",
+      "text": "Nuestras fórmulas combinan el Olivo, el Coco y el Aguacate en una proporción áurea. Empieza tu propio ritual hoy mismo.",
+      "button": "Adquirir Colección"
+    },
+    "footer": {
+      "explore": "Explorar",
+      "sustainability": "Sostenibilidad",
+      "wholesale": "Mayoreo",
+      "legal": "Legal",
+      "privacy": "Política de Privacidad",
+      "shipping": "Envíos",
+      "newsletter": "Suscríbete a la Inteligencia Botánica para recibir guías exclusivas.",
+      "email_placeholder": "correo@ejemplo.com",
+      "submit": "ENVIAR",
+      "copyright": "© 2024 JR PureLife Wellness. Formulado por la Inteligencia de la Naturaleza.",
+      "accessories": "Accesorios del Santuario"
+    }
+  },
+  "accessories": {
+    "meta": {
+      "title": "Accesorios del Santuario | JR PureLife Wellness"
+    },
+    "nav": {
+      "alchemy": "Alquimia",
+      "rituals": "Rituales",
+      "boutique": "Boutique",
+      "journal": "Journal"
+    },
+    "hero": {
+      "eyebrow": "Boutique del Santuario",
+      "title": "Instrumentos de Calma",
+      "text": "Eleva tu ritual diario a una ceremonia sagrada con nuestra selección curada de herramientas naturales. Cada pieza ha sido diseñada para armonizar con la inteligencia botánica de nuestros elixires.",
+      "cta": "Explorar Colección"
+    },
+    "grid": {
+      "heading": "Accesorios del Santuario",
+      "subheading": "Materiales puros moldeados por la mano humana y la paciencia de la naturaleza.",
+      "filter": "Filtro: Todos los materiales"
+    },
+    "card1": {
+      "img_alt": "Un primer plano cinematográfico de alta resolución de una esponja de Luffa natural mostrando su intrincada textura fibrosa.",
+      "badge": "ORGÁNICO",
+      "name": "Esponja de Luffa Natural",
+      "desc": "Textura botánica cruda para exfoliación profunda y renovación celular.",
+      "price": "$18.00"
+    },
+    "card2": {
+      "img_alt": "Primer plano de una toalla de lino orgánico tejida a mano en un suave tono crema.",
+      "badge": "ARTESANAL",
+      "name": "Toalla de Lino Orgánico",
+      "desc": "Tejida a mano, altamente absorbente en tono crema natural. Suavidad que respeta la piel.",
+      "price": "$45.00"
+    },
+    "card3": {
+      "img_alt": "Masajeador de cuero cabelludo de madera ergonómico con un grano suave y pulido.",
+      "badge": "MÁS VENDIDO",
+      "name": "Masajeador de Cuero Cabelludo",
+      "desc": "Diseño ergonómico en madera dura para estimulación y relajación del cuero cabelludo.",
+      "price": "$32.00"
+    },
+    "card4": {
+      "img_alt": "Un cuenco de cerámica hecho a mano con estética wabi-sabi, con un sutil esmalte terroso.",
+      "badge": "EDICIÓN LIMITADA",
+      "name": "Cuenco de Cerámica",
+      "desc": "Para preparar infusiones botánicas y mascarillas de arcilla purificantes.",
+      "price": "$28.00"
+    },
+    "quality": {
+      "img_alt": "Una escena de laboratorio de alta gama mostrando frascos de vidrio de alta resolución llenos de aceites de oliva dorados.",
+      "badge": "Biodegradable",
+      "eyebrow": "COMPROMISO PURO",
+      "title": "Calidad de Laboratorio",
+      "text": "Cada accesorio de nuestra colección del santuario pasa por un riguroso proceso de validación. Buscamos no solo estética, sino integridad biológica y durabilidad ancestral.",
+      "p1_title": "FIBRAS ORGÁNICAS",
+      "p1_text": "Lino y luffa cultivados sin pesticidas, procesados mecánicamente para preservar su estructura natural.",
+      "p2_title": "MADERAS SOSTENIBLES",
+      "p2_text": "Provenientes de bosques certificados en reforestación, tratadas únicamente con aceites botánicos.",
+      "p3_title": "TOXICIDAD CERO",
+      "p3_text": "Ausencia total de pegamentos sintéticos, tintes químicos o recubrimientos plásticos."
+    },
+    "cta": {
+      "title": "El Santuario está Completo",
+      "quote": "\"La belleza no es un lujo, es una resonancia con la verdad de la naturaleza.\"",
+      "primary": "Completar Mi Ritual",
+      "secondary": "Ver Guía de Uso"
+    },
+    "footer": {
+      "tagline": "Inteligencia Botánica y Arte Sagrado. Sostenibilidad certificada en laboratorio.",
+      "explore": "Explorar",
+      "our_alchemy": "Nuestra Alquimia",
+      "sustainability": "Sostenibilidad",
+      "certifications": "Certificaciones",
+      "sanctuary": "Santuario",
+      "link_accessories": "Accesorios del Santuario",
+      "link_boutique": "Boutique de Jabones",
+      "link_gifts": "Kits de Regalo",
+      "legal": "Legal",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "contact": "Contacto",
+      "copyright": "© 2024 JR PureLife Wellness. Inteligencia Botánica y Arte Sagrado. Sostenibilidad Certificada en Laboratorio."
+    }
+  },
+  "review": {
+    "meta": {
+      "title": "Escribir una Reseña | JR PureLife Wellness"
+    },
+    "nav": {
+      "heritage": "Herencia",
+      "science": "Ciencia",
+      "collection": "Colección"
+    },
+    "header": {
+      "eyebrow": "TU VOZ IMPORTA",
+      "title": "Compartir la Sabiduría",
+      "subtitle": "Tu experiencia ayuda a otros a descubrir la inteligencia biológica de nuestros rituales ancestrales."
+    },
+    "product": {
+      "img_alt": "Un primer plano cinematográfico de alta resolución de una barra de jabón artesanal hecha a mano llamada Jabón Trinidad Ancestral.",
+      "name": "Jabón Trinidad Ancestral",
+      "tagline": "Una Sinfonía de Oliva, Coco y Aguacate"
+    },
+    "form": {
+      "rating_label": "CALIFICACIÓN GENERAL",
+      "name_label": "NOMBRE COMPLETO",
+      "email_label": "CORREO ELECTRÓNICO",
+      "text_label": "TU EXPERIENCIA (RITUAL Y SENSACIÓN)",
+      "upload_title": "SANTUARIO PERSONAL",
+      "upload_text": "Muestra cómo el Jabón Trinidad habita en tu espacio",
+      "submit": "PUBLICAR RESEÑA"
+    },
+    "footer": {
+      "sourcing": "Ética de Abastecimiento",
+      "labs": "Informes de Laboratorio",
+      "trinity": "La Trinidad",
+      "copyright": "© 2024 JR PureLife Wellness. Elaborado con Sabiduría Ancestral.",
+      "contact": "Contáctanos"
+    },
+    "dynamic": {
+      "sending": "ENVIANDO...",
+      "thanks": "Tu reseña ha sido compartida con sabiduría. ¡Gracias!"
+    }
+  },
+  "packaging": {
+    "meta": {
+      "title": "Empaque Sostenible | JR PureLife Wellness"
+    },
+    "nav": {
+      "philosophy": "Filosofía",
+      "trinity": "La Trinidad",
+      "rituals": "Rituales a Medida"
+    },
+    "hero": {
+      "eyebrow": "HECHO PARA LA TIERRA",
+      "title": "Empaque Sostenible",
+      "text_pre": "En JR PureLife Wellness, creemos que el viaje hacia el alma no debería dejar huella en la tierra. Nuestro compromiso con la",
+      "text_em": "Logística Sostenible",
+      "text_post": "asegura que cada vasija de bienestar regrese a la tierra con gracia.",
+      "cta_primary": "Explorar Filosofía",
+      "cta_secondary": "Nuestro Proceso",
+      "img_alt": "Caja de Empaque Sostenible de JR PureLife Wellness"
+    },
+    "commitment": {
+      "heading": "Logística Arraigada en la Integridad",
+      "text": "Guiado por la precisión técnica de la ciencia moderna y la reverencia de la tradición ancestral, nuestro marco logístico se construye sobre tres pilares inquebrantables. Utilizamos fibras orgánicas compostables y componentes libres de plástico, asegurando que cada envío sea una contribución de circuito cerrado al ecosistema. Desde el momento de la elaboración artesanal hasta la última milla de envío sostenible, priorizamos la inteligencia biológica de la naturaleza sobre la conveniencia industrial."
+    },
+    "pillars": {
+      "eyebrow": "LA TRINIDAD",
+      "heading": "Fundamentos Centrales",
+      "p1_title": "Elaboración Artesanal",
+      "p1_text": "Cada paquete se ensambla a mano en nuestro taller, reflejando la naturaleza sagrada de su contenido. No es solo una caja, sino un preludio al ritual del bienestar.",
+      "p1_tag": "CURADO METICULOSAMENTE",
+      "p2_title": "Eco-Materiales",
+      "p2_text": "Nuestro empaque libre de plástico y compostable proviene de fibras orgánicas recicladas. Diseñado para disolverse en la tierra en 90 días.",
+      "p2_badge1": "LIBRE DE PLÁSTICO",
+      "p2_badge2": "COMPOSTABLE",
+      "p2_tag": "FIBRAS AMIGABLES CON LA TIERRA",
+      "p3_title": "Sabiduría Ancestral",
+      "p3_text": "Inspirado en técnicas de almacenamiento antiguas que usaban hojas y fibras para preservar la potencia botánica, fusionamos herencia con sostenibilidad de alto rendimiento.",
+      "p3_tag": "PRINCIPIOS ATEMPORALES"
+    },
+    "gallery": {
+      "img1_alt": "Toma cinematográfica en ángulo alto de barras de jabón artesanal sobre un lecho de paja orgánica seca dentro de una caja de cartón reciclado minimalista.",
+      "img2_alt": "Primer plano extremo de un sello botánico grabado en papel ecológico.",
+      "stat_value": "100%",
+      "stat_label": "TRAYECTORIA BIODEGRADABLE"
+    },
+    "footer": {
+      "tagline": "Uniendo el ritual ancestral con la ciencia biológica moderna a través de la pureza de los aceites botánicos.",
+      "philosophy_label": "Filosofía",
+      "report": "Informe de Sostenibilidad",
+      "our_philosophy": "Nuestra Filosofía",
+      "resources_label": "Recursos",
+      "sourcing": "Abastecimiento de Materiales",
+      "wholesale": "Mayoreo",
+      "copyright": "© 2024 JR PureLife Wellness. Hecho para la Tierra, Sembrado para el Alma.",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
+  },
+  "csuperpack": {
+    "meta": {
+      "title": "Checkout Super Pack | JR PureLife Wellness"
+    },
+    "bg_alt": "Un fondo cinematográfico sereno con luz natural en un laboratorio botánico minimalista.",
+    "header": {
+      "secure": "Pago Seguro"
+    },
+    "title": "Finaliza tu Alquimia",
+    "subtitle": "Completa tu pedido para recibir tus creaciones botánicas de producción limitada.",
+    "s1": {
+      "heading": "Información de Contacto",
+      "email_label": "Correo Electrónico",
+      "email_placeholder": "alquimista@ejemplo.com",
+      "updates": "Mantenme al tanto de lanzamientos exclusivos de lotes pequeños."
+    },
+    "s2": {
+      "heading": "Envío",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "address_label": "Dirección del Santuario",
+      "address_placeholder": "Dirección",
+      "apt_placeholder": "Apartamento, suite, etc. (opcional)",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zip": "Código Postal",
+      "method_label": "Método de Envío",
+      "express_name": "Santuario Exprés",
+      "carbon_neutral": "Carbono Neutral",
+      "express_time": "2-3 Días Hábiles",
+      "express_price": "$8.00",
+      "standard_name": "Herencia Estándar",
+      "standard_time": "5-7 Días Hábiles",
+      "standard_price": "Gratis"
+    },
+    "s3": {
+      "heading": "Pago Seguro",
+      "credit_card": "Tarjeta de Crédito",
+      "card_number": "Número de tarjeta",
+      "expiry": "MM / AA",
+      "cvc": "CVC",
+      "name_on_card": "Nombre en la tarjeta",
+      "submit": "Completar Ritual • $32.99",
+      "encrypted_note": "Los pagos están cifrados de forma segura."
+    },
+    "summary": {
+      "heading": "Tu Selección",
+      "item_img_alt": "Una toma cinematográfica de primer plano de una pila de tres barras de jabón artesanal envueltas en una banda de papel kraft minimalista.",
+      "item_name": "Super Pack (3 piezas)",
+      "item_price": "$24.99",
+      "item_desc": "Lavanda, Cúrcuma, Almendra",
+      "limited_badge": "Producción Limitada",
+      "qty": "Cant.: 1",
+      "benefit_title": "Beneficio de Miembro Aplicado",
+      "benefit_text": "Incluye Monitoreo del Concierge Alquimista. Tus números de lote se registrarán en tu perfil.",
+      "subtotal": "Subtotal",
+      "subtotal_value": "$24.99",
+      "shipping": "Envío (Exprés)",
+      "shipping_value": "$8.00",
+      "taxes": "Impuestos",
+      "taxes_value": "Calculado en el siguiente paso",
+      "total": "Total",
+      "vat_note": "IVA incluido",
+      "total_value": "$32.99"
+    },
+    "trust": {
+      "eco": "Empaque Eco",
+      "lab": "Probado en Laboratorio",
+      "cruelty_free": "Libre de Crueldad"
+    },
+    "footer": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "lab_cert": "Certificación de Laboratorio",
+      "sustainability": "Informe de Sostenibilidad",
+      "copyright": "© 2024 JR PureLife Wellness. Inteligencia Botánica."
+    },
+    "dynamic": {
+      "processing": "Procesando..."
+    }
+  }
+}

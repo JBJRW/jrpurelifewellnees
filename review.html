@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Write a Review | JR PureLife Wellness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fbf9f4",
+                        "outline-variant": "#c7c7b9",
+                        "surface-container-low": "#f5f3ee",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#434a19",
+                        "secondary-container": "#fed65b",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-tertiary-fixed": "#191e00",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffe088",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#46483d",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dbdad5",
+                        "tertiary": "#272d00",
+                        "on-background": "#1b1c19",
+                        "on-primary-container": "#a9b181",
+                        "tertiary-fixed": "#dfe8a6",
+                        "tertiary-fixed-dim": "#c3cc8c",
+                        "on-secondary-fixed": "#241a00",
+                        "on-tertiary-container": "#a9b175",
+                        "on-secondary-container": "#745c00",
+                        "primary-fixed-dim": "#c3cb99",
+                        "tertiary-container": "#3d4413",
+                        "surface": "#fbf9f4",
+                        "primary-container": "#3d441e",
+                        "on-primary-fixed-variant": "#434a23",
+                        "on-primary-fixed": "#181e00",
+                        "on-surface": "#1b1c19",
+                        "surface-variant": "#e4e2dd",
+                        "outline": "#77786c",
+                        "surface-container": "#f0eee9",
+                        "secondary": "#735c00",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-tint": "#5b6239",
+                        "inverse-primary": "#c3cb99",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#574500",
+                        "background": "#fbf9f4",
+                        "primary-fixed": "#dfe7b3",
+                        "primary": "#272e0a",
+                        "inverse-surface": "#30312e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Space Mono"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            transition: all 0.3s ease;
+        }
+        .rating-star:hover, .rating-star.active {
+            font-variation-settings: 'FILL' 1;
+            color: #735c00;
+        }
+        input:focus + label, input:not(:placeholder-shown) + label {
+            transform: translateY(-20px) scale(0.85);
+            color: #272e0a;
+        }
+        .custom-shadow {
+            box-shadow: 0 24px 48px -12px rgba(61, 68, 30, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col" data-i18n-title-key="review.meta.title">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto bg-surface/80 dark:bg-surface-container-low/80 backdrop-blur-md shadow-sm shadow-primary/5">
+<a href="home.html" class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">JR PureLife Wellness</a>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="home.html" data-i18n="review.nav.heritage">Heritage</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="alchemy.html" data-i18n="review.nav.science">Science</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:opacity-70" href="reserve.html" data-i18n="review.nav.collection">Collection</a>
+</div>
+<div class="flex items-center gap-unit">
+<a href="cart.html" class="p-2 text-primary hover:text-secondary transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</a>
+<a href="concierge.html" class="p-2 text-primary hover:text-secondary transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-0">
+<div class="max-w-3xl mx-auto">
+<!-- Page Header -->
+<header class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block" data-i18n="review.header.eyebrow">YOUR VOICE MATTERS</span>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-4" data-i18n="review.header.title">Share the Wisdom</h1>
+<p class="font-body-lg text-on-surface-variant max-w-lg mx-auto" data-i18n="review.header.subtitle">Your experience helps others discover the biological intelligence of our ancestral rituals.</p>
+</header>
+<!-- Product Context -->
+<section class="bg-surface-container-low rounded-xl p-gutter mb-12 flex flex-col md:flex-row items-center gap-gutter border border-outline-variant/20 custom-shadow">
+<div class="w-32 h-32 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-i18n-alt="review.product.img_alt" alt="A cinematic, high-resolution close-up of a handmade artisanal soap bar named Ancestral Trinity Soap." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf0hR1LDBvuy2ieD2MAljFpFDOs0LX_7d7Ev8VJQoDTUg8wc67j_86Luq8lYXaz8KJGWuohKojGubY1xgijcsXc5E4rCG0AxLOXjUTYTyAhye1ux8w3KAUo-466ZPLvQfyE413uu7H7sfxXEw5P1wnQqQB7KrLg-5xgoK8GBj-g2qWpdZ9io1FbggvVOOu1A_kAD_HX4uEWOPSTsQfw9t4m4Pl80iI028CRLg0f5b3OfmB4ZruZvxXPea9v97gSsntiOXlxgav7j3G"/>
+</div>
+<div class="text-center md:text-left">
+<h2 class="font-headline-md text-headline-md text-primary mb-1" data-i18n="review.product.name">Ancestral Trinity Soap</h2>
+<p class="font-label-caps text-label-caps text-outline italic" data-i18n="review.product.tagline">A Symphony of Olive, Coconut, and Avocado</p>
+</div>
+</section>
+<!-- Review Form -->
+<form class="space-y-12" id="reviewForm">
+<!-- Star Rating -->
+<div class="text-center space-y-4">
+<p class="font-label-caps text-label-caps text-primary" data-i18n="review.form.rating_label">OVERALL RATING</p>
+<div class="flex justify-center gap-2" id="starContainer">
+<button class="rating-star p-1 transition-transform hover:scale-110" data-value="1" type="button">
+<span class="material-symbols-outlined text-4xl" data-icon="spa">spa</span>
+</button>
+<button class="rating-star p-1 transition-transform hover:scale-110" data-value="2" type="button">
+<span class="material-symbols-outlined text-4xl" data-icon="spa">spa</span>
+</button>
+<button class="rating-star p-1 transition-transform hover:scale-110" data-value="3" type="button">
+<span class="material-symbols-outlined text-4xl" data-icon="spa">spa</span>
+</button>
+<button class="rating-star p-1 transition-transform hover:scale-110" data-value="4" type="button">
+<span class="material-symbols-outlined text-4xl" data-icon="spa">spa</span>
+</button>
+<button class="rating-star p-1 transition-transform hover:scale-110" data-value="5" type="button">
+<span class="material-symbols-outlined text-4xl" data-icon="spa">spa</span>
+</button>
+</div>
+</div>
+<!-- Personal Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-body-md" id="fullName" placeholder=" " type="text"/>
+<label class="absolute left-0 top-4 text-outline pointer-events-none transition-all font-label-caps text-label-caps" for="fullName" data-i18n="review.form.name_label">FULL NAME</label>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-body-md" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-4 text-outline pointer-events-none transition-all font-label-caps text-label-caps" for="email" data-i18n="review.form.email_label">EMAIL ADDRESS</label>
+</div>
+</div>
+<!-- Review Content -->
+<div class="relative">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors text-body-md resize-none" id="reviewText" placeholder=" " rows="5"></textarea>
+<label class="absolute left-0 top-4 text-outline pointer-events-none transition-all font-label-caps text-label-caps" for="reviewText" data-i18n="review.form.text_label">YOUR EXPERIENCE (RITUAL AND SENSATION)</label>
+</div>
+<!-- Image Upload -->
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-gutter text-center group hover:border-secondary transition-colors cursor-pointer bg-surface-container-lowest/50">
+<input accept="image/*" class="hidden" id="imageUpload" multiple="" type="file"/>
+<label class="cursor-pointer flex flex-col items-center gap-2" for="imageUpload">
+<span class="material-symbols-outlined text-3xl text-secondary" data-icon="add_a_photo">add_a_photo</span>
+<p class="font-label-caps text-label-caps text-primary" data-i18n="review.form.upload_title">PERSONAL SANCTUARY</p>
+<p class="text-xs text-on-surface-variant italic" data-i18n="review.form.upload_text">Show how the Trinity Soap lives in your space</p>
+</label>
+</div>
+<!-- Submit Button -->
+<div class="pt-8">
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary font-label-caps text-label-caps tracking-widest hover:bg-primary-container transition-all hover:shadow-lg active:scale-95 flex items-center justify-center gap-4" type="submit">
+<span data-i18n="review.form.submit">POST REVIEW</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-gutter flex flex-col md:flex-row justify-between items-center border-t border-outline-variant/30 bg-surface-container-highest dark:bg-inverse-surface">
+<a href="home.html" class="font-headline-md text-headline-md text-primary mb-6 md:mb-0">JR PureLife Wellness</a>
+<div class="flex flex-col items-center gap-4">
+<div class="flex gap-gutter font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="alchemy.html" data-i18n="review.footer.sourcing">Sourcing Ethics</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="certificate.html" data-i18n="review.footer.labs">Lab Reports</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="alchemy.html" data-i18n="review.footer.trinity">The Trinity</a>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm" data-i18n="review.footer.copyright">© 2024 JR PureLife Wellness. Crafted with Ancestral Wisdom.</p>
+</div>
+<div class="mt-6 md:mt-0">
+<a class="font-label-caps text-label-caps text-primary underline hover:text-secondary transition-all" href="contact.html" data-i18n="review.footer.contact">Contact Us</a>
+</div>
+</footer>
+<script>
+        // Simple star rating interaction
+        const stars = document.querySelectorAll('.rating-star');
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const val = star.getAttribute('data-value');
+                stars.forEach(s => {
+                    if (s.getAttribute('data-value') <= val) {
+                        s.classList.add('active');
+                        s.querySelector('span').style.fontVariationSettings = "'FILL' 1";
+                    } else {
+                        s.classList.remove('active');
+                        s.querySelector('span').style.fontVariationSettings = "'FILL' 0";
+                    }
+                });
+            });
+        });
+
+        function revT(key, fallback) {
+            if (window.JRI18N && typeof window.JRI18N.t === "function") {
+                const v = window.JRI18N.t(key);
+                if (v && v !== key) return v;
+            }
+            return fallback;
+        }
+        // Form submission handling
+        document.getElementById('reviewForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const span = btn.querySelector('span:not(.material-symbols-outlined)');
+            const original = span.textContent;
+            span.textContent = revT('review.dynamic.sending', 'SENDING...');
+            btn.disabled = true;
+            setTimeout(() => {
+                alert(revT('review.dynamic.thanks', 'Your review has been shared with wisdom. Thank you!'));
+                span.textContent = original;
+                btn.disabled = false;
+                e.target.reset();
+                document.querySelectorAll('.rating-star').forEach(s => {
+                    s.classList.remove('active');
+                    s.querySelector('span').style.fontVariationSettings = "'FILL' 0";
+                });
+            }, 900);
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

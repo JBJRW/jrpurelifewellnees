@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sacred Allocation Payment | ORACLE — JR PureLife Wellness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Playfair+Display:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(251, 249, 244, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        @keyframes subtle-float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim { animation: subtle-float 6s ease-in-out infinite; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#574500",
+                        "outline-variant": "#c7c7b9",
+                        "secondary": "#735c00",
+                        "on-primary-fixed-variant": "#434a23",
+                        "surface-bright": "#fbf9f4",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#272e0a",
+                        "on-background": "#1b1c19",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#c3cb99",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary-container": "#a9b181",
+                        "tertiary-fixed": "#dfe8a6",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#3d441e",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-tertiary-fixed-variant": "#434a19",
+                        "on-surface": "#1b1c19",
+                        "on-tertiary-container": "#a9b175",
+                        "surface-variant": "#e4e2dd",
+                        "background": "#fbf9f4",
+                        "surface-container-low": "#f5f3ee",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "on-secondary": "#ffffff",
+                        "outline": "#77786c",
+                        "surface-container-high": "#eae8e3",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#30312e",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#272d00",
+                        "surface": "#fbf9f4",
+                        "tertiary-fixed-dim": "#c3cc8c",
+                        "surface-tint": "#5b6239",
+                        "primary-fixed-dim": "#c3cb99",
+                        "on-surface-variant": "#46483d",
+                        "on-primary-fixed": "#181e00",
+                        "surface-container": "#f0eee9",
+                        "secondary-container": "#fed65b",
+                        "tertiary-container": "#3d4413",
+                        "primary-fixed": "#dfe7b3",
+                        "on-tertiary-fixed": "#191e00",
+                        "surface-dim": "#dbdad5",
+                        "on-secondary-container": "#745c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Space Mono"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container" data-i18n-title-key="checkout.meta.title">
+<div class="grain-overlay"></div>
+<!-- Navigation suppressed for checkout focus -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md px-margin-desktop py-6 flex justify-between items-center">
+<div class="font-display-lg text-headline-md tracking-tighter text-primary">ORACLE</div>
+<div class="flex items-center gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase" data-i18n="checkout.header.terminal">Secure Allocation Terminal</span>
+<span class="material-symbols-outlined text-primary">lock</span>
+</div>
+</header>
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Order Details & Certification -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Sanctuary Verification Banner -->
+<section class="bg-primary-container text-on-primary-container p-8 rounded-lg shadow-[0_24px_48px_rgba(61,68,30,0.08)] flex items-center gap-6 border-l-4 border-secondary">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<h2 class="font-label-caps text-label-caps mb-1 opacity-80" data-i18n="checkout.banner.status">SANCTUARY STATUS: CONFIRMED</h2>
+<p class="font-headline-md text-xl italic text-surface-bright" data-i18n="checkout.banner.greeting">Greetings, Sage. Your clearance grants access to the Private Reserve Batch 0924.</p>
+</div>
+</section>
+<!-- Allocation Summary -->
+<section>
+<h3 class="font-label-caps text-label-caps text-outline mb-6 border-b border-outline-variant pb-2" data-i18n="checkout.allocation.heading">THE ALLOCATION</h3>
+<div class="space-y-8">
+<!-- Product Item 1 -->
+<div class="flex flex-col md:flex-row gap-6 group">
+<div class="w-full md:w-48 h-64 bg-surface-container overflow-hidden rounded shadow-sm">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic, high-resolution close-up of a hand-blown glass elixir bottle filled with a golden, viscous botanical oil. The bottle sits in a sun-drenched, minimalist white laboratory setting with soft olive leaves blurring in the background. The lighting is ethereal and high-key, highlighting the liquid gold texture of the oil and the artisanal quality of the container. 4K high-end wellness aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlKYQ_HanQ5AYYl7TqOI56sfFd491djDXeeMYkjMzcdIJhXCvrnPMhQEP13WOJ6f-Yjs1w5QOrgJQpzLSEYoOhstSZnCQ78VL88Qy4sx0RDnwEdpwblX70qbLrGax5Eoi4wxiIonpodop6uPv31r5f55Sy50dcjtlxRLxZAljXtbVTHkoRrRx5UQZfVs17AFEuET7nm2Qi_mAO3ehKxbRz80kCZ1g3FkBhNJKEtBKUOL5L1jCK1q9tuw')"></div>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary mb-2" data-i18n="checkout.item.badge">LIMITED RESERVE</span>
+<h4 class="font-headline-md text-2xl text-primary mb-2" data-i18n="checkout.item.name">Ancestral Trinity Elixir</h4>
+<p class="font-body-md text-on-surface-variant mb-4" data-i18n="checkout.item.desc">A triple-infused concentrate of cold-pressed Olive, Coconut, and Avocado pits, aged for 120 days in ceramic vessels.</p>
+<div class="grid grid-cols-2 gap-4 border-t border-outline-variant pt-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline" data-i18n="checkout.item.batch_label">BATCH NO.</p>
+<p class="font-label-caps text-primary" data-i18n="checkout.item.batch_value">#AT-2024-09</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline" data-i18n="checkout.item.date_label">CURATION DATE</p>
+<p class="font-label-caps text-primary" data-i18n="checkout.item.date_value">OCT 14, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Laboratory Certification Preview -->
+<section class="bg-surface-container-low p-8 rounded-lg border border-outline-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">biotech</span>
+</div>
+<h3 class="font-label-caps text-label-caps text-primary mb-6" data-i18n="checkout.cert.heading">LABORATORY CERTIFICATION: LOT 0924-A</h3>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/3 aspect-[3/4] bg-white p-4 shadow-xl border border-outline-variant transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+<div class="w-full h-full border border-secondary/20 p-4 flex flex-col justify-between items-center text-center">
+<div class="font-display-lg text-lg text-primary" data-i18n="checkout.cert.card_title">CERTIFICATE</div>
+<div class="w-12 h-[1px] bg-secondary my-2"></div>
+<div class="text-[8px] font-label-caps leading-relaxed text-on-surface-variant">
+<span data-i18n="checkout.cert.purity">PURITY: 99.98%</span><br/>
+<span data-i18n="checkout.cert.bioactivity">BIO-ACTIVITY: OPTIMAL</span><br/>
+<span data-i18n="checkout.cert.dna">DNA ORIGIN: VERIFIED</span>
+</div>
+<div class="w-16 h-16 border border-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40">workspace_premium</span>
+</div>
+</div>
+</div>
+<div class="flex-1 space-y-4">
+<p class="font-body-md text-on-surface" data-i18n="checkout.cert.text">This lot has been subjected to rigorous GC-MS analysis, ensuring the molecular integrity of the Ancestral Trinity lipids. Digital certificate (NFT-backed) will be minted upon confirmation.</p>
+<a href="certificate.html" class="font-label-caps text-secondary text-label-caps hover:text-primary transition-colors flex items-center gap-2">
+<span data-i18n="checkout.cert.cta">VIEW ANALYSIS DATA</span> <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Payment Form -->
+<div class="lg:col-span-5 sticky top-32">
+<div class="glass-panel p-10 rounded-lg shadow-[0_24px_48px_rgba(61,68,30,0.05)] border border-white">
+<h2 class="font-headline-md text-2xl mb-8 text-primary" data-i18n="checkout.payment.heading">Sacred Allocation Payment</h2>
+<form class="space-y-6">
+<!-- Name on Card -->
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-outline" data-i18n="checkout.payment.name_label">CARDHOLDER IDENTITY</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 font-body-lg placeholder:text-outline-variant transition-colors" data-i18n-placeholder="checkout.payment.name_placeholder" placeholder="THE SAGE" type="text"/>
+</div>
+<!-- Card Details -->
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-outline" data-i18n="checkout.payment.card_label">CARD DETAILS</label>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 font-body-lg placeholder:text-outline-variant transition-colors" placeholder="XXXX XXXX XXXX XXXX" type="text"/>
+<span class="absolute right-0 bottom-3 flex gap-2">
+<span class="material-symbols-outlined text-outline-variant">credit_card</span>
+</span>
+</div>
+</div>
+<!-- Expiry and CVC -->
+<div class="grid grid-cols-2 gap-gutter">
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-outline" data-i18n="checkout.payment.expiry_label">EXPIRATION</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 font-body-lg placeholder:text-outline-variant transition-colors" placeholder="MM/YY" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-caps text-label-caps text-outline" data-i18n="checkout.payment.cvc_label">CVC CODE</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 py-3 font-body-lg placeholder:text-outline-variant transition-colors" placeholder="000" type="text"/>
+</div>
+</div>
+<!-- Order Summary Details -->
+<div class="pt-8 space-y-4 border-t border-outline-variant/30">
+<div class="flex justify-between font-body-md">
+<span class="text-on-surface-variant" data-i18n="checkout.summary.allocation">Reserve Allocation</span>
+<span class="text-on-surface" id="checkout-subtotal">$245.00</span>
+</div>
+<div class="flex justify-between font-body-md">
+<span class="text-on-surface-variant" data-i18n="checkout.summary.handling">Ceremonial Handling</span>
+<span class="text-on-surface">$12.00</span>
+</div>
+<div class="flex justify-between font-label-caps text-xl text-primary pt-4">
+<span data-i18n="checkout.summary.total">TOTAL VALUE</span>
+<span id="checkout-total">$257.00</span>
+</div>
+</div>
+<!-- Submission with Sense of Ceremony -->
+<div class="pt-6">
+<button class="w-full bg-primary-container text-on-primary py-5 px-8 font-label-caps tracking-widest hover:bg-primary transition-all active:scale-[0.98] flex items-center justify-center gap-3 group relative overflow-hidden" type="button" id="checkout-pay-btn">
+<span class="relative z-10" data-i18n="checkout.summary.cta">INITIATE ALLOCATION RITUAL</span>
+<span class="material-symbols-outlined relative z-10 transition-transform group-hover:translate-x-1">bolt</span>
+<div class="absolute inset-0 bg-secondary/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+</button>
+<p class="text-center font-body-md text-[12px] text-outline mt-4 italic" data-i18n="checkout.summary.disclaimer">By confirming, you acknowledge the ancestral heritage and laboratory standards of ORACLE.</p>
+</div>
+</form>
+</div>
+<!-- Trust Badge -->
+<div class="mt-8 flex justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="material-symbols-outlined text-4xl">lock</span>
+<span class="material-symbols-outlined text-4xl">eco</span>
+<span class="material-symbols-outlined text-4xl">chevron_left</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full py-12 bg-surface-container-low dark:bg-surface-container-lowest mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary opacity-20">ORACLE</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact.html" data-i18n="checkout.footer.privacy">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="alchemy.html" data-i18n="checkout.footer.sourcing">Ethical Sourcing</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html" data-i18n="checkout.footer.heritage">Ancestral Heritage</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="alchemy.html" data-i18n="checkout.footer.lab_standards">Laboratory Standards</a>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant opacity-60" data-i18n="checkout.footer.copyright">© 2024 JR PURELIFE WELLNESS. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for form inputs
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').style.color = '#3d441e';
+            });
+            input.addEventListener('blur', () => {
+                if(!input.value) input.parentElement.querySelector('label').style.color = '';
+            });
+        });
+
+        function ckT(key, fallback) {
+            if (window.JRI18N && typeof window.JRI18N.t === "function") {
+                const v = window.JRI18N.t(key);
+                if (v && v !== key) return v;
+            }
+            return fallback;
+        }
+
+        // Submission Ceremony Effect
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const btnText = btn.querySelector('span');
+            
+            btnText.textContent = ckT("checkout.dynamic.verifying", "VERIFYING BIOMETRICS...");
+            btn.classList.add('opacity-80', 'cursor-wait');
+            
+            setTimeout(() => {
+                btnText.textContent = ckT("checkout.dynamic.secured", "ALLOCATION SECURED");
+                btn.style.backgroundColor = '#735c00'; // secondary gold
+                
+                // Trigger a celebratory subtle pulse or redirection logic
+                console.log("Allocation successful");
+            }, 2500);
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

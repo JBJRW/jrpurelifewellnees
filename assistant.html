@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ritual Assistant | JR PureLife Wellness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Space+Mono:wght@700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "surface-container": "#f0eee9",
+                    "secondary-fixed": "#ffe088",
+                    "on-surface-variant": "#46483d",
+                    "on-primary-fixed-variant": "#434a23",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-dim": "#dbdad5",
+                    "on-primary-fixed": "#181e00",
+                    "tertiary-fixed-dim": "#c3cc8c",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-error": "#ffffff",
+                    "primary": "#272e0a",
+                    "inverse-primary": "#c3cb99",
+                    "tertiary": "#272d00",
+                    "surface-container-high": "#eae8e3",
+                    "surface": "#fbf9f4",
+                    "on-primary": "#ffffff",
+                    "secondary": "#735c00",
+                    "primary-fixed-dim": "#c3cb99",
+                    "primary-fixed": "#dfe7b3",
+                    "surface-tint": "#5b6239",
+                    "surface-container-low": "#f5f3ee",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#30312e",
+                    "tertiary-container": "#3d4413",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "secondary-container": "#fed65b",
+                    "on-primary-container": "#a9b181",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#434a19",
+                    "primary-container": "#3d441e",
+                    "on-secondary-container": "#745c00",
+                    "on-background": "#1b1c19",
+                    "tertiary-fixed": "#dfe8a6",
+                    "surface-variant": "#e4e2dd",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e4e2dd",
+                    "background": "#fbf9f4",
+                    "outline": "#77786c",
+                    "on-tertiary-container": "#a9b175",
+                    "on-secondary-fixed": "#241a00",
+                    "outline-variant": "#c7c7b9",
+                    "on-tertiary-fixed": "#191e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"],
+                    "display-lg": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-caps": ["Space Mono"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .ancestral-gradient {
+            background: linear-gradient(135deg, rgba(61, 68, 30, 0.03) 0%, rgba(254, 214, 91, 0.05) 100%);
+        }
+        .shimmer-text {
+            background: linear-gradient(90deg, #272e0a 0%, #735c00 50%, #272e0a 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+        .glass-panel {
+            background: rgba(251, 249, 244, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(228, 226, 221, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen" data-i18n-title-key="assistant.meta.title">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-[0_24px_48px_rgba(61,68,30,0.05)] px-margin-mobile md:px-margin-desktop py-4 flex justify-between items-center max-w-container-max mx-auto">
+<div class="text-label-caps font-label-caps tracking-widest text-primary" data-i18n="assistant.header.title">ALCHEMIST CONCIERGE</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b border-primary pb-1 font-label-caps text-label-caps" href="assistant.html" data-i18n="assistant.header.nav_consult">Consultations</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-label-caps" href="alchemy.html" data-i18n="assistant.header.nav_heritage">Heritage</a>
+<div class="flex items-center gap-4 ml-4">
+<a href="circle.html" class="material-symbols-outlined text-primary" data-icon="chat">chat</a>
+<a href="history.html" class="material-symbols-outlined text-primary" data-icon="history">history</a>
+<a href="concierge.html" class="w-8 h-8 rounded-full overflow-hidden bg-surface-container ml-2 block">
+<img class="w-full h-full object-cover" data-i18n-alt="assistant.header.avatar_alt" alt="A sophisticated close-up portrait of a high-end wellness concierge, Elias." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjNZOeyovcjNSzYhmKZ6t3Ulz1mfxBxDDc2FGrbyHgP-FEJSoXrSRdskHD4xWpRcwF9NWSmvfwqAcNNKsKMOlADN3S5K5yOwicXTtieKXW-5Wl-FCUtJMoRXn0PwyayASQp54wRZxKt-WyfUsvbJrmv-54ytjryJk0qqdGmFHqeaeGAQDxMS9MaYHxr1S93mi74xVws5s5oyWnf4B-vo2TFlTNQvxq-l7iF_1zPhSUPy_fPxLbhivOVg"/>
+</a>
+</div>
+</nav>
+</header>
+<!-- Side Navigation (Visible on Desktop) -->
+<aside class="hidden lg:flex fixed left-0 top-0 h-full w-80 bg-surface-container-low flex-col p-gutter pt-24 shadow-2xl shadow-primary/5 z-40">
+<div class="mb-12">
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="science">science</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-primary leading-tight" data-i18n="assistant.sidebar.member_no">Member No. 0422</h2>
+<p class="text-label-caps font-label-caps text-on-surface-variant opacity-70" data-i18n="assistant.sidebar.member_tag">Elite Botanical Access</p>
+</div>
+<nav class="space-y-2 flex-grow">
+<a class="flex items-center gap-3 p-3 text-primary font-bold bg-secondary-container/20 rounded-lg translate-x-1 transition-transform duration-200" href="assistant.html">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span class="font-label-caps text-label-caps" data-i18n="assistant.sidebar.nav_alchemist">Personal Alchemist</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="vault.html">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-label-caps text-label-caps" data-i18n="assistant.sidebar.nav_profile">Botanical Profile</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="history.html">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-label-caps text-label-caps" data-i18n="assistant.sidebar.nav_history">Scientific History</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="reserve.html">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+<span class="font-label-caps text-label-caps" data-i18n="assistant.sidebar.nav_rituals">Exclusive Rituals</span>
+</a>
+<a class="flex items-center gap-3 p-3 text-on-surface-variant hover:bg-surface-variant transition-all duration-300 rounded-lg" href="contact.html">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-caps text-label-caps" data-i18n="assistant.sidebar.nav_settings">Settings</span>
+</a>
+</nav>
+<a href="contact.html" class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-caps text-label-caps hover:opacity-90 transition-opacity block text-center" data-i18n="assistant.sidebar.cta_book">
+            Book Consultation
+        </a>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-80 pt-28 pb-20 px-margin-mobile md:px-margin-desktop min-h-screen relative overflow-hidden">
+<!-- Ambient Background Effect -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-30 pointer-events-none">
+
+</div>
+<div class="max-w-5xl mx-auto space-y-12 relative z-10">
+<!-- Elias Conversational Section -->
+<section class="flex flex-col md:flex-row gap-10 items-start">
+<div class="flex-shrink-0 relative">
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-xl">
+<img class="w-full h-full object-cover" data-i18n-alt="assistant.hero.avatar_alt" alt="A focused close-up of a sophisticated male concierge named Elias." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiI_Ym6kDVyJbuW_8Dg7jqT8ar6PpTgGu7lMcG0QJxr3hjxMRC9-PP5i530buW3YIraRwva2ZMfjQupb-7uQtKXgoRM5-pvwGvrJVhiApy2U77CpZeZjAxOEpynXZ3G5cCLuaBmGVru9wUQ1hlIG7JfRa8KcrnDP2v8zaM9kZsaL4OMCsxBDaF6DbiFHsTC2KKS3b3bTm36wNSfaj-zSa8tavvx7-DIYtWbdoJPCilW6g-jAlBpl0dBQ"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary-container p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+<div class="space-y-4 max-w-2xl">
+<div class="inline-block bg-surface-container-high px-4 py-1 rounded-full text-label-caps font-label-caps text-primary mb-2" data-i18n="assistant.hero.badge">
+                        Smart Assistant: Elias
+                    </div>
+<h1 class="text-headline-lg font-headline-lg text-primary leading-tight">
+                        "<span data-i18n="assistant.hero.title_pre">Your biological markers suggest a</span> <span class="shimmer-text" data-i18n="assistant.hero.title_em">Deep Lipid Infusion</span> <span data-i18n="assistant.hero.title_post">this evening.</span>"
+                    </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant" data-i18n="assistant.hero.text">
+                        Based on the latest atmospheric analysis and your skin’s current pH of 5.42, I have identified a critical need for oleic fortification. A recent heritage study confirms Avocado Lipids harmonize perfectly with your current regenerative state.
+                    </p>
+</div>
+</section>
+<!-- Data Logic & Visualization Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Data Point 1 -->
+<div class="glass-panel p-8 rounded-xl shadow-[0_24px_48px_rgba(61,68,30,0.05)] space-y-6 flex flex-col justify-between">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="science">science</span>
+<h3 class="text-label-caps font-label-caps text-on-surface-variant" data-i18n="assistant.data.d1_label">Intelligence Feed</h3>
+<p class="text-body-md font-body-md text-primary font-medium" data-i18n="assistant.data.d1_text">New Study: Bio-Synthesis of Avocado Lipids in colder climates.</p>
+</div>
+<div class="h-1 bg-outline-variant w-full overflow-hidden rounded-full">
+<div class="bg-primary h-full w-3/4"></div>
+</div>
+</div>
+<!-- Data Point 2 -->
+<div class="glass-panel p-8 rounded-xl shadow-[0_24px_48px_rgba(61,68,30,0.05)] space-y-6 flex flex-col justify-between">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="device_thermostat">device_thermostat</span>
+<h3 class="text-label-caps font-label-caps text-on-surface-variant" data-i18n="assistant.data.d2_label">Your Vitals</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-md font-headline-md text-primary" data-i18n="assistant.data.d2_value">pH 5.42</span>
+<span class="text-label-caps font-label-caps text-error" data-i18n="assistant.data.d2_alert">Alert</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant" data-i18n="assistant.data.d2_text">Slightly alkaline trend detected in the last 24 hours.</p>
+</div>
+</div>
+<!-- Data Point 3 -->
+<div class="glass-panel p-8 rounded-xl shadow-[0_24px_48px_rgba(61,68,30,0.05)] space-y-6 flex flex-col justify-between">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-secondary" data-icon="auto_graph">auto_graph</span>
+<h3 class="text-label-caps font-label-caps text-on-surface-variant" data-i18n="assistant.data.d3_label">Synergy Score</h3>
+<p class="text-headline-md font-headline-md text-primary" data-i18n="assistant.data.d3_value">98% Match</p>
+<p class="text-body-md font-body-md text-on-surface-variant" data-i18n="assistant.data.d3_text">Ancestral Trinity alignment confirmed for Ritual L-42.</p>
+</div>
+</div>
+</section>
+<!-- Recommended Ritual Section -->
+<section class="space-y-8">
+<div class="flex justify-between items-end">
+<h2 class="text-headline-md font-headline-md text-primary" data-i18n="assistant.rituals.heading">Actionable Intelligence</h2>
+<a class="text-label-caps font-label-caps text-secondary flex items-center gap-2 hover:gap-3 transition-all" href="reserve.html">
+<span data-i18n="assistant.rituals.view_all">VIEW ALL RITUALS</span> <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<!-- Ritual Cards (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Primary Recommendation -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl shadow-primary/5 flex flex-col h-full border border-surface-variant">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-i18n-alt="assistant.card1.img_alt" alt="A cinematic macro photograph of a luxurious soap bar made from avocado and olive oil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOqK3rgnnq2yV0AveUqdujq2CkP17HHr-8KtlFFuvKc1cMJq2kse-5Q3-s0xYQj9m9_u_MhybvQWan-4oWdjvlkmrM5FF68jE2jWXFhs_h0-swHfc9_v2gBcdY35wZXRsV9jV6hEZMZ65xqNcvPVDmAzqqwiGStFbeVM0WOOTQ-kYC0bJyeD0_6Kx_vqelh-f5i82ofPZcVslIUJmTINY_Gx-Ngj4r3y2sYzhTjUDIUykn1TNQvmRAmA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-caps font-label-caps" data-i18n="assistant.card1.badge">OPTIMAL CHOICE</span>
+</div>
+</div>
+<div class="p-8 space-y-6 flex-grow">
+<div class="space-y-2">
+<h3 class="text-headline-md font-headline-md text-primary" data-i18n="assistant.card1.name">Deep Lipid Infusion Ritual</h3>
+<div class="flex gap-2">
+<span class="bg-surface-container-low px-2 py-1 rounded text-[10px] font-label-caps text-on-surface-variant border border-outline-variant" data-i18n="assistant.card1.tag1">COLD-PRESSED</span>
+<span class="bg-surface-container-low px-2 py-1 rounded text-[10px] font-label-caps text-on-surface-variant border border-outline-variant" data-i18n="assistant.card1.tag2">ORGANIC</span>
+<span class="bg-surface-container-low px-2 py-1 rounded text-[10px] font-label-caps text-on-surface-variant border border-outline-variant" data-i18n="assistant.card1.tag3">OLIVE-FOCUS</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant" data-i18n="assistant.card1.desc">A 45-minute evening ritual designed to restore cellular moisture using a hyper-concentrated avocado-lipid base. Best performed between 9 PM and 11 PM for maximum absorption.</p>
+<div class="flex gap-4 pt-4">
+<a href="calendar.html" class="flex-1 bg-primary text-on-primary py-4 rounded font-label-caps text-label-caps hover:bg-tertiary transition-colors text-center" data-i18n="assistant.card1.cta_primary">ALIGN NOW</a>
+<a href="alchemy.html" class="px-6 border border-secondary text-secondary rounded font-label-caps text-label-caps hover:bg-secondary/5 transition-colors flex items-center" data-i18n="assistant.card1.cta_secondary">DETAILS</a>
+</div>
+</div>
+</div>
+<!-- Secondary Recommendation -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl shadow-primary/5 flex flex-col h-full border border-surface-variant">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-i18n-alt="assistant.card2.img_alt" alt="Cinematic macro shot of a clear botanical elixir being poured into a crystal vessel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxzCi1yh-6NtsnnYrwqLXlb2SnruSbXsCY9S1HTPO9Fmk1yqTW-ejU0382o189RPOJ550cIs5JbysILq0gFfS0Gpy7Tnb0iBmwjojDLO4lcvAd48InTYp-4WlFDGlbVcTIEw2hHe-giP3aAuCoOP2znnyOW_4JHzXmRyCiMhd0yZrf6vIOBouRQ6YaPvVJEIpjKs60ghPS4u0MiwF_fzov6s_jGuyiSteMzpH9CIi5iE0MOie3rbx0Ug"/>
+</div>
+<div class="p-8 space-y-6 flex-grow">
+<div class="space-y-2">
+<h3 class="text-headline-md font-headline-md text-primary" data-i18n="assistant.card2.name">pH Stabilization Ritual</h3>
+<div class="flex gap-2">
+<span class="bg-surface-container-low px-2 py-1 rounded text-[10px] font-label-caps text-on-surface-variant border border-outline-variant" data-i18n="assistant.card2.tag1">RAPID-ACTION</span>
+<span class="bg-surface-container-low px-2 py-1 rounded text-[10px] font-label-caps text-on-surface-variant border border-outline-variant" data-i18n="assistant.card2.tag2">COCONUT-OIL</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant" data-i18n="assistant.card2.desc">A reactive ritual focused on immediate pH correction using the alkaline-balancing properties of virgin coconut water and essential mineral salts.</p>
+<div class="flex gap-4 pt-4">
+<a href="calendar.html" class="flex-1 bg-primary text-on-primary py-4 rounded font-label-caps text-label-caps hover:bg-tertiary transition-colors text-center" data-i18n="assistant.card2.cta_primary">BOOK RITUAL</a>
+<a href="alchemy.html" class="px-6 border border-secondary text-secondary rounded font-label-caps text-label-caps hover:bg-secondary/5 transition-colors flex items-center" data-i18n="assistant.card2.cta_secondary">DETAILS</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage Data Visualization -->
+<section class="glass-panel p-10 rounded-xl space-y-8 ancestral-gradient">
+<div class="flex flex-col md:flex-row justify-between gap-6">
+<div class="space-y-4 max-w-md">
+<h2 class="text-headline-md font-headline-md text-primary" data-i18n="assistant.trinity.heading">The Ancestral Trinity Index</h2>
+<p class="text-body-md font-body-md text-on-surface-variant" data-i18n="assistant.trinity.text">The biological synergy between these three botanical pillars forms the foundation of your personalized wellness trajectory.</p>
+</div>
+<div class="flex gap-12">
+<div class="text-center">
+<div class="w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="eco">eco</span>
+</div>
+<p class="text-label-caps font-label-caps text-primary" data-i18n="assistant.trinity.olive_label">OLIVE</p>
+<p class="text-body-md font-bold" data-i18n="assistant.trinity.olive_value">88%</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full border-2 border-secondary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-secondary" data-icon="spa">spa</span>
+</div>
+<p class="text-label-caps font-label-caps text-secondary" data-i18n="assistant.trinity.coconut_label">COCONUT</p>
+<p class="text-body-md font-bold" data-i18n="assistant.trinity.coconut_value">42%</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 rounded-full border-2 border-on-tertiary-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="psychology">psychology</span>
+</div>
+<p class="text-label-caps font-label-caps text-on-tertiary-container" data-i18n="assistant.trinity.avocado_label">AVOCADO</p>
+<p class="text-body-md font-bold" data-i18n="assistant.trinity.avocado_value">94%</p>
+</div>
+</div>
+</div>
+<!-- Visualization Placeholder -->
+<div class="h-64 w-full bg-surface-container rounded-lg relative overflow-hidden flex items-center justify-center border border-outline-variant">
+
+<div class="relative text-center z-10 px-8">
+<p class="text-label-caps font-label-caps text-on-surface-variant tracking-[0.3em] mb-2 uppercase" data-i18n="assistant.trinity.mapping">Real-time Biosynergy Mapping</p>
+<div class="w-48 h-[1px] bg-primary/20 mx-auto"></div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Mobile Navigation (Hidden on Desktop) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md shadow-[0_-8px_32px_rgba(61,68,30,0.08)] flex justify-around items-center h-20 px-4 pb-safe rounded-t-xl">
+<a href="concierge.html" class="flex flex-col items-center justify-center text-primary scale-110">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="text-label-caps font-label-caps mt-1" data-i18n="assistant.tabbar.concierge">Concierge</span>
+</a>
+<a href="calendar.html" class="flex flex-col items-center justify-center text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="text-label-caps font-label-caps mt-1" data-i18n="assistant.tabbar.schedule">Schedule</span>
+</a>
+<a href="vault.html" class="flex flex-col items-center justify-center text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="text-label-caps font-label-caps mt-1" data-i18n="assistant.tabbar.vault">Vault</span>
+</a>
+<a href="home.html" class="flex flex-col items-center justify-center text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-label-caps font-label-caps mt-1" data-i18n="assistant.tabbar.profile">Profile</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for Elias's section
+        document.addEventListener('DOMContentLoaded', () => {
+            const h1 = document.querySelector('h1');
+            h1.style.opacity = '0';
+            h1.style.transform = 'translateY(20px)';
+            h1.style.transition = 'all 1s ease-out';
+            
+            setTimeout(() => {
+                h1.style.opacity = '1';
+                h1.style.transform = 'translateY(0)';
+            }, 300);
+
+            // Subtle parallax effect on ritual images
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const images = document.querySelectorAll('.ritual-img');
+                images.forEach(img => {
+                    const rate = scrolled * 0.1;
+                    img.style.transform = `translate3d(0, ${rate}px, 0)`;
+                });
+            });
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

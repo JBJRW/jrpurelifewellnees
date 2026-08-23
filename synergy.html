@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bio-Synergy Report | JR PureLife Wellness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Playfair+Display:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#3d4413",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#434a19",
+                    "on-primary-fixed": "#181e00",
+                    "inverse-on-surface": "#f2f1ec",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#241a00",
+                    "surface-container-high": "#eae8e3",
+                    "on-surface": "#1b1c19",
+                    "background": "#fbf9f4",
+                    "secondary-fixed": "#ffe088",
+                    "primary-fixed": "#dfe7b3",
+                    "primary-container": "#3d441e",
+                    "on-surface-variant": "#46483d",
+                    "secondary-container": "#fed65b",
+                    "surface-container-highest": "#e4e2dd",
+                    "outline-variant": "#c7c7b9",
+                    "on-background": "#1b1c19",
+                    "surface-bright": "#fbf9f4",
+                    "surface-container": "#f0eee9",
+                    "tertiary-fixed-dim": "#c3cc8c",
+                    "surface-variant": "#e4e2dd",
+                    "on-primary-container": "#a9b181",
+                    "secondary-fixed-dim": "#e9c349",
+                    "secondary": "#735c00",
+                    "inverse-primary": "#c3cb99",
+                    "on-tertiary-container": "#a9b175",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "primary-fixed-dim": "#c3cb99",
+                    "outline": "#77786c",
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#574500",
+                    "inverse-surface": "#30312e",
+                    "on-tertiary-fixed": "#191e00",
+                    "tertiary": "#272d00",
+                    "surface-tint": "#5b6239",
+                    "primary": "#272e0a",
+                    "surface-dim": "#dbdad5",
+                    "tertiary-fixed": "#dfe8a6",
+                    "on-primary-fixed-variant": "#434a23"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Space Mono"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f4;
+            color: #1b1c19;
+            overflow-x: hidden;
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .cinematic-bg {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0) 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .handwritten {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        .floating-card {
+            box-shadow: 0 24px 48px -12px rgba(61, 68, 30, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .floating-card:hover {
+            transform: translateY(-4px);
+        }
+        canvas#synergyCanvas {
+            filter: drop-shadow(0 0 20px rgba(169, 177, 129, 0.2));
+        }
+    </style>
+</head>
+<body class="bg-background" data-i18n-title-key="synergy.meta.title">
+<!-- Desktop Navigation SideBar -->
+<aside class="bg-surface-container-low h-screen w-64 fixed left-0 top-0 hidden md:flex flex-col flex flex-col h-full py-8 border-r border-outline-variant/20 shadow-xl shadow-primary/5 z-50">
+<div class="px-6 mb-12">
+<h1 class="font-display-lg text-headline-md text-primary tracking-tight">JR PureLife</h1>
+</div>
+<nav class="flex-grow space-y-2">
+<div class="px-4 mb-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant opacity-50 uppercase" data-i18n="synergy.sidebar.section">The Sanctuary</span>
+</div>
+<a class="text-on-surface-variant hover:text-primary mx-2 px-4 py-3 flex items-center gap-3 transition-all hover:bg-surface-container-high rounded-full" href="home.html">
+<span class="material-symbols-outlined">spa</span>
+<span class="font-label-caps text-label-caps" data-i18n="synergy.sidebar.nav_sanctuary">Sanctuary</span>
+</a>
+<!-- Active Tab: Report/Bio-Synergy -->
+<a class="bg-primary-container text-on-primary-container rounded-full mx-2 px-4 py-3 flex items-center gap-3 active:scale-95 transition-transform" href="synergy.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="font-label-caps text-label-caps" data-i18n="synergy.sidebar.nav_synergy">Bio-Synergy</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary mx-2 px-4 py-3 flex items-center gap-3 transition-all hover:bg-surface-container-high rounded-full" href="journal.html">
+<span class="material-symbols-outlined">opacity</span>
+<span class="font-label-caps text-label-caps" data-i18n="synergy.sidebar.nav_rituals">Rituals</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary mx-2 px-4 py-3 flex items-center gap-3 transition-all hover:bg-surface-container-high rounded-full" href="alchemy.html">
+<span class="material-symbols-outlined">auto_fix_high</span>
+<span class="font-label-caps text-label-caps" data-i18n="synergy.sidebar.nav_alchemy">Alchemy</span>
+</a>
+</nav>
+<div class="mt-auto px-4">
+<div class="p-4 bg-surface-container-high rounded-xl flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-i18n-alt="synergy.sidebar.avatar_alt" alt="A portrait photo of a sophisticated wellness professional with glowing skin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2_3vyAFk4g0dOEals1fg4h4XIUyKvMoOVpZ7z8eoiUGK4EJj6mZqQIOchMi7hAie1zAsJBpzcYGjYuVCetmBVkV6ZviOJUZKkCEtgSgkFzPjULyJKzdML8FjyfIMY78driB-Imkr21FyYOtc-LeBeHli7HIJeUOTkRcWlYP80DRXDsniWlQC8zlwX4mtDfRMzABSGbPQsqfQ89OTCCrBWFdB3_F9m1cs0spqoPyUqwIWCmmHqnNBYwg"/>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant" data-i18n="synergy.sidebar.profile_label">Member Profile</p>
+<p class="font-bold text-primary text-sm" data-i18n="synergy.sidebar.profile_name">Elena Vance</p>
+</div>
+</div>
+<a href="circle.html" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-caps text-label-caps tracking-widest hover:opacity-90 transition-opacity block text-center" data-i18n="synergy.sidebar.cta_consult">
+                Consult Alchemist
+            </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="md:ml-64 min-h-screen relative">
+<!-- Subtle Botanical Background -->
+<div class="absolute inset-0 w-full h-[80vh] z-0 opacity-20 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background z-10"></div>
+<img data-i18n-alt="synergy.hero.bg_alt" alt="Olive Grove at Sunset" class="w-full h-full object-cover cinematic-bg" src="https://lh3.googleusercontent.com/aida/AP1WRLtMMGRpuXLXwNBPrlVKpiZ_osXlnplo6DgRXofQ3tavJRKHWU9EhRN267EX53rwMlahY8jVBL0r6ASYNCeDi2NqvbazczA-VnlBUDtB8LcOKZepQcNSRsDD77IKgo1mrpNM_eKFEkvipe1F6z9xS1-CwBJTLn2wqrXLHkzkNqxDCUbPdJucS4cTn6auDa6Ymh-Mm3mQ_Cv5vNUFDyZ5vNxtOtemctJqymmscH9r6si0KdwcTocPCz-43rPQ"/>
+</div>
+<!-- Top Header for Mobile & Desktop Actions -->
+<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-40 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full shadow-sm shadow-primary/5">
+<div class="flex items-center gap-4">
+<span class="md:hidden material-symbols-outlined text-primary">menu</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest hidden md:block" data-i18n="synergy.header.unit">Biological Intelligence Unit</span>
+</div>
+<div class="flex items-center gap-6">
+<a href="calendar.html" class="material-symbols-outlined text-primary cursor-pointer">science</a>
+<a href="concierge.html" class="material-symbols-outlined text-primary cursor-pointer">account_circle</a>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<!-- Headline -->
+<div class="mb-16">
+<p class="font-label-caps text-label-caps text-secondary mb-4 tracking-[0.2em] uppercase" data-i18n="synergy.hero.eyebrow">Phase IV Harmony</p>
+<h2 class="font-headline-lg text-headline-lg md:text-display-lg text-primary max-w-2xl leading-tight" data-i18n="synergy.hero.title">Your Bio-Synergy Evolution</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Visualization Column -->
+<div class="lg:col-span-8 relative">
+<div class="mb-4 flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-primary" data-i18n="synergy.map.heading">Synergy Map</h3>
+<div class="flex gap-4">
+<span class="flex items-center gap-2 font-label-caps text-[10px] text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-[#a9b181]"></span> <span data-i18n="synergy.map.legend_botanicals">BOTANICALS</span>
+                            </span>
+<span class="flex items-center gap-2 font-label-caps text-[10px] text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> <span data-i18n="synergy.map.legend_biomarkers">BIOMARKERS</span>
+                            </span>
+</div>
+</div>
+<!-- Bio-Synergy Map Visualization -->
+<div class="bg-white/40 glass-panel rounded-full overflow-hidden aspect-[16/9] relative flex items-center justify-center p-8">
+<canvas class="w-full h-full" id="synergyCanvas"></canvas>
+<div class="absolute bottom-8 left-8 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<div class="w-1 h-1 bg-primary rounded-full"></div>
+<span class="text-[10px] font-label-caps text-on-surface-variant uppercase tracking-widest" data-i18n="synergy.map.convergence">Convergence Delta: +12.4%</span>
+</div>
+</div>
+</div>
+<!-- Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+<div class="bg-white p-6 rounded-xl floating-card">
+<span class="material-symbols-outlined text-secondary mb-3">shield_moon</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-70" data-i18n="synergy.metrics.m1_label">Mantle Integrity</p>
+<h4 class="font-headline-md text-headline-md text-primary mt-1" data-i18n="synergy.metrics.m1_value">98%</h4>
+<p class="text-xs text-secondary mt-2 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> <span data-i18n="synergy.metrics.m1_note">Stable State</span>
+                            </p>
+</div>
+<div class="bg-white p-6 rounded-xl floating-card">
+<span class="material-symbols-outlined text-secondary mb-3">history</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-70" data-i18n="synergy.metrics.m2_label">Biological Age</p>
+<h4 class="font-headline-md text-headline-md text-primary mt-1" data-i18n="synergy.metrics.m2_value">-2.4Y</h4>
+<p class="text-xs text-primary mt-2 flex items-center gap-1 font-medium" data-i18n="synergy.metrics.m2_note">
+                                Alignment Achieved
+                            </p>
+</div>
+<div class="bg-white p-6 rounded-xl floating-card border-b-2 border-secondary/20">
+<span class="material-symbols-outlined text-secondary mb-3">waves</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant opacity-70" data-i18n="synergy.metrics.m3_label">Nutrient Saturation</p>
+<h4 class="font-headline-md text-headline-md text-primary mt-1" data-i18n="synergy.metrics.m3_value">Peak</h4>
+<p class="text-xs text-on-surface-variant mt-2 font-medium" data-i18n="synergy.metrics.m3_note">
+                                Shea Vitamins Active
+                            </p>
+</div>
+</div>
+</div>
+<!-- Alchemist Column -->
+<div class="lg:col-span-4 space-y-gutter">
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-primary/10 text-6xl">format_quote</span>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-16 h-16 rounded-full border-2 border-secondary p-1">
+<img class="w-full h-full object-cover rounded-full" data-i18n-alt="synergy.alchemist.avatar_alt" alt="Close-up portrait of Elias Thorne, a dignified elder Master Alchemist with silver hair and wise eyes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrq3uv6jc1N63iSvDTQX7zWhFXlJITI_o_MvrYijPUbWs6yLGSR0IfI5oGmPkEhtHI47MPjysHRzPO5Eu4GUXCIJcn6JcVIpAMBLQf9fjrIbsQFXNBMigxee38pekZqsII93MXDjMqH5I0r4RgmFsXqpKssUqRB0eRNi_bIFvAlAytnWe16FlZuilvylLvEtRjYj8E_dLuxy0MNKgGuwZpDcdi4Ck2auLQQFUNchU7OEijCUVTwlPW3A"/>
+</div>
+<div>
+<h5 class="font-headline-md text-xl text-primary" data-i18n="synergy.alchemist.name">Elias Thorne</h5>
+<p class="font-label-caps text-[10px] text-secondary tracking-widest" data-i18n="synergy.alchemist.title">MASTER ALCHEMIST</p>
+</div>
+</div>
+<div class="space-y-4">
+<p class="handwritten text-body-lg text-primary leading-relaxed opacity-90 italic" data-i18n="synergy.alchemist.quote">
+                                "Your skin is breathing the language of the Trinity. The synergy between the Shea vitamins and the Olive polyphenols has reached a state of perpetual harmony. We are seeing a biological resonance that transcends standard skincare."
+                            </p>
+<div class="pt-6 border-t border-outline-variant/30 flex justify-between items-end">
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant" data-i18n="synergy.alchemist.next_label">NEXT CALIBRATION</p>
+<p class="font-bold text-primary" data-i18n="synergy.alchemist.next_date">Sept 24, 2024</p>
+</div>
+<a href="contact.html" class="bg-primary text-white p-4 rounded-full flex items-center justify-center hover:scale-105 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">event</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="bg-primary p-8 rounded-xl text-on-primary">
+<h4 class="font-headline-md text-2xl mb-2" data-i18n="synergy.cta.title">Deep Tissue Re-Calibration</h4>
+<p class="text-on-primary/80 mb-6 text-sm" data-i18n="synergy.cta.text">Schedule your seasonal adjustment with Elias to optimize your botanical intake for the coming harvest cycle.</p>
+<a href="contact.html" class="w-full bg-secondary py-4 rounded-full text-white font-label-caps text-label-caps tracking-[0.2em] hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-xl shadow-secondary/10 block text-center" data-i18n="synergy.cta.button">
+                            SCHEDULE CALIBRATION
+                        </a>
+</div>
+<!-- Ingredient Breakdown -->
+<div class="p-4 border-l border-secondary/30">
+<h6 class="font-label-caps text-label-caps text-on-surface-variant mb-4" data-i18n="synergy.trinity.heading">ACTIVE ANCESTRAL TRINITY</h6>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">spa</span>
+</div>
+<span class="text-sm font-medium" data-i18n="synergy.trinity.i1_name">Pure Cold-Pressed Olive</span>
+<span class="ml-auto text-xs font-label-caps text-secondary" data-i18n="synergy.trinity.i1_pct">42%</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+</div>
+<span class="text-sm font-medium" data-i18n="synergy.trinity.i2_name">Saturated Coconut Matrix</span>
+<span class="ml-auto text-xs font-label-caps text-secondary" data-i18n="synergy.trinity.i2_pct">28%</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded">
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+</div>
+<span class="text-sm font-medium" data-i18n="synergy.trinity.i3_name">Crushed Avocado Lipids</span>
+<span class="ml-auto text-xs font-label-caps text-secondary" data-i18n="synergy.trinity.i3_pct">30%</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / Disclosure -->
+<footer class="px-margin-mobile md:px-margin-desktop py-12 border-t border-outline-variant/10 opacity-50">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-caps text-[10px]" data-i18n="synergy.footer.copyright">© 2024 JR PURELIFE WELLNESS BIOLOGICALS</p>
+<div class="flex gap-8">
+<a class="font-label-caps text-[10px] hover:text-primary transition-colors" href="alchemy.html" data-i18n="synergy.footer.sourcing">ETHICAL SOURCING</a>
+<a class="font-label-caps text-[10px] hover:text-primary transition-colors" href="contact.html" data-i18n="synergy.footer.privacy">BIO-PRIVACY PROTOCOL</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- Bottom Navigation for Mobile -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe bg-surface/90 backdrop-blur-lg md:hidden shadow-[0_-4px_24px_rgba(61,68,30,0.08)]">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5" href="home.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-[10px]" data-i18n="synergy.tabbar.sanctuary">Sanctuary</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1.5 scale-90 transition-all duration-200" href="synergy.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-label-caps text-[10px]" data-i18n="synergy.tabbar.report">Report</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5" href="journal.html">
+<span class="material-symbols-outlined">water_drop</span>
+<span class="font-label-caps text-[10px]" data-i18n="synergy.tabbar.rituals">Rituals</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5" href="circle.html">
+<span class="material-symbols-outlined">local_pharmacy</span>
+<span class="font-label-caps text-[10px]" data-i18n="synergy.tabbar.alchemist">Alchemist</span>
+</a>
+</nav>
+<script>
+        // Synergy Map Animation
+        const canvas = document.getElementById('synergyCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            const rect = canvas.parentNode.getBoundingClientRect();
+            canvas.width = rect.width * window.devicePixelRatio;
+            canvas.height = rect.height * window.devicePixelRatio;
+            ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let time = 0;
+        const lines = 12;
+        const points = 30;
+
+        function drawSynergyLines() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const w = canvas.width / window.devicePixelRatio;
+            const h = canvas.height / window.devicePixelRatio;
+            
+            ctx.lineWidth = 1.5;
+            
+            for (let i = 0; i < lines; i++) {
+                ctx.beginPath();
+                // Alternate colors between botanical and biomarker
+                const color = i % 2 === 0 ? '#a9b181' : '#735c00';
+                ctx.strokeStyle = color;
+                ctx.globalAlpha = 0.3 + Math.sin(time + i) * 0.1;
+                
+                for (let j = 0; j < points; j++) {
+                    const x = (j / (points - 1)) * w;
+                    const y = (h / 2) + 
+                             Math.sin(j * 0.2 + time + i) * 40 + 
+                             Math.cos(j * 0.1 - time * 0.5 + i) * 30;
+                    
+                    if (j === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            }
+
+            // Draw intersection points (synergy nodes)
+            ctx.globalAlpha = 0.6;
+            ctx.fillStyle = '#272e0a';
+            for (let k = 0; k < 8; k++) {
+                const nx = w * (0.2 + (k * 0.1));
+                const ny = (h/2) + Math.sin(time * 0.8 + k) * 50;
+                ctx.beginPath();
+                ctx.arc(nx, ny, 3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Subtle ring
+                ctx.beginPath();
+                ctx.arc(nx, ny, 6 + Math.sin(time * 2 + k) * 2, 0, Math.PI * 2);
+                ctx.strokeStyle = '#272e0a';
+                ctx.stroke();
+            }
+
+            time += 0.015;
+            requestAnimationFrame(drawSynergyLines);
+        }
+
+        drawSynergyLines();
+
+        // Smooth scroll for TRUE in-page anchors only (checked at click time,
+        // since nav-fix.js rewrites "#" nav links into real page URLs after
+        // this script runs; without this check, clicking a nav link would
+        // preventDefault() and fail against a non-existent selector).
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href') || '';
+                if (!href.startsWith('#') || href === '#') return;
+                const target = document.querySelector(href);
+                if (!target) return;
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

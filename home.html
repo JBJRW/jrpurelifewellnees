@@ -1,0 +1,350 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>JR PureLife Wellness | The Ancestral Trinity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Hanken+Grotesk:wght@400;500&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#dfe7b3",
+                        "surface-container": "#f0eee9",
+                        "tertiary-container": "#3d4413",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#745c00",
+                        "on-primary-fixed-variant": "#434a23",
+                        "secondary-container": "#fed65b",
+                        "surface-container-high": "#eae8e3",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed": "#191e00",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#c3cb99",
+                        "on-tertiary-container": "#a9b175",
+                        "outline-variant": "#c7c7b9",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#181e00",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "surface": "#fbf9f4",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#a9b181",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary-fixed": "#241a00",
+                        "background": "#fbf9f4",
+                        "tertiary-fixed-dim": "#c3cc8c",
+                        "primary": "#272e0a",
+                        "surface-container-low": "#f5f3ee",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-surface-variant": "#46483d",
+                        "surface-tint": "#5b6239",
+                        "on-tertiary-fixed-variant": "#434a19",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#30312e",
+                        "tertiary-fixed": "#dfe8a6",
+                        "inverse-primary": "#c3cb99",
+                        "outline": "#77786c",
+                        "primary-container": "#3d441e",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "surface-dim": "#dbdad5",
+                        "inverse-on-surface": "#f2f1ec",
+                        "tertiary": "#272d00",
+                        "secondary": "#735c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["Space Mono"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ancestral-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0) 0%, rgba(251, 249, 244, 1) 100%);
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary" data-i18n-title-key="home.meta.title">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto bg-surface/80 backdrop-blur-md transition-all duration-300">
+<div class="flex items-center gap-4">
+<span class="font-display-lg text-headline-md text-primary tracking-tight">JR PureLife Wellness</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-primary border-b border-secondary-fixed pb-1" href="reserve.html" data-i18n="home.nav.shop">Shop</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="alchemy.html" data-i18n="home.nav.our_story">Our Story</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="journal.html" data-i18n="home.nav.journal">Wellness Journal</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">search</button>
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">shopping_cart</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply z-10"></div>
+<img alt="Ancestral Trinity botanical oils on a rustic table" data-i18n-alt="home.hero.img_alt" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ahciD9jzq0xy6GcCsm7RlfYivV0RCYucrXWzw7ug4YhGnYzwdU7bks3S9wqrTghy0YpU49cK_J_For9e9OJ9phsb4WU8qesrR7ij2G3S8JbWvRKr_A3Ao6rU23QPFJI-1VabpSIjzJlNMPlUrW5sFNTB6XELtgn9X-hKVbdHrQuoslhUyG1kbEf-F8SJEeFiRP868g66lpqt6u19uV0fxVcQ92erMsC9Nzi6r-XOYkFTIoJAzLp5IWVfTts2rLN2GefCn_cyp1rK">
+</div>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl">
+<span class="font-label-caps text-label-caps text-on-primary tracking-[0.3em] mb-6 block uppercase opacity-90" data-i18n="home.hero.eyebrow">Cold Saponification</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-8 leading-tight" data-i18n="home.hero.title">
+                    The Ancestral Trinity
+                </h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-12 max-w-2xl mx-auto leading-relaxed italic" data-i18n="home.hero.subtitle">
+                    Restore your skin's natural intelligence lost through time. A biological ritual born from olive, coconut, and avocado.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<a href="reserve.html" class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all active:scale-95 text-center" data-i18n="home.hero.cta_primary">Explore Collection</a>
+<button class="border border-on-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all active:scale-95" data-i18n="home.hero.cta_secondary">
+                        Our Science
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-32 ancestral-gradient z-20"></div>
+</section>
+<!-- Ancestral Trinity Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-4" data-i18n="home.pillars.heading">The Three Pillars</h2>
+<div class="w-24 h-1 bg-secondary-fixed mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Olive -->
+<div class="group p-8 bg-surface-container-low border-b-2 border-transparent hover:border-primary transition-all duration-500 shadow-sm shadow-primary/5">
+<div class="mb-8 overflow-hidden">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">eco</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="home.pillars.olive.name">Olive</h3>
+<span class="font-label-caps text-label-caps text-tertiary block mb-4" data-i18n="home.pillars.olive.tag">THE SHIELD</span>
+</div>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.olive.point1_strong">Antioxidant shield:</strong> <span data-i18n="home.pillars.olive.point1_text">Neutralizes free radicals thanks to its high concentration of Vitamin E.</span></span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.olive.point2_strong">Elasticity:</strong> <span data-i18n="home.pillars.olive.point2_text">Preserves cellular structure for visibly firmer skin.</span></span>
+</li>
+</ul>
+</div>
+<!-- Coconut -->
+<div class="group p-8 bg-surface-container-low border-b-2 border-transparent hover:border-primary transition-all duration-500 shadow-sm shadow-primary/5">
+<div class="mb-8 overflow-hidden">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">water_drop</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="home.pillars.coconut.name">Coconut</h3>
+<span class="font-label-caps text-label-caps text-tertiary block mb-4" data-i18n="home.pillars.coconut.tag">THE PURITY</span>
+</div>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.coconut.point1_strong">Antibacterial purification:</strong> <span data-i18n="home.pillars.coconut.point1_text">Lauric acid that deep cleans without aggression.</span></span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.coconut.point2_strong">Creamy lather:</strong> <span data-i18n="home.pillars.coconut.point2_text">A rich texture that respects the natural lipid mantle.</span></span>
+</li>
+</ul>
+</div>
+<!-- Avocado -->
+<div class="group p-8 bg-surface-container-low border-b-2 border-transparent hover:border-primary transition-all duration-500 shadow-sm shadow-primary/5">
+<div class="mb-8 overflow-hidden">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">compost</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="home.pillars.avocado.name">Avocado</h3>
+<span class="font-label-caps text-label-caps text-tertiary block mb-4" data-i18n="home.pillars.avocado.tag">THE REBIRTH</span>
+</div>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.avocado.point1_strong">Deep regeneration:</strong> <span data-i18n="home.pillars.avocado.point1_text">Phytosterols that stimulate the recovery of damaged tissue.</span></span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-sm text-secondary pt-1" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span class=""><strong data-i18n="home.pillars.avocado.point2_strong">Collagen:</strong> <span data-i18n="home.pillars.avocado.point2_text">Boosts natural production for a silky, youthful touch.</span></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Botanical Intelligence Story Section -->
+<section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sunlight filtering through olive trees in a Tuscan grove" data-i18n-alt="home.story.img_alt" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8JHKKRzanEdnMtd7GFyVooFVYNyEmY0v67xxT2hG6Xe4Q4pj5HC_xm85N7u2yQEBe9qcsOHVluwPuD1loCMOtEJqo_B_I0G7W7w9CPLLt_9EodHAMNJcSFTMGr0I7PsNfc27yS5ImZ980PmRdLQrxbeVc0o1RVvBZ4wEd8921N2U-EnKUTmRaq6p2hiLTbzHK4yQ_n7BWW62XJ6ssIwOfIyeqaCaDmNCLQvYGHFi1v2lM3s6wIWaZez5pcB29BS1eiW6iseBJbACw">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-3xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-8 italic" data-i18n="home.story.heading">
+                    Botanical Intelligence
+                </h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-10 leading-relaxed" data-i18n="home.story.text">
+                    A cinematic journey of 1:30 min to the heart of our heritage. Discover the art of cold saponification, where time is our most precious ingredient to preserve plant intelligence.
+                </p>
+<button class="flex items-center gap-4 mx-auto group">
+<span class="w-16 h-16 rounded-full border border-on-primary flex items-center justify-center group-hover:bg-on-primary group-hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</span>
+<span class="font-label-caps text-label-caps text-on-primary tracking-widest group-hover:translate-x-2 transition-transform uppercase" data-i18n="home.story.watch">Watch the Process</span>
+</button>
+</div>
+</section>
+<!-- Product Spotlight Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-bright overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<img alt="Artisanal soap bar by JR PureLife Wellness" data-i18n-alt="home.spotlight.img_alt" class="w-full h-auto shadow-2xl shadow-primary/10 rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzQzMGwpeNAWx27xOsSzFpd1L6RHtGdL80lxh0W99yRiAlYRLR2kOD7zyrBRmz_7ig7GkkIYfam6LbbGR7bFyRGDJBkBKxfe2S_-Mp62re_2q-xzhEhEkcftW2jMFdYVamr2Ilp1I5AfI4coi_D27K6sxf_hXoVJB7bBlpgU_FHFStt7aK1CXua85P_sEX8fnh-uqQ65advYByG1hdUK4I0c2la14HINl16Jg-IwRa02Bl3UqchJr6UVbFTJuydkjoyMiVBK2MSn3T">
+<div class="absolute -bottom-6 -right-6 p-6 bg-surface border border-outline-variant/20 shadow-xl">
+<span class="font-label-caps text-label-caps text-secondary block mb-1" data-i18n="home.spotlight.badge">LIMITED EDITION</span>
+<span class="font-headline-md text-headline-md text-primary" data-i18n="home.spotlight.product_name">Master Bar</span>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest mb-6 block" data-i18n="home.spotlight.eyebrow">Botanical Symphony</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-8" data-i18n="home.spotlight.heading">Perfect Balance</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed" data-i18n="home.spotlight.text">
+                        Each bar is a biological work of art. Formulated with scientific precision to balance skin pH while delivering a concentrated dose of phytonutrients. It's not just cleansing; it's the restoration of the skin's ecosystem.
+                    </p>
+<div class="space-y-6 mb-12">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">science</span>
+</div>
+<div>
+<h4 class="font-body-lg font-bold text-primary" data-i18n="home.spotlight.feature1_title">Certified Purity</h4>
+<p class="text-sm text-on-surface-variant" data-i18n="home.spotlight.feature1_text">Free from sulfates, parabens, and synthetic fragrances.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">temp_preferences_custom</span>
+</div>
+<div>
+<h4 class="font-body-lg font-bold text-primary" data-i18n="home.spotlight.feature2_title">6-Week Curing</h4>
+<p class="text-sm text-on-surface-variant" data-i18n="home.spotlight.feature2_text">Absolute rest to ensure extreme softness.</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary-container transition-all shadow-lg shadow-primary/20" data-i18n="home.spotlight.cta">
+                        Purchase Ritual
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-start gap-gutter bg-primary text-on-primary border-t border-tertiary-container/20">
+<div class="max-w-sm">
+<img alt="JR PureLife Wellness Gold Logo" data-i18n-alt="home.footer.logo_alt" class="w-24 h-24 mb-6 invert brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8z11LWVNNpMx3RPWuQ83eunAcc7Gen6zpSPgeec_zQ6CslPOCoTZAh1x_OcgETyvob7O0_KhYrW6zhZ2YBSePUsr5pRj5klSVTknmK7-Hs4zgIYjh8iEnfa9rfajPjeXh0f4bk1e9CuUPhD9rvpgS2ZW5xjqdcxiStKvOvcmsDM1wP1tuPJVrnGNvDWwC4aublSlFW5r4UUdwJzZ_OlxoD1lbEHD4aG8-ybaH5vrFzUYay7vqSjv8U_I--ZGEW49LDHITaiczRU7p">
+<p class="font-display-lg text-headline-md text-secondary-fixed mb-4">JR PureLife Wellness</p>
+<p class="font-body-md text-surface-variant/80 mb-8 italic" data-i18n="home.footer.tagline">
+                "Nature at its peak."
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-secondary-fixed/60 mb-2" data-i18n="home.footer.company_label">Company</span>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="alchemy.html" data-i18n="home.footer.sustainability">Sustainability</a>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="contact.html" data-i18n="home.footer.wholesale">Wholesale</a>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="contact.html" data-i18n="home.footer.contact_us">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-secondary-fixed/60 mb-2" data-i18n="home.footer.legal_label">Legal</span>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="contact.html" data-i18n="home.footer.privacy">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="contact.html" data-i18n="home.footer.terms">Terms of Service</a>
+<a class="font-label-caps text-label-caps text-surface-variant/80 hover:text-secondary-fixed transition-colors" href="contact.html" data-i18n="home.footer.shipping">Shipping</a>
+</div>
+</div>
+<div class="w-full md:w-auto border-t md:border-t-0 border-surface-variant/20 pt-8 md:pt-0">
+<p class="font-label-caps text-[10px] text-surface-variant/60 uppercase tracking-widest" data-i18n="home.footer.copyright">
+                © 2024 JR PureLife Wellness. Nature at its peak.
+            </p>
+<div class="flex gap-6 mt-6">
+<a class="material-symbols-outlined text-secondary-fixed" href="#">facebook</a>
+<a class="material-symbols-outlined text-secondary-fixed" href="#">camera</a>
+<a class="material-symbols-outlined text-secondary-fixed" href="#">spa</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll behavior for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md', 'bg-surface/95');
+                nav.classList.remove('py-4', 'bg-surface/80');
+            } else {
+                nav.classList.add('py-4', 'bg-surface/80');
+                nav.classList.remove('py-2', 'shadow-md', 'bg-surface/95');
+            }
+        });
+
+        // Micro-interactions for primary buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+    </script>
+
+
+<div class="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-surface/80 backdrop-blur-md p-3 border border-outline-variant/20 shadow-lg rounded-sm"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></div><span class="font-label-caps text-[10px] tracking-widest text-primary uppercase" data-i18n="home.misc.ambient_frequency">Ambient Frequency: 432Hz Active</span></div><script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

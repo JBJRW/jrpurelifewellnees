@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ORACLE | The Private Reserve Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dbdad5",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-container": "#a9b175",
+                        "background": "#fbf9f4",
+                        "primary-container": "#3d441e",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#735c00",
+                        "on-primary-fixed-variant": "#434a23",
+                        "secondary-fixed": "#ffe088",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed-dim": "#c3cc8c",
+                        "primary-fixed-dim": "#c3cb99",
+                        "tertiary-fixed": "#dfe8a6",
+                        "surface-variant": "#e4e2dd",
+                        "on-primary-fixed": "#181e00",
+                        "outline": "#77786c",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-surface": "#1b1c19",
+                        "on-tertiary-fixed": "#191e00",
+                        "secondary-container": "#fed65b",
+                        "primary": "#272e0a",
+                        "on-surface-variant": "#46483d",
+                        "surface-bright": "#fbf9f4",
+                        "surface-tint": "#5b6239",
+                        "tertiary-container": "#3d4413",
+                        "on-primary-container": "#a9b181",
+                        "surface-container": "#f0eee9",
+                        "inverse-primary": "#c3cb99",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "outline-variant": "#c7c7b9",
+                        "on-background": "#1b1c19",
+                        "primary-fixed": "#dfe7b3",
+                        "on-secondary-fixed-variant": "#574500",
+                        "inverse-surface": "#30312e",
+                        "tertiary": "#272d00",
+                        "surface-container-high": "#eae8e3",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-container": "#745c00",
+                        "on-tertiary-fixed-variant": "#434a19",
+                        "surface": "#fbf9f4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-caps": ["Space Mono"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .ancestral-gradient {
+            background: linear-gradient(to bottom, rgba(251, 249, 244, 0) 0%, rgba(251, 249, 244, 1) 100%);
+        }
+        .ethereal-glow {
+            box-shadow: 0 0 40px rgba(61, 68, 30, 0.08);
+        }
+        .botanical-mask {
+            mask-image: linear-gradient(to right, black, transparent);
+        }
+    </style>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden" data-i18n-title-key="reserve.meta.title">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-[0_24px_48px_rgba(61,68,30,0.05)] transition-all duration-500">
+<div class="flex justify-between items-center px-margin-desktop py-unit w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-display-lg text-display-lg tracking-tight text-primary" href="vault.html">ORACLE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-lg text-body-lg text-primary font-bold border-b border-secondary cursor-pointer active:scale-95 transition-transform" href="reserve.html" data-i18n="reserve.nav.archive">The Archive</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="reserve.html" data-i18n="reserve.nav.extractions">Rare Extractions</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="alchemy.html" data-i18n="reserve.nav.science">Botanical Science</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 cursor-pointer active:scale-95" href="journal.html" data-i18n="reserve.nav.rituals">Rituals</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-outline/30 px-2 py-1">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm italic placeholder-outline/50 w-48" placeholder="Search the Reserve..." data-i18n-placeholder="reserve.nav.search_placeholder" type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70" data-icon="account_circle">account_circle</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full overflow-hidden">
+<img alt="The Private Reserve Archive Hero" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGecft9XbLJSV38tw77A_vaXBTJ1VBnUIAjN_imfPWDoorfRairEPqy0qCawRMqXV7W0IfBENA1YQBa8bVLK3qOXvzmFvIW-8-d96Y-LbLx6Z-f-TAsCzz85m8f6PbZE1W_jxeLvi3lDM-moIOWGaRY680T6yQq04PiSz6Ous_DKljryAlYSlwLl9-Ci64-n01PqnkIKRCUbr1hsby_Ckx-8DrOVH66PdLDtrZSvb4ANIwAqOCSw11A"/>
+<div class="absolute inset-0 bg-black/10"></div>
+<div class="absolute inset-0 ancestral-gradient"></div>
+<div class="relative z-10 h-full flex flex-col justify-end items-center text-center pb-24 px-margin-desktop">
+<span class="font-label-caps text-label-caps text-secondary mb-4 tracking-[0.3em]" data-i18n="reserve.hero.eyebrow">RESERVA PRIVADA</span>
+<h1 class="font-display-lg text-display-lg text-primary max-w-4xl mb-6" data-i18n="reserve.hero.title">The Private Reserve Archive</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto" data-i18n="reserve.hero.subtitle">
+                    A biological sanctuary for our most rare and sacred botanical extractions. Accessible only to the ORACLE inner circle, these specimens represent the pinnacle of ancestral intelligence.
+                </p>
+<div class="mt-12 flex flex-col items-center gap-4 animate-bounce">
+<span class="font-label-caps text-[10px] text-outline" data-i18n="reserve.hero.scroll">SCROLL TO OBSERVE</span>
+<div class="w-[1px] h-12 bg-secondary/40"></div>
+</div>
+</div>
+</section>
+<!-- Narrative Section: Biological Integrity -->
+<section class="py-24 px-margin-desktop bg-surface-container-low/30 overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5" data-aos="fade-up">
+<span class="font-label-caps text-label-caps text-secondary mb-6 block" data-i18n="reserve.philosophy.eyebrow">OUR PHILOSOPHY</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 leading-tight"><span data-i18n="reserve.philosophy.heading_l1">Biological Science,</span> <br/><span data-i18n="reserve.philosophy.heading_l2">Sacred Artistry.</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6" data-i18n="reserve.philosophy.text1">
+                        Each elixir in the Private Reserve undergoes a proprietary "Ancestral Trinity" distillation process. We synchronize the harvest of our Olea, Cocos, and Persea with lunar cycles to ensure the molecular integrity of the botanical oils remains undisturbed.
+                    </p>
+<p class="font-body-md text-body-md text-outline" data-i18n="reserve.philosophy.text2">
+                        These are not mere products; they are living chronological records of nature's intelligence, cured in temperature-controlled glass vaults for a minimum of 365 days.
+                    </p>
+</div>
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/3] w-full bg-white ethereal-glow p-4 relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic macro shot of a dark amber glass bottle sitting on a stone pedestal inside a sun-drenched ancient greenhouse. Light beams filter through gothic arched windows, illuminating floating dust particles and lush green foliage. The mood is ethereal, high-end, and deeply serene, emphasizing the artisanal heritage of the JR PureLife Wellness brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0L8IP0fRDNagmI2tYxlsDa14uv6f4I44Iv7cJ3W8SPB2BXTSzV9dUjeLyy0IMFMZBkAaK6OPLp5U7uoGkNfn5k5SkzPSqoh8BNzsyC6XzpW5lmJPs6o4meJAkUBzuLhQqoJb7oUnoaIeicKnV_9cF2-8QUBKJU2IU0zMJgg640yR6lsKBCNK95cQgVHdOjb0OZUFWtqNwsZcEhosZt0DmttRfV_ojHyvx-MZOvgN0nIhQ4OiHZqfLAg"/>
+<div class="absolute bottom-10 right-10 bg-background/90 backdrop-blur-md p-6 border-l-4 border-secondary max-w-xs shadow-xl">
+<span class="font-label-caps text-[10px] text-secondary mb-2 block" data-i18n="reserve.philosophy.batch_label">BATCH N. 072</span>
+<p class="font-body-md text-sm italic text-primary" data-i18n="reserve.philosophy.quote">"The extraction captured a specific atmospheric moisture profile present only once every decade."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Curated Archive -->
+<section class="py-24 px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary" data-i18n="reserve.archive.heading">Limited Edition Specimens</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic" data-i18n="reserve.archive.subheading">Chronicles of Extraction &amp; Maturation</p>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 border border-outline/20 font-label-caps text-label-caps text-on-surface-variant hover:border-secondary transition-colors" data-i18n="reserve.archive.sort_btn">SORT BY CURE DATE</button>
+<button class="px-6 py-2 border border-outline/20 font-label-caps text-label-caps text-on-surface-variant hover:border-secondary transition-colors" data-i18n="reserve.archive.filter_btn">FILTER ORIGIN</button>
+<a href="checkout-superpack.html" class="px-6 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps hover:opacity-90 transition-all" data-i18n="reserve.archive.superpack_btn">SUPER PACK BUNDLE</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Item 1 -->
+<div class="group flex flex-col gap-6">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img alt="Extraction 001: Golden Olea" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXCD4q_flvUAm1GMI1njqZ0e4g1VoKGvU9Or4NBl2A_S612RN78RacJeG_CnxsZr42amefit_5MI7OA-NE9WLeEi0j1wZ_0EHDlSE_IBTZ75iAMpYjiwM2a4GemT5V8tnyLJx7luRr0YhV-JosgzK-y5X_bwokijz4d0BQyd6wkptzwHQrc8SoTD3IQKuhJidbVlZx5NuZ2aDrtgCJbm5IHaIkpGEpzHdcZ65BDfcnGi_-8Wz4eEjziA"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 font-label-caps text-[10px] tracking-widest uppercase" data-i18n="reserve.p1.badge">Member Exclusive</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors" data-i18n="reserve.p1.name">Extraction 001: Golden Olea</h3>
+<p class="font-label-caps text-label-caps text-secondary mt-1" data-i18n="reserve.p1.subtitle">OLIVE EMBRYO ELIXIR</p>
+</div>
+<span class="font-display-lg text-[24px] text-outline/30">01</span>
+</div>
+<div class="grid grid-cols-2 gap-4 border-y border-outline/10 py-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.origin_label">Botanical Origin</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p1.origin">Peloponnese, Greece</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.date_label">Cure Date</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p1.date">Autumn Equinox 2023</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-white font-label-caps text-label-caps tracking-widest hover:bg-primary-container transition-all flex items-center justify-center gap-2 group/btn" onclick="window.location.href='contact.html'">
+<span data-i18n="reserve.card.request_btn">REQUEST EXTRACTION</span>
+                                <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex flex-col gap-6">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A macro high-detail shot of thick, glowing translucent green botanical oil being poured into a marble bowl. Tiny gold leaf particles are suspended in the liquid, creating a shimmering ripple effect. The lighting is focused and cinematic, reflecting off the surface like liquid gold. The background is a soft-focus laboratory setting with antique glass beakers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7uV1LCImXQwby_Da75hskqKuqK-Jd_VDVeZRe1smLr91JpPl4nHqXqb5Za2rWAci_rPCPheZNA5CJsm_LSUJD7SLw_SX-lh4aEbD1QVQWmip8EMgd_8XP-PME1V_VkUH7FUOPqi-J82OFQiDgeONldqbQYItIOYZ0-TJ-4_j7tp5AxSiCwLxbVVpgyk2bHf178bQ6-lu-HBdW6e4mQivb6tMD6RDHYajG9toFC3JhxNwS6T2DfufaHQ"/>
+<div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 font-label-caps text-[10px] tracking-widest uppercase" data-i18n="reserve.p2.badge">Rare Specimen</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors" data-i18n="reserve.p2.name">Extraction 004: Cocos Nucifera</h3>
+<p class="font-label-caps text-label-caps text-secondary mt-1" data-i18n="reserve.p2.subtitle">VIRGIN COCONUT HEART</p>
+</div>
+<span class="font-display-lg text-[24px] text-outline/30">04</span>
+</div>
+<div class="grid grid-cols-2 gap-4 border-y border-outline/10 py-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.origin_label">Botanical Origin</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p2.origin">Coastal Philippines</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.date_label">Cure Date</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p2.date">Winter Solstice 2022</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-white font-label-caps text-label-caps tracking-widest hover:bg-primary-container transition-all flex items-center justify-center gap-2 group/btn" onclick="window.location.href='contact.html'">
+<span data-i18n="reserve.card.request_btn">REQUEST EXTRACTION</span>
+                                <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex flex-col gap-6">
+<div class="relative aspect-[3/4] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A minimalist composition of a raw, cracked open avocado resting on an organic linen surface. Beside it, a small clear vial of rich, dark green avocado oil sits elegantly. The lighting is high-key and airy, suggesting absolute purity. The aesthetic is extremely high-end, focusing on the tactile texture of the fruit and the liquid gold of the oil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRcWdQhGCQw2tgCCCD38VtM0fTvOlZI17BddSBgX04EMQo4y41Q2_267YrZyK0rJp8AR44NthsCYXfgH99DmbQXmT9jsJxOevuZXz2mm0s718Na7BApxlVbCl9EN5bIuViQAlLBqIVn0XaSW9d06G5V2ah12xTA2rz6Odh9MeQiPSCgwDpC5OHfwnDivTHZKckw-DA59E7nMJsXPz5twTx_LfVZbcNkfywtZYVGNUqUF8UimAy7F5EIA"/>
+<div class="absolute top-4 left-4 bg-on-surface-variant text-white px-3 py-1 font-label-caps text-[10px] tracking-widest uppercase" data-i18n="reserve.p3.badge">Last of Batch</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors" data-i18n="reserve.p3.name">Extraction 009: Persea Oil</h3>
+<p class="font-label-caps text-label-caps text-secondary mt-1" data-i18n="reserve.p3.subtitle">COLD-PRESSED AVOCADO CORE</p>
+</div>
+<span class="font-display-lg text-[24px] text-outline/30">09</span>
+</div>
+<div class="grid grid-cols-2 gap-4 border-y border-outline/10 py-4">
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.origin_label">Botanical Origin</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p3.origin">Michoacán Highlands</p>
+</div>
+<div>
+<p class="font-label-caps text-[10px] text-outline mb-1 uppercase" data-i18n="reserve.card.date_label">Cure Date</p>
+<p class="font-body-md text-sm text-on-surface" data-i18n="reserve.p3.date">Spring Equinox 2024</p>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-white font-label-caps text-label-caps tracking-widest hover:bg-primary-container transition-all flex items-center justify-center gap-2 group/btn" onclick="window.location.href='contact.html'">
+<span data-i18n="reserve.card.request_btn">REQUEST EXTRACTION</span>
+                                <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-desktop bg-primary text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full botanical-mask opacity-20 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="A detailed, ethereal illustration of an olive branch with fruit, rendered in a scientific botanical style with thin gold lines against a dark olive green background. The style is classic and authoritative, evoking a sense of ancient wisdom and laboratory precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpZXOnLwMME8EckhTs7_L6Q-vOaOibekenXjUISiXKDfMshgNiqNi0BZiIaC6KDt0o7cv7YwtnW1bBhsuz_tMEnqMw-TlvfbL84bvTZX2dGaqbx-RQ__EfwFsejMUPMSeQF7mfTvCX3QUX2iFXkDif1uYt1ZwIjBdK3QzQGdJ0sEechb0gptfq53GCrQWiKC-ZW0bjg_z4ygtgcWPY8RsG8oru9GRog_Zn4gbxGGR5YLw4JC0QDQj5Hw"/>
+</div>
+<div class="max-w-3xl relative z-10">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-6 block tracking-widest" data-i18n="reserve.cta.eyebrow">THE INVITATION</span>
+<h2 class="font-display-lg text-display-lg mb-8" data-i18n="reserve.cta.heading">Can your ancestry be distilled into a single ritual?</h2>
+<p class="font-body-lg text-body-lg text-surface-variant mb-12 leading-relaxed" data-i18n="reserve.cta.text">
+                    Accessing the Private Reserve is a privilege reserved for those who understand that wellness is a generational dialogue. Our curators are available for private botanical consultations to tailor a reserve selection to your biological blueprint.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps tracking-widest hover:scale-105 transition-transform" onclick="window.location.href='contact.html'" data-i18n="reserve.cta.apply_btn">APPLY FOR MEMBERSHIP</button>
+<button class="px-10 py-5 border border-surface-variant text-surface-variant font-label-caps text-label-caps tracking-widest hover:bg-white/10 transition-all" onclick="window.location.href='contact.html'" data-i18n="reserve.cta.consult_btn">RESERVE CONSULTATION</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-low border-t border-outline/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-gutter w-full max-w-container-max mx-auto">
+<div class="flex flex-col gap-2">
+<span class="font-headline-md text-headline-md text-primary">ORACLE</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant" data-i18n="reserve.footer.copyright">© 2024 JR PURELIFE WELLNESS. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline decoration-secondary/30 transition-opacity duration-200 hover:opacity-80" href="contact.html" data-i18n="reserve.footer.privacy">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline decoration-secondary/30 transition-opacity duration-200 hover:opacity-80" href="alchemy.html" data-i18n="reserve.footer.sourcing">Ethical Sourcing</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline decoration-secondary/30 transition-opacity duration-200 hover:opacity-80" href="product.html" data-i18n="reserve.footer.heritage">Ancestral Heritage</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline decoration-secondary/30 transition-opacity duration-200 hover:opacity-80" href="alchemy.html" data-i18n="reserve.footer.standards">Laboratory Standards</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">shield_with_heart</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">smb_share</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for the navbar on scroll
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('py-2', 'shadow-lg');
+                nav.classList.remove('py-unit');
+            } else {
+                nav.classList.remove('py-2', 'shadow-lg');
+                nav.classList.add('py-unit');
+            }
+        };
+
+        // Subtle parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImg = document.querySelector('section img');
+            if (heroImg) {
+                heroImg.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

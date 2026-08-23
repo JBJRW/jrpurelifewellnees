@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ancestral Rituals | JR PureLife Wellness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;family=Space+Mono:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#c3cc8c",
+                    "surface-tint": "#5b6239",
+                    "tertiary-fixed": "#dfe8a6",
+                    "primary-container": "#3d441e",
+                    "on-secondary-fixed": "#241a00",
+                    "surface-container-highest": "#e4e2dd",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-variant": "#e4e2dd",
+                    "secondary-container": "#fed65b",
+                    "outline-variant": "#c7c7b9",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#eae8e3",
+                    "on-surface": "#1b1c19",
+                    "inverse-primary": "#c3cb99",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#3d4413",
+                    "on-primary-fixed-variant": "#434a23",
+                    "surface-bright": "#fbf9f4",
+                    "primary-fixed-dim": "#c3cb99",
+                    "on-surface-variant": "#46483d",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-container": "#a9b175",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#30312e",
+                    "primary": "#272e0a",
+                    "outline": "#77786c",
+                    "inverse-on-surface": "#f2f1ec",
+                    "primary-fixed": "#dfe7b3",
+                    "on-tertiary-fixed": "#191e00",
+                    "surface-dim": "#dbdad5",
+                    "secondary-fixed": "#ffe088",
+                    "on-primary-container": "#a9b181",
+                    "on-error": "#ffffff",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#181e00",
+                    "on-background": "#1b1c19",
+                    "on-secondary-container": "#745c00",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#735c00",
+                    "on-tertiary-fixed-variant": "#434a19",
+                    "surface-container": "#f0eee9",
+                    "on-secondary-fixed-variant": "#574500",
+                    "error": "#ba1a1a",
+                    "tertiary": "#272d00",
+                    "background": "#fbf9f4",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Space Mono"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolling-text {
+            animation: scroll 40s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .ancestral-trinity-bullet {
+            width: 8px;
+            height: 8px;
+            background-color: #735c00;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed antialiased overflow-x-hidden" data-i18n-title-key="rituals.meta.title">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<a href="home.html" class="font-headline-md text-headline-md text-primary italic cursor-pointer transition-opacity active:opacity-70 block">JR PureLife Wellness</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html" data-i18n="rituals.nav.home">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-secondary hover:text-primary transition-colors duration-300" href="rituals.html" data-i18n="rituals.nav.rituals">Rituals</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="reserve.html" data-i18n="rituals.nav.boutique">Boutique</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="alchemy.html" data-i18n="rituals.nav.ingredients">Ingredients</a>
+</nav>
+<div class="flex gap-4 items-center">
+<a href="cart.html" class="material-symbols-outlined text-primary cursor-pointer transition-opacity active:opacity-70" data-icon="shopping_bag">shopping_bag</a>
+<a href="concierge.html" class="material-symbols-outlined text-primary cursor-pointer transition-opacity active:opacity-70" data-icon="person">person</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full parallax-bg" data-i18n-alt="rituals.hero.bg_alt" alt="A cinematic, high-end bathroom sanctuary filled with soft, warm morning light filtering through steam." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsPlO_LQLUMB6oiEqQScyqOEUKgRfXTchmVHtoRYsl-iYSxpB_vhIKdW7UOe75dCtxWE5UF7a9omu8sCOjWBLPbUcCT0YU066WCgBZ-1rfgjYcplFZqasWkiQ6cesVw3I3LDdFYsy6rWMKNRFjFbz0ki-RsT4MoVBKCHQyDCl_VZ5geo3p_wgn9r0d6y-MX-eK7GjMJUYOzngw5Z03x9qNLm9rWQTeqhyOyB9K0AsyoEzRcYp8l_nKwlAC1gwQNfH-yfEBZJ-OUUxT')"></div>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary mb-4 block tracking-[0.2em]" data-i18n="rituals.hero.eyebrow">THE ART OF THE SANCTUARY</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-8 leading-tight" data-i18n="rituals.hero.title">Ancestral Rituals</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg" data-i18n="rituals.hero.text">
+                    Transform your routine into a ritual. Where science meets the soul through nature's biological intelligence.
+                </p>
+<div class="flex gap-6">
+<a href="#hair-ritual" class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-primary/90 transition-all active:scale-95" data-i18n="rituals.hero.cta_start">Begin the Journey</a>
+<a href="journal.html" class="border border-secondary text-secondary px-8 py-4 font-label-caps text-label-caps hover:bg-secondary/5 transition-all" data-i18n="rituals.hero.cta_guide">Explore Guide</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Ritual Capilar Section -->
+<section id="hair-ritual" class="py-24 bg-surface-container-low border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative aspect-[3/4] overflow-hidden rounded-lg shadow-2xl shadow-primary/10">
+<img class="w-full h-full object-cover" data-i18n-alt="rituals.hair.img_alt" alt="High-resolution editorial photograph of a person's hair being rinsed under clear, sparkling water." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARwvPkb72EWgYaos7ef7NW-ikLl0xWaPlUNjI5kfYbCRXp2RNWinCc0XHTNuuv50NDvS86gudmJq4HaZr83MM0RnGwuvWRZ0y_m07k5Z1_XCxdoeRl_MVpk_pVvhp__PAQdArHphqrI_wBRu5CjV3FH48DS2e0I_1VN-2JSCCEH5tJHriD8uElbzEiYr3EuqKdF5-0-VKn5ct5GYPngpQt7v3Dn-pR5_yFZfAaRT_vqK40o0OkH9YzuXm27Z55vKBJb7chBfSOwtZj"/>
+<div class="absolute bottom-8 left-8 bg-white/80 backdrop-blur-md p-6 max-w-xs">
+<p class="font-label-caps text-[10px] text-primary mb-2" data-i18n="rituals.hair.usage_label">DIRECTIONS FOR USE</p>
+<p class="font-body-md text-body-md italic text-on-surface" data-i18n="rituals.hair.quote">"Patience is the final ingredient of every formula."</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-caps text-label-caps text-secondary mb-4 block" data-i18n="rituals.hair.eyebrow">STEP BY STEP</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6" data-i18n="rituals.hair.title">Ancestral Hair Ritual</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12" data-i18n="rituals.hair.text">A three-act protocol designed to restore follicular balance through sacred purification.</p>
+<div class="space-y-12">
+<div class="flex gap-6">
+<span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">01</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.hair.s1_title">The Awakening</h4>
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.hair.s1_text">Submerge the hair in lukewarm water for exactly two minutes. Let the fiber open, preparing the ground for botanical alchemy.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">02</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.hair.s2_title">The Alchemy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.hair.s2_text">Massage with the Trinity soap. The dense, creamy lather, rich in fatty acids, should linger on your scalp as you visualize regeneration.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">03</span>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.hair.s3_title">The Calm</h4>
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.hair.s3_text">Rinse with cold water to seal the cuticle. The secret of the 40 days: true biological transformation requires one full lunar cycle of consistency.</p>
+</div>
+</div>
+</div>
+<div class="mt-16 bg-primary-container p-8 inline-block">
+<p class="font-label-caps text-label-caps text-on-primary-container" data-i18n="rituals.hair.frequency">RECOMMENDED FREQUENCY: 2-3 TIMES PER WEEK</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ritual Santuario de Piel Section -->
+<section class="py-24 relative overflow-hidden bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center mb-20">
+<span class="font-label-caps text-label-caps text-primary mb-4 block tracking-[0.3em]" data-i18n="rituals.skin.eyebrow">THE BODY JOURNEY</span>
+<h3 class="font-display-lg text-display-lg text-primary" data-i18n="rituals.skin.title">Symphony of the Senses</h3>
+</div>
+<!-- Bento Grid Ritual -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-8 group relative overflow-hidden bg-white shadow-sm border border-outline-variant/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-i18n-alt="rituals.skin.img_alt" alt="A macro shot of a creamy botanical soap bar being lathered." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRBMXH8sIDUjJuMH1wZFanZ-EOdGSDc0V3-k3izlM1PISIKFl03K-WuVnmiOtCEF1xXdMkCN9fGd71pEIqDuQ1WNZmzTTrE_L_szwodqHKPmKoukezmgp5CiCpS4VBW-5dX_OxtYEEI5wG82dYmLUJVLCBJ65pUDrImBsTUAVcZ8H_Ro0X-qsen4FAkLXqURdhx45AD7cSyVm4HgU0Acq7LkvmE_NxlZHo8k2pmnRJN60BKPPFChLY_RCzxXOuGdMCzsaC4nCp7j9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-white max-w-md">
+<h4 class="font-headline-md text-headline-md mb-4 italic" data-i18n="rituals.skin.contact_title">The Sacred Touch</h4>
+<p class="font-body-md text-body-md opacity-90" data-i18n="rituals.skin.contact_text">Begin the ritual from the extremities toward the heart, using slow circular movements that activate the lymphatic system and conscious presence.</p>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="space-y-12">
+<div class="flex gap-6"><span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">01</span><div><h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.skin.s1_title">The Awakening</h4><p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.skin.s1_text">Begin with lukewarm water to open the pores. Perform upward movements activating the lymphatic system, preparing the tissue for deep nourishment.</p></div></div>
+<div class="flex gap-6"><span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">02</span><div><h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.skin.s2_title">The Alchemy</h4><p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.skin.s2_text">Apply the Ancestral Trinity soap. Massage in circles, allowing the synergy of Olive, Coconut, Avocado, and Shea Butter to penetrate deeply into the lipid barrier.</p></div></div>
+<div class="flex gap-6"><span class="font-headline-md text-headline-md text-tertiary-fixed-dim shrink-0">03</span><div><h4 class="font-headline-md text-headline-md text-primary mb-2" data-i18n="rituals.skin.s3_title">The Calm</h4><p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.skin.s3_text">Finish with a cool water rinse to seal the skin barrier and lock in nutrients. Rest in silence for complete sensory grounding.</p></div></div>
+</div>
+<div class="bg-primary-container p-8">
+<p class="font-label-caps text-label-caps text-on-primary-container" data-i18n="rituals.skin.frequency">RECOMMENDED FREQUENCY: DAILY USE FOR CONTINUOUS CELLULAR NUTRITION</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sensory Notes Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+<h3 class="font-headline-lg text-headline-lg text-primary" data-i18n="rituals.sensory.heading">Sensory Notes</h3>
+</div>
+<div class="flex gap-8 px-margin-mobile md:px-margin-desktop overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Card 1: Eucalyptus -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white p-12 snap-center shadow-sm border border-outline-variant/20"><div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="air">air</span>
+<span class="font-label-caps text-label-caps text-secondary">01</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="rituals.sensory.c1_name">Glacial Eucalyptus</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8" data-i18n="rituals.sensory.c1_text">A piercing opening note that refreshes the tissue. Its dense lather releases vapors that expand breathing capacity while purifying the pore.</p>
+<div class="bg-surface-container p-4">
+<p class="font-label-caps text-[10px] text-primary" data-i18n="rituals.sensory.c1_profile">PROFILE: CLARIFYING / SILKY TOUCH</p>
+</div></div>
+<!-- Card 2: Rosemary -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white p-12 snap-center shadow-sm border border-outline-variant/20"><div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="eco">eco</span>
+<span class="font-label-caps text-label-caps text-secondary">02</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="rituals.sensory.c2_name">Ancestral Rosemary</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8" data-i18n="rituals.sensory.c2_text">The regenerating heart note. Its creamy texture facilitates deep massage, stimulating microcirculation and skin firmness.</p>
+<div class="bg-surface-container p-4">
+<p class="font-label-caps text-[10px] text-primary" data-i18n="rituals.sensory.c2_profile">PROFILE: REGENERATING / DENSE LATHER</p>
+</div></div>
+<!-- Card 3: Cedar -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white p-12 snap-center shadow-sm border border-outline-variant/20"><div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="forest">forest</span>
+<span class="font-label-caps text-label-caps text-secondary">03</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-4" data-i18n="rituals.sensory.c3_name">Grounding Cedar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8" data-i18n="rituals.sensory.c3_text">The base note that leaves an invisible protective veil. Calms redness and settles nutrients into the deepest layers.</p>
+<div class="bg-surface-container p-4">
+<p class="font-label-caps text-[10px] text-primary" data-i18n="rituals.sensory.c3_profile">PROFILE: GROUNDING / VELVET FINISH</p>
+</div></div>
+</div>
+</section>
+<!-- Animated Shader Placeholder (Simulating Water/Oil) -->
+<div class="relative h-64 w-full bg-primary-container overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<p class="font-display-lg text-display-lg text-tertiary-fixed italic opacity-30 select-none" data-i18n="rituals.shader.text">Water. Oil. Intention.</p>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="py-32 bg-white text-center">
+<div class="max-w-2xl mx-auto px-margin-mobile">
+<span class="font-label-caps text-label-caps text-secondary mb-6 block tracking-widest" data-i18n="rituals.cta.eyebrow">THE BEGINNING OF EVERYTHING</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-10" data-i18n="rituals.cta.title">Discover the Ancestral Trinity</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12" data-i18n="rituals.cta.text">
+                Our formulas combine Olive, Coconut, and Avocado in a golden ratio. Begin your own ritual today.
+            </p>
+<a class="inline-block bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95" href="reserve.html" data-i18n="rituals.cta.button">
+                Shop the Collection
+            </a>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-high w-full pt-16 pb-8 border-t border-outline-variant">
+<div class="flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-12">JR PureLife Wellness</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full mb-16 text-center md:text-left">
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-primary" data-i18n="rituals.footer.explore">Explore</h5>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="alchemy.html" data-i18n="rituals.footer.sustainability">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="accessories.html" data-i18n="rituals.footer.accessories">Sanctuary Accessories</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="contact.html" data-i18n="rituals.footer.wholesale">Wholesale</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-primary" data-i18n="rituals.footer.legal">Legal</h5>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="contact.html" data-i18n="rituals.footer.privacy">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="contact.html" data-i18n="rituals.footer.shipping">Shipping</a>
+</div>
+<div class="md:col-span-2 flex flex-col items-center md:items-end justify-center">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-right" data-i18n="rituals.footer.newsletter">Subscribe to Botanical Intelligence for exclusive guides.</p>
+<div class="mt-4 flex w-full max-w-sm">
+<input class="flex-grow bg-transparent border-b border-primary focus:border-secondary outline-none py-2 font-label-caps text-label-caps" data-i18n-placeholder="rituals.footer.email_placeholder" placeholder="email@address.com" type="email"/>
+<button class="ml-4 text-primary font-label-caps text-label-caps" data-i18n="rituals.footer.submit">SUBMIT</button>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="rituals.footer.copyright">© 2024 JR PureLife Wellness. Formulated by Nature's Intelligence.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="language">language</span>
+<a href="contact.html" class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="share">share</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB (Suppressed on Details/Content screens usually, but added for "Ritual Help" as it's a long page) -->
+<div class="fixed bottom-8 right-8 z-40">
+<a href="contact.html" class="bg-secondary-container text-on-secondary-container w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</a>
+</div>
+<script>
+        // Simple Intersection Observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>

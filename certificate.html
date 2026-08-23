@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certificate of Ancestral Authenticity | JR PureLife Wellness</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#3d441e">
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Subtle texture for the certificate background */
+        .bg-texture {
+            background-color: #fbf9f4; /* background */
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+        
+        /* Glassmorphism for the signature card */
+        .glass-card {
+            background: rgba(251, 249, 244, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(199, 199, 185, 0.3); /* outline-variant */
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-surface-variant": "#46483d",
+                        "primary": "#272e0a",
+                        "tertiary-fixed": "#dfe8a6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "surface-bright": "#fbf9f4",
+                        "on-tertiary-fixed-variant": "#434a19",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#30312e",
+                        "surface-container-low": "#f5f3ee",
+                        "primary-fixed": "#dfe7b3",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-secondary-fixed": "#241a00",
+                        "secondary-container": "#fed65b",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#c3cb99",
+                        "on-primary-container": "#a9b181",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#5b6239",
+                        "background": "#fbf9f4",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface": "#fbf9f4",
+                        "primary-container": "#3d441e",
+                        "tertiary": "#272d00",
+                        "on-tertiary-container": "#a9b175",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#eae8e3",
+                        "on-secondary-container": "#745c00",
+                        "secondary": "#735c00",
+                        "outline-variant": "#c7c7b9",
+                        "on-surface": "#1b1c19",
+                        "on-primary-fixed-variant": "#434a23",
+                        "inverse-primary": "#c3cb99",
+                        "on-tertiary-fixed": "#191e00",
+                        "tertiary-container": "#3d4413",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-dim": "#dbdad5",
+                        "outline": "#77786c",
+                        "on-primary-fixed": "#181e00",
+                        "tertiary-fixed-dim": "#c3cc8c",
+                        "secondary-fixed": "#ffe088",
+                        "on-background": "#1b1c19"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Space Mono"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "700" }],
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "500" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-low text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col" data-i18n-title-key="certificate.meta.title">
+<!-- Top Navigation (Shell suppressed for this focused document view, replaced with simple brand header) -->
+<header class="w-full py-8 px-margin-mobile md:px-margin-desktop flex justify-center items-center z-50">
+<a href="home.html" class="font-display-lg text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+            JR PureLife Wellness
+        </a>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-8 md:px-margin-desktop">
+<!-- Certificate Container -->
+<div class="bg-texture shadow-[0_24px_48px_-12px_rgba(61,68,30,0.08)] max-w-[900px] w-full rounded-xl overflow-hidden relative border border-outline-variant/20">
+<!-- Subtle Gold Accent Line at Top -->
+<div class="h-1 w-full bg-gradient-to-r from-transparent via-secondary to-transparent opacity-60"></div>
+<div class="p-8 md:p-16 flex flex-col items-center text-center relative z-10">
+<!-- Ornamental Icon -->
+<div class="mb-6 text-secondary/80">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 0;">workspace_premium</span>
+</div>
+<!-- Certificate Title -->
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4" data-i18n="certificate.title">
+                    Certificate of Ancestral Authenticity
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12 italic" data-i18n="certificate.subtitle">
+                    This document certifies that the enclosed botanical formulation has been crafted with uncompromising integrity, honoring the ancient synergy of nature's finest oils.
+                </p>
+<!-- Two Column Layout for Details and Image -->
+<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 text-left">
+<!-- Details Section -->
+<div class="space-y-8">
+<div>
+<h2 class="font-label-caps text-label-caps text-surface-tint uppercase mb-2" data-i18n="certificate.item_label">Item Designation</h2>
+<p class="font-headline-md text-headline-md text-primary" data-i18n="certificate.item_value">Ancestral Trinity Super Pack</p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-caps text-label-caps text-surface-tint uppercase mb-1" data-i18n="certificate.batch_label">Batch Number</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium" data-i18n="certificate.batch_value">#TR-402-2024</p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-surface-tint uppercase mb-1" data-i18n="certificate.date_label">Maturation Start</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium" data-i18n="certificate.date_value">October 15, 2024</p>
+</div>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-surface-tint uppercase mb-3" data-i18n="certificate.formulation_label">Core Formulation</h3>
+<ul class="space-y-2 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span data-i18n="certificate.ing1">First-Cold Pressed Olive Oil</span>
+                                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span data-i18n="certificate.ing2">Virgin Coconut Oil</span>
+                                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span data-i18n="certificate.ing3">Unrefined Avocado Oil</span>
+                                </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span data-i18n="certificate.ing4">Raw Karité Butter</span>
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Image Section -->
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden shadow-[0_12px_32px_-8px_rgba(61,68,30,0.15)] border border-outline-variant/30">
+<img data-i18n-alt="certificate.image_alt" alt="Ancestral Trinity Botanical Oils" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLssj0QTsHRw_zspHCmrqK6RpZjYebBATl6bYGShGwBVObmDOOjzAAzTOk2iCjxb9NwTE67ovzJuo4v4BSaCk1IEmPHCEfWfqE_yup2D-3L0un32W5FuZv0chSIFiVq6B7E-hl0O8p11ocWyB8NG92a3Ra3J5qATBCcTpqIutW0COtPP6SO0J20AW-naDNQrV32GD605LHkd1DERHjsmfEU_e-6IPI4lDxuaZG7IulYSD391yHKjCUJiJuUX"/>
+<!-- Delicate inner border for image -->
+<div class="absolute inset-4 border border-surface-bright/40 pointer-events-none rounded"></div>
+</div>
+</div>
+<!-- Signature & Stamp Section -->
+<div class="w-full max-w-lg mx-auto glass-card rounded-lg p-6 flex flex-col items-center justify-center mt-4">
+<div class="mb-4">
+<!-- Stylized Signature representation -->
+<img alt="Signature" class="h-16 object-contain opacity-80" data-i18n-alt="certificate.signature_alt" alt="A delicate, flowing handwritten signature in dark olive ink." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtkzh6jwpdhjjR_wttqfsU8xGDOrwfvkk343RJIx1uH4Q8pB5rsI7-sDnaEUo8Xt9diciBdWLXh61yxL0mXCtYpbu6MQyJFgDvV9gRRZ1JXqQkrMpEzi3UuWGBqfKqwrWsrvefrqBYNrhPRBUcivDl7pRXhKjjxOCSw_na6WPzkE3UBSkTWlZsCH1BFJ3HPxzPGGjShERiRFpvZpu8826e2iD-IY7QKggzOtNXDZxCRDxPz7mWYFME_A"/>
+</div>
+<div class="w-16 h-px bg-outline-variant/60 mb-3"></div>
+<p class="font-body-md text-body-md text-primary font-medium" data-i18n="certificate.signer_name">Juliet Rivers</p>
+<p class="font-label-caps text-label-caps text-surface-tint mt-1" data-i18n="certificate.signer_role">Lead Alchemist &amp; Founder</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Buttons for Document -->
+<div class="fixed bottom-0 left-0 w-full p-6 md:p-8 flex justify-center gap-4 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none z-40">
+<div class="pointer-events-auto flex gap-4">
+<button id="cert-download-btn" class="flex items-center gap-2 px-6 py-3 bg-primary text-on-primary rounded-full font-body-md text-body-md font-medium hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span data-i18n="certificate.cta_download">Download PDF</span>
+            </button>
+<button id="cert-share-btn" class="flex items-center gap-2 px-6 py-3 border border-secondary text-primary rounded-full font-body-md text-body-md font-medium hover:bg-secondary/10 transition-colors bg-surface/80 backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span data-i18n="certificate.cta_share">Share to Sanctuary</span>
+            </button>
+</div>
+</div>
+<footer class="w-full py-8 mt-auto flex justify-center border-t border-outline-variant/20 bg-surface">
+<p class="font-body-md text-body-md text-on-surface-variant/60 text-sm" data-i18n="certificate.footer">
+            © 2024 JR PureLife Wellness. Botanical Intelligence.
+        </p>
+</footer>
+<script>
+        function certT(key, fallback) {
+            if (window.JRI18N && typeof window.JRI18N.t === "function") {
+                const v = window.JRI18N.t(key);
+                if (v && v !== key) return v;
+            }
+            return fallback;
+        }
+        document.getElementById('cert-download-btn').addEventListener('click', function() {
+            const span = this.querySelector('span:not(.material-symbols-outlined)');
+            const original = span.textContent;
+            span.textContent = certT('certificate.dynamic.preparing', 'Preparing...');
+            this.disabled = true;
+            window.print();
+            setTimeout(() => {
+                span.textContent = original;
+                this.disabled = false;
+            }, 1200);
+        });
+        document.getElementById('cert-share-btn').addEventListener('click', async function() {
+            const span = this.querySelector('span:not(.material-symbols-outlined)');
+            const original = span.textContent;
+            const shareData = {
+                title: certT('certificate.title', 'Certificate of Ancestral Authenticity'),
+                text: certT('certificate.subtitle', 'JR PureLife Wellness'),
+                url: window.location.href
+            };
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    span.textContent = certT('certificate.dynamic.link_copied', 'Link Copied ✓');
+                    setTimeout(() => { span.textContent = original; }, 2000);
+                }
+            } catch (e) { /* user cancelled share, no-op */ }
+        });
+    </script>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/nav-fix.js"></script>
+<script src="assets/cart.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body></html>
