@@ -225,13 +225,13 @@
                     Botanical Intelligence
                 </h2>
 <p class="font-body-lg text-body-lg text-on-primary/90 mb-10 leading-relaxed" data-i18n="home.story.text">
-                    A cinematic journey of 1:30 min to the heart of our heritage. Discover the art of cold saponification, where time is our most precious ingredient to preserve plant intelligence.
+                    Discover the art of cold saponification through our botanical archive, where time is our most precious ingredient to preserve plant intelligence.
                 </p>
-<button class="flex items-center gap-4 mx-auto group">
+<button id="watch-process-btn" class="flex items-center gap-4 mx-auto group">
 <span class="w-16 h-16 rounded-full border border-on-primary flex items-center justify-center group-hover:bg-on-primary group-hover:text-primary transition-all duration-500">
-<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">visibility</span>
 </span>
-<span class="font-label-caps text-label-caps text-on-primary tracking-widest group-hover:translate-x-2 transition-transform uppercase" data-i18n="home.story.watch">Watch the Process</span>
+<span class="font-label-caps text-label-caps text-on-primary tracking-widest group-hover:translate-x-2 transition-transform uppercase" data-i18n="home.story.watch">View the Gallery</span>
 </button>
 </div>
 </section>
@@ -338,10 +338,71 @@
     </script>
 
 
-<div class="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-surface/80 backdrop-blur-md p-3 border border-outline-variant/20 shadow-lg rounded-sm"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></div><span class="font-label-caps text-[10px] tracking-widest text-primary uppercase" data-i18n="home.misc.ambient_frequency">Ambient Frequency: 432Hz Active</span></div><script src="assets/config.js"></script>
+<div class="fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-surface/80 backdrop-blur-md p-3 border border-outline-variant/20 shadow-lg rounded-sm"><div class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></div><span class="font-label-caps text-[10px] tracking-widest text-primary uppercase" data-i18n="home.misc.ambient_frequency">Ambient Frequency: 432Hz Active</span></div>
+<!-- Process Gallery Lightbox -->
+<div id="process-lightbox" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/90 backdrop-blur-sm p-6">
+<button id="process-lightbox-close" class="absolute top-6 right-6 text-white hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<div class="max-w-3xl w-full">
+<img id="process-lightbox-img" class="w-full h-auto max-h-[75vh] object-contain rounded-sm" src="" alt="">
+<div class="flex justify-between items-center mt-6">
+<button id="process-lightbox-prev" class="text-white flex items-center gap-2 font-label-caps text-label-caps hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">arrow_back</span> <span data-i18n="home.lightbox.prev">Previous</span>
+</button>
+<p id="process-lightbox-caption" class="text-white/80 font-body-md text-center px-4"></p>
+<button id="process-lightbox-next" class="text-white flex items-center gap-2 font-label-caps text-label-caps hover:opacity-70 transition-opacity">
+<span data-i18n="home.lightbox.next">Next</span> <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script src="assets/config.js"></script>
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
+<script>
+(function () {
+  function hT(key, fallback) {
+    if (window.JRI18N && typeof window.JRI18N.t === "function") {
+      const v = window.JRI18N.t(key);
+      if (v && v !== key) return v;
+    }
+    return fallback;
+  }
+  const gallery = [
+    { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8JHKKRzanEdnMtd7GFyVooFVYNyEmY0v67xxT2hG6Xe4Q4pj5HC_xm85N7u2yQEBe9qcsOHVluwPuD1loCMOtEJqo_B_I0G7W7w9CPLLt_9EodHAMNJcSFTMGr0I7PsNfc27yS5ImZ980PmRdLQrxbeVc0o1RVvBZ4wEd8921N2U-EnKUTmRaq6p2hiLTbzHK4yQ_n7BWW62XJ6ssIwOfIyeqaCaDmNCLQvYGHFi1v2lM3s6wIWaZez5pcB29BS1eiW6iseBJbACw", captionKey: "home.lightbox.c1" },
+    { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCBAzkC5EQVqeALUFaYXVG1Ictujqb80h1u2xn0TOc9Z6-slNmArddXP5wBryZhintTYucwZYj1oFdQ_ngxP0Xw4TIdTsBwH7-CLAM7rWEpVI4xZUUbdC75JZAPFc1yJxqvCqlZw0_5rX1NxCGeDqESybi2dC0OT4RushaA7i7XsE-twbvsMVdy1tXiFo2RvmOXCGaTsadQ6unHqa-zAgH_bS56wIR2SwvnOKhfReL3yfy9DzzIcvkuptW3v7a7J65757SDG6e9eokN", captionKey: "home.lightbox.c2" },
+    { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDzQzMGwpeNAWx27xOsSzFpd1L6RHtGdL80lxh0W99yRiAlYRLR2kOD7zyrBRmz_7ig7GkkIYfam6LbbGR7bFyRGDJBkBKxfe2S_-Mp62re_2q-xzhEhEkcftW2jMFdYVamr2Ilp1I5AfI4coi_D27K6sxf_hXoVJB7bBlpgU_FHFStt7aK1CXua85P_sEX8fnh-uqQ65advYByG1hdUK4I0c2la14HINl16Jg-IwRa02Bl3UqchJr6UVbFTJuydkjoyMiVBK2MSn3T", captionKey: "home.lightbox.c3" }
+  ];
+  let idx = 0;
+  const lightbox = document.getElementById("process-lightbox");
+  const imgEl = document.getElementById("process-lightbox-img");
+  const captionEl = document.getElementById("process-lightbox-caption");
+
+  function render() {
+    imgEl.src = gallery[idx].src;
+    captionEl.textContent = hT(gallery[idx].captionKey, "The ancestral process, captured in botanical detail.");
+  }
+  function open() {
+    idx = 0;
+    render();
+    lightbox.classList.remove("hidden");
+    lightbox.classList.add("flex");
+  }
+  function close() {
+    lightbox.classList.add("hidden");
+    lightbox.classList.remove("flex");
+  }
+  const watchBtn = document.getElementById("watch-process-btn");
+  if (watchBtn) watchBtn.addEventListener("click", open);
+  document.getElementById("process-lightbox-close").addEventListener("click", close);
+  document.getElementById("process-lightbox-prev").addEventListener("click", () => { idx = (idx - 1 + gallery.length) % gallery.length; render(); });
+  document.getElementById("process-lightbox-next").addEventListener("click", () => { idx = (idx + 1) % gallery.length; render(); });
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) close(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+})();
+</script>
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
