@@ -843,7 +843,8 @@
       "nav_history": "Historique Scientifique",
       "nav_rituals": "Rituels Exclusifs",
       "nav_settings": "Paramètres",
-      "cta_book": "Réserver une Consultation"
+      "cta_book": "Réserver une Consultation",
+      "cta_membership": "Améliorer l'Adhésion"
     },
     "mobilebar": {
       "title": "ALCHIMISTE"
@@ -1657,6 +1658,67 @@
     },
     "dynamic": {
       "processing": "Traitement en cours..."
+    }
+  },
+  "membership": {
+    "meta": {
+      "title": "Adhésion Annuelle au Sanctuaire | JR PureLife Wellness"
+    },
+    "nav": {
+      "alchemy": "Alchimie",
+      "rituals": "Rituels",
+      "boutique": "Boutique",
+      "journal": "Journal"
+    },
+    "hero": {
+      "eyebrow": "EXCLUSIVITÉ ANCESTRALE",
+      "title": "Adhésion Annuelle au Sanctuaire",
+      "subtitle": "Bienvenue dans le cercle privilégié de l'Intelligence Botanique. Votre voyage vers la pureté ancestrale commence maintenant."
+    },
+    "benefits": {
+      "b1_title": "Économies Échelonnées",
+      "b1_desc": "Profitez de 20 % de réduction sur les achats inférieurs à 25 $ et de 30 % sur toutes les commandes supérieures à 25 $.",
+      "b2_title": "Accumulation de Points",
+      "b2_desc": "Gagnez des points à chaque achat rituel pour débloquer des cadeaux botaniques offerts.",
+      "b3_title": "Surprises Mensuelles",
+      "b3_desc": "Recevez des coupons mensuels jusqu'à 50 % de réduction pour vos réapprovisionnements supérieurs à 100 $.",
+      "b4_title": "Essais Anticipés",
+      "b4_desc": "Échantillons offerts et accès anticipé exclusif pour tester nos dernières extractions de laboratoire.",
+      "b5_title": "Aperçus de Production",
+      "b5_desc": "Accès hebdomadaire à nos listes de production internes et aux prochains calendriers de récolte.",
+      "b6_title": "Tirages Exclusifs",
+      "b6_desc": "Participation automatique aux tirages réservés aux membres pour des voyages bien-être sélectionnés et des vacances méditerranéennes."
+    },
+    "checkout": {
+      "plan_label": "ADHÉSION ANNUELLE",
+      "plan_name": "Accès au Sanctuaire",
+      "price": "79,99 $",
+      "billed": "Facturé Annuellement",
+      "payment_label": "Informations de Paiement",
+      "card_number": "Numéro de Carte",
+      "expiry": "MM / AA",
+      "cvc": "CVC",
+      "name_on_card": "Nom sur la Carte",
+      "terms_pre": "J'accepte les",
+      "terms_link": "Conditions Générales du Sanctuaire",
+      "terms_post": ". Je comprends que mon abonnement se renouvellera automatiquement chaque année.",
+      "submit": "CONFIRMER L'ADHÉSION",
+      "secure_note": "TRAITEMENT SÉCURISÉ 256 BITS"
+    },
+    "footer": {
+      "discover_label": "Découvrir",
+      "our_alchemy": "Notre Alchimie",
+      "sustainability": "Durabilité",
+      "certifications": "Certifications",
+      "support_label": "Assistance",
+      "accessories": "Accessoires du Sanctuaire",
+      "privacy": "Confidentialité",
+      "copyright": "© 2024 JR PureLife Wellness. Intelligence Botanique et Art Sacré. Durabilité Certifiée en Laboratoire."
+    },
+    "dynamic": {
+      "alert_terms": "Veuillez accepter les Conditions Générales du Sanctuaire pour continuer.",
+      "processing": "TRAITEMENT EN COURS...",
+      "alert_no_payment": "Les paiements ne sont pas encore configurés. Définissez STRIPE_PAYMENT_LINK dans assets/config.js pour activer le paiement réel."
     }
   }
 }
