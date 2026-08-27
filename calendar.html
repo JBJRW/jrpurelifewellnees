@@ -130,6 +130,7 @@
             grid-template-columns: repeat(7, 1fr);
         }
     </style>
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen selection:bg-secondary-container" data-i18n-title-key="calendar.meta.title">
 <!-- Top Navigation Bar -->
@@ -375,13 +376,7 @@
 <span class="material-symbols-outlined">chat_bubble</span>
 </a>
 <script>
-        function calT(key, fallback) {
-            if (window.JRI18N && typeof window.JRI18N.t === "function") {
-                const v = window.JRI18N.t(key);
-                if (v && v !== key) return v;
-            }
-            return fallback;
-        }
+        const calT = window.JRUtils.t;
         // Micro-interactions for calendar days
         document.querySelectorAll('.calendar-grid > div').forEach(day => {
             day.addEventListener('click', function() {
@@ -422,9 +417,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

@@ -1,4 +1,4 @@
-const CACHE = "jr-purelife-v1";
+const CACHE = "jr-purelife-v2";
 const CORE = [
   "./home.html",
   "./index.html",
@@ -11,6 +11,7 @@ const CORE = [
   "./checkout.html",
   "./contact.html",
   "./manifest.json",
+  "./assets/utils.js",
   "./assets/cart.js",
   "./assets/nav-fix.js",
   "./assets/config.js",

@@ -79,13 +79,7 @@
     });
   }
 
-  function tt(key, fallback) {
-    if (window.JRI18N && typeof window.JRI18N.t === "function") {
-      const v = window.JRI18N.t(key);
-      if (v && v !== key) return v;
-    }
-    return fallback;
-  }
+  const tt = window.JRUtils.t;
 
   function flashAdded(name) {
     let toast = document.getElementById("jr-toast");

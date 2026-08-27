@@ -119,6 +119,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <meta name="theme-color" content="#3d441e">
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container" data-i18n-title-key="points.meta.title">
 <!-- TopNavBar Shell -->
@@ -403,13 +404,7 @@
 </footer>
 <script>
         // Micro-interaction for reward cards redemption
-        function ptT(key, fallback) {
-            if (window.JRI18N && typeof window.JRI18N.t === "function") {
-                const v = window.JRI18N.t(key);
-                if (v && v !== key) return v;
-            }
-            return fallback;
-        }
+        const ptT = window.JRUtils.t;
         document.querySelectorAll('button[data-action="redeem"]').forEach(btn => {
             btn.addEventListener('click', function() {
                     this.textContent = ptT('points.dynamic.redeeming', 'REDEEMING...');
@@ -440,10 +435,5 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 
 </body></html>

@@ -126,6 +126,7 @@
             border: 1px solid rgba(228, 226, 221, 0.5);
         }
     </style>
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen" data-i18n-title-key="assistant.meta.title">
 <!-- Top Navigation Bar -->
@@ -387,9 +388,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

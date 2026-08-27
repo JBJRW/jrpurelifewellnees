@@ -115,6 +115,7 @@
             mask-size: contain;
         }
     </style>
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden" data-i18n-title-key="accessories.meta.title">
 <!-- Top Navigation Bar -->
@@ -393,9 +394,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>
