@@ -8,7 +8,19 @@
 
   function readCart() {
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      if (!Array.isArray(raw)) return [];
+      return raw
+        .filter((i) => i && typeof i === "object")
+        .map((i) => ({
+          id: String(i.id || ""),
+          name: String(i.name || ""),
+          desc: String(i.desc || ""),
+          image: String(i.image || ""),
+          currency: String(i.currency || "$"),
+          price: isFinite(Number(i.price)) ? Number(i.price) : 0,
+          qty: Math.max(1, Math.floor(Number(i.qty)) || 1),
+        }));
     } catch (e) {
       return [];
     }
@@ -52,6 +64,20 @@
   function fmt(n, currency) {
     currency = currency || "$";
     return currency + n.toFixed(2);
+  }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    }[c]));
+  }
+  function safeImageSrc(url) {
+    const s = String(url || "");
+    if (/^(https?:)?\/\//i.test(s) || /^[\w./-]+$/.test(s)) return esc(s);
+    return "";
   }
 
   function updateBadge() {
@@ -148,35 +174,35 @@
   }
 
   const ITEM_TEMPLATE = (item) => `
-    <div class="group relative bg-surface-container-lowest p-6 flex flex-col md:flex-row gap-6 soft-shadow rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1" data-cart-row="${item.id}">
+    <div class="group relative bg-surface-container-lowest p-6 flex flex-col md:flex-row gap-6 soft-shadow rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-1" data-cart-row="${esc(item.id)}">
       <div class="w-full md:w-48 h-48 bg-surface-container-low rounded overflow-hidden">
-        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="${item.name}" src="${item.image || ""}"/>
+        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="${esc(item.name)}" src="${safeImageSrc(item.image)}"/>
       </div>
       <div class="flex-grow flex flex-col justify-between py-2">
         <div>
           <div class="flex justify-between items-start">
             <div>
-              <h3 class="font-headline-md text-[24px] text-primary">${item.name}</h3>
-              <p class="text-on-surface-variant text-sm mt-1">${item.desc || ""}</p>
+              <h3 class="font-headline-md text-[24px] text-primary">${esc(item.name)}</h3>
+              <p class="text-on-surface-variant text-sm mt-1">${esc(item.desc)}</p>
             </div>
-            <button class="text-outline hover:text-error transition-colors" data-remove="${item.id}">
+            <button class="text-outline hover:text-error transition-colors" data-remove="${esc(item.id)}">
               <span class="material-symbols-outlined">delete</span>
             </button>
           </div>
         </div>
         <div class="flex flex-wrap justify-between items-end mt-6 gap-4">
           <div class="flex items-center bg-surface-container border border-outline-variant rounded p-1">
-            <button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container-highest transition-colors" data-decr="${item.id}">
+            <button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container-highest transition-colors" data-decr="${esc(item.id)}">
               <span class="material-symbols-outlined text-sm">remove</span>
             </button>
-            <span class="px-4 font-label-caps text-label-caps text-on-surface">${item.qty}</span>
-            <button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container-highest transition-colors" data-incr="${item.id}">
+            <span class="px-4 font-label-caps text-label-caps text-on-surface">${esc(item.qty)}</span>
+            <button class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container-highest transition-colors" data-incr="${esc(item.id)}">
               <span class="material-symbols-outlined text-sm">add</span>
             </button>
           </div>
           <div class="text-right">
-            <p class="text-xs font-label-caps text-outline mb-1">${tt("cart.dynamic.unit_price", "UNIT PRICE")}: ${fmt(item.price, item.currency)}</p>
-            <p class="font-headline-md text-headline-md text-primary">${fmt(item.price * item.qty, item.currency)}</p>
+            <p class="text-xs font-label-caps text-outline mb-1">${esc(tt("cart.dynamic.unit_price", "UNIT PRICE"))}: ${esc(fmt(item.price, item.currency))}</p>
+            <p class="font-headline-md text-headline-md text-primary">${esc(fmt(item.price * item.qty, item.currency))}</p>
           </div>
         </div>
       </div>
@@ -187,9 +213,9 @@
     if (!list) return; // not on the cart page
     const cart = readCart();
     if (!cart.length) {
-      const emptyTitle = tt("cart.dynamic.empty_title", "Your basket is empty");
-      const emptyText = tt("cart.dynamic.empty_text", "Begin your ritual by exploring the collection.");
-      const emptyCta = tt("cart.dynamic.empty_cta", "Explore the Reserve");
+      const emptyTitle = esc(tt("cart.dynamic.empty_title", "Your basket is empty"));
+      const emptyText = esc(tt("cart.dynamic.empty_text", "Begin your ritual by exploring the collection."));
+      const emptyCta = esc(tt("cart.dynamic.empty_cta", "Explore the Reserve"));
       list.innerHTML =
         `<div class="text-center py-20 text-on-surface-variant"><p class="font-headline-md text-headline-md text-primary mb-3">${emptyTitle}</p><p class="mb-8">${emptyText}</p><a href="reserve.html" class="inline-block bg-primary text-white px-8 py-4 rounded font-label-caps text-label-caps">${emptyCta}</a></div>`;
     } else {
