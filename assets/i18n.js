@@ -32,7 +32,8 @@
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored && SUPPORTED.includes(stored)) return stored;
     } catch (e) {
-      /* localStorage puede fallar en modo privado; seguimos sin romper */
+      // localStorage puede fallar en modo privado; seguimos con el idioma del navegador.
+      console.warn("[i18n] No se pudo leer el idioma guardado —", e);
     }
     const nav = (navigator.language || navigator.userLanguage || "").slice(0, 2).toLowerCase();
     if (SUPPORTED.includes(nav)) return nav;
@@ -45,16 +46,30 @@
 
   async function loadDict(lang) {
     if (cache[lang]) return cache[lang];
+    let res;
     try {
-      const res = await fetch(`assets/i18n/${lang}.json`, { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      const dict = await res.json();
-      cache[lang] = dict;
-      return dict;
+      res = await fetch(`assets/i18n/${lang}.json`, { cache: "no-store" });
     } catch (e) {
-      console.warn(`[i18n] No se pudo cargar "${lang}.json" —`, e.message);
+      console.warn(`[i18n] Falló la red al pedir "${lang}.json" —`, e);
       return null;
     }
+    if (!res.ok) {
+      console.error(`[i18n] "${lang}.json" respondió HTTP ${res.status} ${res.statusText}.`);
+      return null;
+    }
+    let dict;
+    try {
+      dict = await res.json();
+    } catch (e) {
+      console.error(`[i18n] "${lang}.json" no es JSON válido —`, e);
+      return null;
+    }
+    if (!dict || typeof dict !== "object" || Array.isArray(dict)) {
+      console.error(`[i18n] "${lang}.json" debería ser un objeto, no ${Array.isArray(dict) ? "un array" : typeof dict}.`);
+      return null;
+    }
+    cache[lang] = dict;
+    return dict;
   }
 
   async function getDictWithFallback(lang) {
@@ -70,7 +85,11 @@
   async function applyTranslations(lang) {
     const dict = await getDictWithFallback(lang);
     const enDict = lang === DEFAULT_LANG ? dict : await loadDict(DEFAULT_LANG);
-    if (!dict) return; // sin red / sin JSON: el texto en inglés ya escrito en el HTML queda visible
+    if (!dict) {
+      // sin red / sin JSON: el texto en inglés ya escrito en el HTML queda visible
+      console.error(`[i18n] Sin diccionario para "${lang}"; se mantiene el texto original del HTML.`);
+      return false;
+    }
 
     let missing = 0;
 
@@ -109,6 +128,7 @@
     if (missing > 0) {
       console.warn(`[i18n] ${missing} clave(s) faltaban en "${lang}.json" y se usó el respaldo en inglés.`);
     }
+    return true;
   }
 
   function injectSwitcher() {
@@ -146,7 +166,7 @@
       item.addEventListener("mouseenter", () => (item.style.background = "#f0eee9"));
       item.addEventListener("mouseleave", () => (item.style.background = "none"));
       item.addEventListener("click", () => {
-        setLanguage(code);
+        setLanguage(code).catch((e) => console.error(`[i18n] No se pudo cambiar a "${code}" —`, e));
         closeMenu();
       });
       menu.appendChild(item);
@@ -192,11 +212,13 @@
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch (e) {
-      /* modo privado: seguimos, solo no persiste entre visitas */
+      // modo privado: seguimos, solo no persiste entre visitas
+      console.warn(`[i18n] No se pudo guardar el idioma "${lang}" —`, e);
     }
-    await applyTranslations(lang);
+    const applied = await applyTranslations(lang);
     updateSwitcherUI(lang);
-    window.dispatchEvent(new CustomEvent("jr:langchange", { detail: { lang: lang } }));
+    window.dispatchEvent(new CustomEvent("jr:langchange", { detail: { lang: lang, applied: applied } }));
+    return applied;
   }
 
   // Traducción síncrona para contenido generado por JS (ej. cart.js redibuja
@@ -215,15 +237,19 @@
     injectSwitcher();
     const lang = detectInitialLang();
     updateSwitcherUI(lang);
-    await applyTranslations(lang);
-    window.dispatchEvent(new CustomEvent("jr:langchange", { detail: { lang: lang } }));
+    const applied = await applyTranslations(lang);
+    window.dispatchEvent(new CustomEvent("jr:langchange", { detail: { lang: lang, applied: applied } }));
+  }
+
+  function start() {
+    init().catch((e) => console.error("[i18n] Falló la inicialización —", e));
   }
 
   window.JRI18N = { setLanguage, getLang: detectInitialLang, t: t, SUPPORTED_LANGS: SUPPORTED };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", start);
   } else {
-    init();
+    start();
   }
 })();

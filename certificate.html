@@ -274,7 +274,13 @@
                     span.textContent = certT('certificate.dynamic.link_copied', 'Link Copied ✓');
                     setTimeout(() => { span.textContent = original; }, 2000);
                 }
-            } catch (e) { /* user cancelled share, no-op */ }
+            } catch (e) {
+                span.textContent = original;
+                if (e && e.name === 'AbortError') return; // el usuario canceló el diálogo
+                console.error('[certificate] No se pudo compartir ni copiar el enlace —', e);
+                span.textContent = certT('certificate.dynamic.share_failed', 'Copy failed — copy the URL manually');
+                setTimeout(() => { span.textContent = original; }, 3000);
+            }
         });
     </script>
 <script src="assets/config.js"></script>
@@ -283,7 +289,9 @@
 <script src="assets/cart.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker
+    .register("sw.js")
+    .catch((e) => console.error("[sw] No se pudo registrar el service worker —", e)));
 }
 </script>
 </body></html>

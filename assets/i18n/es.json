@@ -495,7 +495,9 @@
       "added_toast": "{name} añadido a tu canasta ritual",
       "alert_empty_checkout": "Tu canasta ritual está vacía. Añade un producto antes de proceder al pago.",
       "alert_empty_basket": "Tu canasta está vacía — añade un producto antes de proceder al pago.",
-      "alert_no_payment": "Los pagos aún no están configurados.\n\nAbre assets/config.js y define STRIPE_PAYMENT_LINK con tu enlace real de pago de Stripe (o URL de sesión de Checkout) para activar el pago real."
+      "alert_no_payment": "Los pagos aún no están configurados.\n\nAbre assets/config.js y define STRIPE_PAYMENT_LINK con tu enlace real de pago de Stripe (o URL de sesión de Checkout) para activar el pago real.",
+      "save_failed": "No pudimos guardar tu canasta ritual en este navegador. Prueba desactivar el modo privado.",
+      "add_failed": "No pudimos añadir este producto. Inténtalo de nuevo."
     }
   },
   "checkout": {
@@ -1312,7 +1314,8 @@
     "footer": "© 2024 JR PureLife Wellness. Inteligencia Botánica.",
     "dynamic": {
       "preparing": "Preparando...",
-      "link_copied": "Enlace Copiado ✓"
+      "link_copied": "Enlace Copiado ✓",
+      "share_failed": "No se pudo copiar — copia la URL manualmente"
     }
   },
   "rituals": {

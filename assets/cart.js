@@ -6,40 +6,113 @@
   const SHIPPING = 8.5;
   const TAX_RATE = 0.087; // matches the $2.10 on $24 example in the original mock
 
+  function isValidItem(item) {
+    return (
+      item &&
+      typeof item === "object" &&
+      typeof item.id === "string" &&
+      item.id !== "" &&
+      Number.isFinite(item.price) &&
+      Number.isFinite(item.qty) &&
+      item.qty > 0
+    );
+  }
+
+  // Reads the basket, dropping entries that would poison the totals
+  // (NaN prices, missing ids) instead of rendering "$NaN" to the visitor.
   function readCart() {
+    let raw;
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      raw = localStorage.getItem(STORAGE_KEY);
     } catch (e) {
+      console.warn("[cart] localStorage no está disponible; el carrito no persiste —", e);
       return [];
     }
+    if (!raw) return [];
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch (e) {
+      console.error(`[cart] "${STORAGE_KEY}" contenía JSON inválido y se descartó —`, e);
+      clearCart();
+      return [];
+    }
+    if (!Array.isArray(parsed)) {
+      console.error(`[cart] "${STORAGE_KEY}" no era un array (${typeof parsed}) y se descartó.`);
+      clearCart();
+      return [];
+    }
+    const valid = parsed.filter(isValidItem);
+    if (valid.length !== parsed.length) {
+      console.warn(`[cart] Se descartaron ${parsed.length - valid.length} artículo(s) con datos inválidos.`);
+    }
+    return valid;
   }
+  function clearCart() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (e) {
+      console.warn("[cart] No se pudo limpiar el carrito guardado —", e);
+    }
+  }
+  // Returns true when the basket was persisted. Callers must not report
+  // success to the visitor when this fails (private mode, quota exceeded).
   function writeCart(cart) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+    let saved = true;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+    } catch (e) {
+      saved = false;
+      console.error("[cart] No se pudo guardar el carrito —", e);
+      flashMessage(
+        tt(
+          "cart.dynamic.save_failed",
+          "We couldn't save your ritual basket in this browser. Try disabling private mode."
+        )
+      );
+    }
     updateBadge();
+    return saved;
   }
   function addItem(product, qty) {
-    qty = qty || 1;
+    qty = Number.isFinite(qty) && qty > 0 ? qty : 1;
+    const candidate = Object.assign({ qty: qty }, product);
+    if (!isValidItem(candidate)) {
+      console.error("[cart] Se ignoró un producto con datos incompletos:", product);
+      flashMessage(tt("cart.dynamic.add_failed", "We couldn't add this product. Please try again."));
+      return false;
+    }
     const cart = readCart();
-    const existing = cart.find((i) => i.id === product.id);
+    const existing = cart.find((i) => i.id === candidate.id);
     if (existing) {
       existing.qty += qty;
     } else {
-      cart.push(Object.assign({ qty: qty }, product));
+      cart.push(candidate);
     }
-    writeCart(cart);
-    flashAdded(product.name);
+    if (!writeCart(cart)) return false;
+    flashAdded(candidate.name);
+    return true;
   }
   function removeItem(id) {
-    writeCart(readCart().filter((i) => i.id !== id));
+    const saved = writeCart(readCart().filter((i) => i.id !== id));
     renderCartPage();
+    return saved;
   }
   function setQty(id, qty) {
+    if (!Number.isFinite(qty)) {
+      console.error(`[cart] Cantidad inválida (${qty}) para "${id}"; se ignoró.`);
+      return false;
+    }
     const cart = readCart();
     const item = cart.find((i) => i.id === id);
-    if (!item) return;
+    if (!item) {
+      console.warn(`[cart] No existe el artículo "${id}"; no se cambió la cantidad.`);
+      return false;
+    }
     item.qty = Math.max(1, qty);
-    writeCart(cart);
+    const saved = writeCart(cart);
     renderCartPage();
+    return saved;
   }
   function totals() {
     const cart = readCart();
@@ -51,6 +124,10 @@
   }
   function fmt(n, currency) {
     currency = currency || "$";
+    if (!Number.isFinite(n)) {
+      console.error(`[cart] Importe no numérico (${n}); se muestra 0.00.`);
+      n = 0;
+    }
     return currency + n.toFixed(2);
   }
 
@@ -88,6 +165,11 @@
   }
 
   function flashAdded(name) {
+    const template = tt("cart.dynamic.added_toast", "{name} added to your ritual basket");
+    flashMessage(template.replace("{name}", name));
+  }
+
+  function flashMessage(text) {
     let toast = document.getElementById("jr-toast");
     if (!toast) {
       toast = document.createElement("div");
@@ -96,8 +178,7 @@
         "position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#3d441e;color:#fbf9f4;padding:14px 24px;border-radius:6px;font-family:'Playfair Display',serif;font-size:14px;z-index:9999;box-shadow:0 6px 20px rgba(0,0,0,0.25);opacity:0;transition:opacity .3s ease;";
       document.body.appendChild(toast);
     }
-    const template = tt("cart.dynamic.added_toast", "{name} added to your ritual basket");
-    toast.textContent = template.replace("{name}", name);
+    toast.textContent = text;
     toast.style.opacity = "1";
     clearTimeout(toast._t);
     toast._t = setTimeout(() => (toast.style.opacity = "0"), 2200);
@@ -109,11 +190,17 @@
     if (explicit) {
       explicit.addEventListener("click", (e) => {
         e.preventDefault();
+        const price = parseFloat(explicit.dataset.productPrice);
+        if (!Number.isFinite(price)) {
+          console.error(
+            `[cart] data-product-price inválido ("${explicit.dataset.productPrice}") en #add-to-cart-btn.`
+          );
+        }
         addItem(
           {
             id: explicit.dataset.productId,
             name: explicit.dataset.productName,
-            price: parseFloat(explicit.dataset.productPrice),
+            price: price,
             currency: explicit.dataset.productCurrency || "$",
             image: explicit.dataset.productImage,
             desc: explicit.dataset.productDesc || "",
@@ -139,7 +226,16 @@
           const h = card.querySelector("h1,h2,h3,h4");
           if (h) name = h.textContent.trim();
           const priceMatch = card.textContent.match(/[$€]\s?[0-9]+[.,][0-9]{2}/);
-          if (priceMatch) price = parseFloat(priceMatch[0].replace(/[^0-9.,]/g, "").replace(",", "."));
+          if (priceMatch) {
+            const parsed = parseFloat(priceMatch[0].replace(/[^0-9.,]/g, "").replace(",", "."));
+            if (Number.isFinite(parsed)) {
+              price = parsed;
+            } else {
+              console.error(`[cart] No se pudo interpretar el precio "${priceMatch[0]}" de "${name}".`);
+            }
+          } else {
+            console.warn(`[cart] No se encontró precio en la tarjeta de "${name}"; se usa 0.`);
+          }
         }
         e.preventDefault();
         addItem({ id: name.toLowerCase().replace(/\s+/g, "-"), name, price, currency: "$" }, 1);

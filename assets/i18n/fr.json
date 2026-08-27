@@ -495,7 +495,9 @@
       "added_toast": "{name} ajouté à votre panier rituel",
       "alert_empty_checkout": "Votre panier rituel est vide. Ajoutez un produit avant de passer au paiement.",
       "alert_empty_basket": "Votre panier est vide — ajoutez un produit avant de passer au paiement.",
-      "alert_no_payment": "Les paiements ne sont pas encore configurés.\n\nOuvrez assets/config.js et définissez STRIPE_PAYMENT_LINK avec votre lien de paiement Stripe réel (ou l'URL de session Checkout) pour activer le paiement réel."
+      "alert_no_payment": "Les paiements ne sont pas encore configurés.\n\nOuvrez assets/config.js et définissez STRIPE_PAYMENT_LINK avec votre lien de paiement Stripe réel (ou l'URL de session Checkout) pour activer le paiement réel.",
+      "save_failed": "Nous n'avons pas pu enregistrer votre panier rituel dans ce navigateur. Essayez de désactiver le mode privé.",
+      "add_failed": "Nous n'avons pas pu ajouter ce produit. Veuillez réessayer."
     }
   },
   "checkout": {
@@ -1312,7 +1314,8 @@
     "footer": "© 2024 JR PureLife Wellness. Intelligence Botanique.",
     "dynamic": {
       "preparing": "Préparation...",
-      "link_copied": "Lien Copié ✓"
+      "link_copied": "Lien Copié ✓",
+      "share_failed": "Copie impossible — copiez l'URL manuellement"
     }
   },
   "rituals": {
