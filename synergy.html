@@ -442,7 +442,9 @@
 <script src="assets/cart.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker
+    .register("sw.js")
+    .catch((e) => console.error("[sw] No se pudo registrar el service worker —", e)));
 }
 </script>
 </body></html>
