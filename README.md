@@ -9,3 +9,16 @@
 
 ## Antes de publicar
 - `assets/config.js`: pon tu Stripe Payment Link real y confirma el email de contacto
+
+## Pruebas
+Las pruebas unitarias cubren la lógica del carrito, el motor de idiomas, la
+reparación de enlaces y el service worker.
+
+```
+npm install
+npm test           # ejecuta la suite
+npm run coverage   # suite + reporte de cobertura
+```
+
+El sitio sigue siendo HTML estático: `npm` solo se usa para las pruebas y no se
+necesita para desplegar.
