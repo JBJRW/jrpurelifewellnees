@@ -127,6 +127,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <meta name="theme-color" content="#3d441e">
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md overflow-x-hidden" data-i18n-title-key="history.meta.title">
 <!-- Sidebar Navigation -->
@@ -462,9 +463,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

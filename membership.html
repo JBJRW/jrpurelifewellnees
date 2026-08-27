@@ -119,6 +119,7 @@
             background: linear-gradient(180deg, rgba(251, 249, 244, 0) 0%, rgba(251, 249, 244, 1) 100%);
         }
     </style>
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden" data-i18n-title-key="membership.meta.title">
 <!-- TopNavBar -->
@@ -300,13 +301,7 @@
             }
         });
 
-        function memT(key, fallback) {
-            if (window.JRI18N && typeof window.JRI18N.t === "function") {
-                const v = window.JRI18N.t(key);
-                if (v && v !== key) return v;
-            }
-            return fallback;
-        }
+        const memT = window.JRUtils.t;
         document.getElementById('membership-confirm-btn').addEventListener('click', function() {
             const terms = document.getElementById('terms');
             if (!terms.checked) {
@@ -333,9 +328,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

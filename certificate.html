@@ -136,6 +136,7 @@
             }
         }
     </script>
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-surface-container-low text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen flex flex-col" data-i18n-title-key="certificate.meta.title">
 <!-- Top Navigation (Shell suppressed for this focused document view, replaced with simple brand header) -->
@@ -240,13 +241,7 @@
         </p>
 </footer>
 <script>
-        function certT(key, fallback) {
-            if (window.JRI18N && typeof window.JRI18N.t === "function") {
-                const v = window.JRI18N.t(key);
-                if (v && v !== key) return v;
-            }
-            return fallback;
-        }
+        const certT = window.JRUtils.t;
         document.getElementById('cert-download-btn').addEventListener('click', function() {
             const span = this.querySelector('span:not(.material-symbols-outlined)');
             const original = span.textContent;
@@ -281,9 +276,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

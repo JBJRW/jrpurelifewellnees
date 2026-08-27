@@ -124,6 +124,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <meta name="theme-color" content="#3d441e">
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container" data-i18n-title-key="checkout.meta.title">
 <div class="grain-overlay"></div>
@@ -293,13 +294,7 @@
             });
         });
 
-        function ckT(key, fallback) {
-            if (window.JRI18N && typeof window.JRI18N.t === "function") {
-                const v = window.JRI18N.t(key);
-                if (v && v !== key) return v;
-            }
-            return fallback;
-        }
+        const ckT = window.JRUtils.t;
 
         // Submission Ceremony Effect
         document.querySelector('form').addEventListener('submit', (e) => {
@@ -323,9 +318,4 @@
 <script src="assets/i18n.js"></script>
 <script src="assets/nav-fix.js"></script>
 <script src="assets/cart.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-</script>
 </body></html>

@@ -108,6 +108,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <meta name="theme-color" content="#3d441e">
+<script src="assets/utils.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-primary" data-i18n-title-key="home.meta.title">
 <!-- TopNavBar -->
@@ -363,13 +364,7 @@
 <script src="assets/cart.js"></script>
 <script>
 (function () {
-  function hT(key, fallback) {
-    if (window.JRI18N && typeof window.JRI18N.t === "function") {
-      const v = window.JRI18N.t(key);
-      if (v && v !== key) return v;
-    }
-    return fallback;
-  }
+  const hT = window.JRUtils.t;
   const gallery = [
     { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8JHKKRzanEdnMtd7GFyVooFVYNyEmY0v67xxT2hG6Xe4Q4pj5HC_xm85N7u2yQEBe9qcsOHVluwPuD1loCMOtEJqo_B_I0G7W7w9CPLLt_9EodHAMNJcSFTMGr0I7PsNfc27yS5ImZ980PmRdLQrxbeVc0o1RVvBZ4wEd8921N2U-EnKUTmRaq6p2hiLTbzHK4yQ_n7BWW62XJ6ssIwOfIyeqaCaDmNCLQvYGHFi1v2lM3s6wIWaZez5pcB29BS1eiW6iseBJbACw", captionKey: "home.lightbox.c1" },
     { src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCBAzkC5EQVqeALUFaYXVG1Ictujqb80h1u2xn0TOc9Z6-slNmArddXP5wBryZhintTYucwZYj1oFdQ_ngxP0Xw4TIdTsBwH7-CLAM7rWEpVI4xZUUbdC75JZAPFc1yJxqvCqlZw0_5rX1NxCGeDqESybi2dC0OT4RushaA7i7XsE-twbvsMVdy1tXiFo2RvmOXCGaTsadQ6unHqa-zAgH_bS56wIR2SwvnOKhfReL3yfy9DzzIcvkuptW3v7a7J65757SDG6e9eokN", captionKey: "home.lightbox.c2" },
@@ -402,10 +397,5 @@
   lightbox.addEventListener("click", (e) => { if (e.target === lightbox) close(); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
 })();
-</script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
 </script>
 </body></html>
