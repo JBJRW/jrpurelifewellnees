@@ -1,0 +1,16 @@
+{
+  "name": "jr-purelife-wellness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JR PureLife Wellness — static site. This package only exists to run the unit test suite.",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "2.1.8",
+    "jsdom": "25.0.1",
+    "vitest": "2.1.8"
+  }
+}
