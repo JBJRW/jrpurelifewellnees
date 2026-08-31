@@ -45,8 +45,8 @@
     },
     "story": {
       "heading": "Intelligenza Botanica",
-      "text": "Un viaggio cinematografico di 1:30 min nel cuore della nostra eredità. Scopri l'arte della saponificazione a freddo, dove il tempo è l'ingrediente più prezioso per preservare l'intelligenza vegetale.",
-      "watch": "Guarda il Processo",
+      "text": "Scopri l'arte della saponificazione a freddo attraverso il nostro archivio botanico, dove il tempo è il nostro ingrediente più prezioso per preservare l'intelligenza vegetale.",
+      "watch": "Vedi la Galleria",
       "img_alt": "Luce solare filtrata tra gli ulivi di un uliveto toscano"
     },
     "spotlight": {
@@ -77,6 +77,13 @@
     },
     "misc": {
       "ambient_frequency": "Frequenza Ambientale: 432Hz Attiva"
+    },
+    "lightbox": {
+      "prev": "Precedente",
+      "next": "Successivo",
+      "c1": "La luce del sole che filtra tra gli uliveti della nostra tenuta d'origine.",
+      "c2": "Ingredienti botanici grezzi: olio d'oliva, cocco e avocado nella loro forma più pura.",
+      "c3": "La saponetta Trinità Ancestrale finita, stagionata e pronta per il rituale."
     }
   },
   "product": {
