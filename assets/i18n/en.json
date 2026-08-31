@@ -45,8 +45,8 @@
     },
     "story": {
       "heading": "Botanical Intelligence",
-      "text": "A cinematic journey of 1:30 min to the heart of our heritage. Discover the art of cold saponification, where time is our most precious ingredient to preserve plant intelligence.",
-      "watch": "Watch the Process",
+      "text": "Discover the art of cold saponification through our botanical archive, where time is our most precious ingredient to preserve plant intelligence.",
+      "watch": "View the Gallery",
       "img_alt": "Sunlight filtering through olive trees in a Tuscan grove"
     },
     "spotlight": {
@@ -77,6 +77,13 @@
     },
     "misc": {
       "ambient_frequency": "Ambient Frequency: 432Hz Active"
+    },
+    "lightbox": {
+      "prev": "Previous",
+      "next": "Next",
+      "c1": "Sunlight filtering through the olive groves of our source estate.",
+      "c2": "Raw botanical ingredients: olive oil, coconut, and avocado in their purest form.",
+      "c3": "The finished Ancestral Trinity bar, cured and ready for the ritual."
     }
   },
   "product": {

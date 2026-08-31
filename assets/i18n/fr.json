@@ -45,8 +45,8 @@
     },
     "story": {
       "heading": "Intelligence Botanique",
-      "text": "Un voyage cinématographique de 1:30 min au cœur de notre héritage. Découvrez l'art de la saponification à froid, où le temps est notre ingrédient le plus précieux pour préserver l'intelligence végétale.",
-      "watch": "Voir le Processus",
+      "text": "Découvrez l'art de la saponification à froid à travers nos archives botaniques, où le temps est notre ingrédient le plus précieux pour préserver l'intelligence végétale.",
+      "watch": "Voir la Galerie",
       "img_alt": "Lumière du soleil filtrant à travers des oliviers toscans"
     },
     "spotlight": {
@@ -77,6 +77,13 @@
     },
     "misc": {
       "ambient_frequency": "Fréquence Ambiante : 432Hz Active"
+    },
+    "lightbox": {
+      "prev": "Précédent",
+      "next": "Suivant",
+      "c1": "La lumière du soleil filtrant à travers les oliveraies de notre domaine d'origine.",
+      "c2": "Ingrédients botaniques bruts : huile d'olive, coco et avocat sous leur forme la plus pure.",
+      "c3": "Le savon Trinité Ancestrale terminé, affiné et prêt pour le rituel."
     }
   },
   "product": {
