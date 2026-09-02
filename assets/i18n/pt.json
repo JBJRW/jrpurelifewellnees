@@ -45,8 +45,8 @@
     },
     "story": {
       "heading": "Inteligência Botânica",
-      "text": "Uma jornada cinematográfica de 1:30 min ao coração da nossa herança. Descubra a arte da saponificação a frio, onde o tempo é o ingrediente mais precioso para preservar a inteligência vegetal.",
-      "watch": "Ver o Processo",
+      "text": "Descubra a arte da saponificação a frio através do nosso arquivo botânico, onde o tempo é nosso ingrediente mais precioso para preservar a inteligência vegetal.",
+      "watch": "Ver a Galeria",
       "img_alt": "Luz solar filtrando-se entre oliveiras de um pomar toscano"
     },
     "spotlight": {
@@ -77,6 +77,13 @@
     },
     "misc": {
       "ambient_frequency": "Frequência Ambiente: 432Hz Ativa"
+    },
+    "lightbox": {
+      "prev": "Anterior",
+      "next": "Próximo",
+      "c1": "Luz solar filtrando pelos olivais da nossa propriedade de origem.",
+      "c2": "Ingredientes botânicos crus: azeite de oliva, coco e abacate em sua forma mais pura.",
+      "c3": "A barra finalizada da Trindade Ancestral, curada e pronta para o ritual."
     }
   },
   "product": {
