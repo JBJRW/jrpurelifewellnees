@@ -45,8 +45,8 @@
     },
     "story": {
       "heading": "Inteligencia Botánica",
-      "text": "Un viaje cinematográfico de 1:30 min al corazón de nuestra herencia. Descubre el arte de la saponificación en frío, donde el tiempo es el ingrediente más preciado para preservar la inteligencia vegetal.",
-      "watch": "Ver el Proceso",
+      "text": "Descubre el arte de la saponificación en frío a través de nuestro archivo botánico, donde el tiempo es nuestro ingrediente más preciado para preservar la inteligencia vegetal.",
+      "watch": "Ver la Galería",
       "img_alt": "Luz solar filtrándose entre olivos de un huerto toscano"
     },
     "spotlight": {
@@ -77,6 +77,13 @@
     },
     "misc": {
       "ambient_frequency": "Frecuencia Ambiental: 432Hz Activa"
+    },
+    "lightbox": {
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "c1": "Luz solar filtrándose entre los olivares de nuestra finca de origen.",
+      "c2": "Ingredientes botánicos crudos: aceite de oliva, coco y aguacate en su forma más pura.",
+      "c3": "La barra terminada de Trinidad Ancestral, curada y lista para el ritual."
     }
   },
   "product": {
@@ -84,10 +91,10 @@
       "title": "Jabón Trinidad Ancestral | JR PureLife Wellness"
     },
     "nav": {
-      "heritage": "Heritage",
-      "science": "Science",
-      "collection": "Collection",
-      "sanctuary": "Sanctuary"
+      "heritage": "Herencia",
+      "science": "Ciencia",
+      "collection": "Colección",
+      "sanctuary": "Santuario"
     },
     "hero": {
       "eyebrow": "Artesanía Biológica",
@@ -116,7 +123,7 @@
       "avocado_badge": "Bio-Regenerativo"
     },
     "science": {
-      "img_alt": "Rustic texture and botanical fragments",
+      "img_alt": "Textura rústica y fragmentos botánicos",
       "quote_label": "Curado Lento",
       "quote_text": "\"El tiempo es el ingrediente que no se puede apresurar. Respetamos cada ciclo natural.\"",
       "eyebrow": "Metodología",
@@ -137,14 +144,14 @@
     "footer": {
       "tagline": "\"Ancestral Wisdom, Biological Science. Reconciliando al ser humano con su propia naturaleza.\"",
       "community_label": "Comunidad",
-      "sourcing_ethics": "Sourcing Ethics",
-      "lab_reports": "Lab Reports",
-      "the_journal": "The Journal",
+      "sourcing_ethics": "Ética de Abastecimiento",
+      "lab_reports": "Informes de Laboratorio",
+      "the_journal": "El Diario",
       "help_label": "Ayuda",
-      "privacy": "Privacy Policy",
-      "contact": "Contact",
-      "returns": "Returns",
-      "copyright": "© 2024 JR PureLife Wellness. Ancestral Wisdom, Biological Science.",
+      "privacy": "Política de Privacidad",
+      "contact": "Contacto",
+      "returns": "Devoluciones",
+      "copyright": "© 2024 JR PureLife Wellness. Sabiduría Ancestral, Ciencia Biológica.",
       "write_review": "Escribir una Reseña"
     }
   },
@@ -1349,7 +1356,7 @@
       "frequency": "FRECUENCIA RECOMENDADA: 2-3 VECES POR SEMANA"
     },
     "skin": {
-      "eyebrow": "THE BODY JOURNEY",
+      "eyebrow": "EL VIAJE DEL CUERPO",
       "title": "Sinfonía de los Sentidos",
       "img_alt": "Una toma macro de una barra de jabón botánico cremoso siendo enjabonada.",
       "contact_title": "El Contacto Sagrado",
