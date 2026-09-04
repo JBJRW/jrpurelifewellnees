@@ -91,10 +91,10 @@
       "title": "Jabón Trinidad Ancestral | JR PureLife Wellness"
     },
     "nav": {
-      "heritage": "Heritage",
-      "science": "Science",
-      "collection": "Collection",
-      "sanctuary": "Sanctuary"
+      "heritage": "Herencia",
+      "science": "La Ciencia",
+      "collection": "Colección",
+      "sanctuary": "Santuario"
     },
     "hero": {
       "eyebrow": "Artesanía Biológica",
@@ -104,7 +104,7 @@
       "cta_add": "Añadir al Ritual",
       "cta_science": "Explorar Ciencia",
       "weight_label": "Peso",
-      "weight_value": "100g approx.",
+      "weight_value": "100 g aprox.",
       "origin_label": "Origen",
       "origin_value": "Hecho a mano en España",
       "img_alt": "Jabón Trinidad Ancestral product"
@@ -123,7 +123,7 @@
       "avocado_badge": "Bio-Regenerativo"
     },
     "science": {
-      "img_alt": "Rustic texture and botanical fragments",
+      "img_alt": "Textura rústica y fragmentos botánicos",
       "quote_label": "Curado Lento",
       "quote_text": "\"El tiempo es el ingrediente que no se puede apresurar. Respetamos cada ciclo natural.\"",
       "eyebrow": "Metodología",
@@ -144,13 +144,13 @@
     "footer": {
       "tagline": "\"Ancestral Wisdom, Biological Science. Reconciliando al ser humano con su propia naturaleza.\"",
       "community_label": "Comunidad",
-      "sourcing_ethics": "Sourcing Ethics",
-      "lab_reports": "Lab Reports",
-      "the_journal": "The Journal",
+      "sourcing_ethics": "Ética de Abastecimiento",
+      "lab_reports": "Informes de Laboratorio",
+      "the_journal": "El Journal",
       "help_label": "Ayuda",
-      "privacy": "Privacy Policy",
-      "contact": "Contact",
-      "returns": "Returns",
+      "privacy": "Política de Privacidad",
+      "contact": "Contacto",
+      "returns": "Devoluciones",
       "copyright": "© 2024 JR PureLife Wellness. Ancestral Wisdom, Biological Science.",
       "write_review": "Escribir una Reseña"
     }
@@ -1356,7 +1356,7 @@
       "frequency": "FRECUENCIA RECOMENDADA: 2-3 VECES POR SEMANA"
     },
     "skin": {
-      "eyebrow": "THE BODY JOURNEY",
+      "eyebrow": "EL VIAJE DEL CUERPO",
       "title": "Sinfonía de los Sentidos",
       "img_alt": "Una toma macro de una barra de jabón botánico cremoso siendo enjabonada.",
       "contact_title": "El Contacto Sagrado",
